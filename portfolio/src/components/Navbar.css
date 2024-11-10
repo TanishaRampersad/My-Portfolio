@@ -7,27 +7,72 @@
 
 nav{
     display: flex;
+    width: 100vw;
+    padding: 1rem 1rem;
+}
+
+.navEnd{
+    display: flex;
     justify-content: space-between;
     width: 100vw;
-    background-color: blueviolet;
+    /* border: 2px solid blueviolet; */
+}
+
+.navFirst{
+    width: 50%;
+    border: 2px solid green;
 }
 
 .navFirst img{
-    width: 1rem;
+    width: 0.7rem;
 }
 
-.menu{
-    visibility: hidden;
-}
-
-.navItem Link{
-    display: flex;
+.navFirst h3{
+    font-size: 0.7rem;
+    width: 100%;
 }
 
 nav ul{
-    display: flex;
+    display:flex;
+    justify-content: flex-ends;
+  }
+
+.menu{
+    visibility: visible;
+    width: 1.5rem;
+    margin-right: 1rem;
+    /* border: 2px solid blue; */
+    /* display: none; */
 }
 
-.nav li + .nav li{
+.hamburger-menu{
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+
+
+.navEnd ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li:not(:first-child){
     margin-left: 1rem;
 }
+
+
+.navEnd ul{
+    padding-right: 2rem;
+    visibility: hidden;
+}
+
+.navEnd{
+    /* border: 2px solid red; */
+    width: 50%;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+

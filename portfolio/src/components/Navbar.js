@@ -48,42 +48,28 @@ export default function Navbar() {
             <div className='navEnd'>
                 <ul>
                     <li className='nav-item'>
-                    <Link id="navigationLink" className='link'to="/">Home</Link>
+                    <Link className='link'to="/">Work</Link>
                         <div className='d-padding'>
                             <div className='dot'></div>
                         </div>
                     </li>
                     <li className='nav-item'>
-                    <Link id="navigationLink" className='link' to="/specials">Specials</Link>
+                    <Link className='link' to="/specials">About</Link>
                         <div className='d-padding'>
                         <div className='dot'></div>
                         </div>
                     </li>
                     <li className='nav-item'>
-                    <Link id="navigationLink" className='link' to="/packages">Packages</Link>
-                        <div className='d-padding'>
-                            <div className='dot'></div>
-                        </div>
-                    </li>
-    
-                    <li className='nav-item'>
-                    <Link id="navigationLink" className='link' to="/massages">Massages</Link>
-                        <div className='d-padding'>
-                            <div className='dot'></div>
-                        </div>
-                    </li>
-    
-                    <li className='nav-item'>
-                    <Link id="navigationLink" className='link' to="/contact">Contact</Link>
+                    <Link className='link' to="/packages">Contact</Link>
                         <div className='d-padding'>
                             <div className='dot'></div>
                         </div>
                     </li>
 
-                    {/* <div className='hamburger-menu'> */}
+                    <div className='hamburger-menu'>
                     <img className="menu" src={hamburger} alt="hamburger menu"></img>
                     <p className='vLine'>|</p>
-                    {/* </div> */}
+                    </div>
                 </ul>
             </div>
   
