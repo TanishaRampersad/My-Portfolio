@@ -42,7 +42,7 @@ export default function Navbar() {
         <>
           <nav>
             <div className='navFirst navResponsive'>
-              <h3><img src={copyright} alt="copyright" />Code by Tanisha Rampersad</h3>
+              <h3><img src={copyright} alt="copyright" />Code by Tanisha</h3>
             </div>
   
             <div className='navEnd'>
@@ -67,8 +67,7 @@ export default function Navbar() {
                     </li>
 
                     <div className='hamburger-menu'>
-                    <img className="menu" src={hamburger} alt="hamburger menu"></img>
-                    <p className='vLine'>|</p>
+                      <img className="menu" src={hamburger} alt="hamburger menu"></img>
                     </div>
                 </ul>
             </div>
