@@ -9,38 +9,49 @@ import Contact from './components/Contact';
 import Work from './components/Work';
 import Error from './components/Error';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
     {
-      path: '/',
+      path: '*',
       element: <App />,
       errorElement: <Error />,
       children: [
         {
-            path: '/home',
-            element: <Home />,
-            errorElement: <Error />,
-          },
+          path: 'home',
+          element: <Home />,
+          errorElement: <Error />,
+        },
         {
-          path: '/work',
+          path: 'work',
           element: <Work />,
           errorElement: <Error />,
         },
         {
-          path: '/about',
+          path: 'about',
           element: <About />,
           errorElement: <Error />,
         },
         {
-          path: '/contact',
+          path: 'contact',
           element: <Contact />,
           errorElement: <Error />,
         },
-       
-      ]
+      ],
+    },
+  ],
+  {
+    future: { 
+      v7_skipActionErrorRevalidation: true,
+      v7_partialHydration: true,
+      v7_normalizeFormMethod: true,
+      v7_fetcherPersist: true,
+      v7_relativeSplatPath: true,
+      v7_startTransition: true
     }
-  ])
+  }
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <RouterProvider router={router} />
+  <RouterProvider router={router} />
 );

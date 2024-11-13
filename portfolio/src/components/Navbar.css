@@ -48,6 +48,11 @@ nav{
     left: 2rem;
 }
 
+#code{
+    text-decoration: none;
+    color: black;
+}
+
 nav ul{
     display:flex;
     justify-content: flex-end;
@@ -111,6 +116,12 @@ nav ul li:not(:first-child){
 }
 
 
+.dot{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    color: rgb(188, 24, 24);
+}
 
 
 
@@ -196,7 +207,7 @@ nav ul li:not(:first-child){
     }
 
     .navFirst img{
-        width: 0.9rem;
+        width: 0.8rem;
         margin-right: 0.2rem;
     }
   }

@@ -42,8 +42,10 @@ export default function Navbar() {
         <>
           <nav>
             <div className='navFirst navResponsive'>
-              <h3><img src={copyright} alt="copyright" />Code by Tanisha</h3>
+              <h3><img src={copyright} alt="copyright" /><Link id='code' to='/'>Code by Tanisha</Link></h3>
             </div>
+
+            <div className='dot'></div>
   
             <div className='navEnd'>
                 <ul>
