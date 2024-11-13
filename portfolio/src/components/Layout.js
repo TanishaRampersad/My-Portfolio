@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 import { useLocation } from 'react-router-dom';
+import './Layout.css';
 //import MouseFollower from "mouse-follower";
 //import 'mouse-follower/dist/mouse-follower.min.css';
 

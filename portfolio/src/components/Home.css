@@ -1,0 +1,114 @@
+
+@font-face {
+    font-family: 'Avenir-light'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-book'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Roman'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Avenir-medium'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Avenir-Roman'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Black'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* ----------------------- Main --------------------------- */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: none;
+}
+
+.banner{
+    width: 100vw;
+    height: 100vh;
+    background-color: #999D9E;
+    overflow: hidden;
+    position: relative;
+    padding-top: 8rem;
+    color: rgb(243, 243, 243);
+}
+
+.banner h3{
+    font-family: 'Avenir-light';
+    font-size: 2rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 20%;
+    right: 0;
+}
+
+.banner-text{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.scroll-div{
+    width: 50%;
+    height: 50%;
+    border: #ffffff 5px dotted;
+    border-style: dotted;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    left: 26%;
+  
+}
+
+.scroll{
+    position: absolute;
+    bottom: 12%;
+    left: 43%;
+    z-index: 5;
+}
+
+.scroll p{
+    font-size: 1.5rem;
+}
+
+#Objects{
+    position: absolute;
+    bottom: 10%;
+}
