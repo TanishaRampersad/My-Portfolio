@@ -76,6 +76,7 @@
     z-index: 1000;  /* Ensures it's above other content */
     background: transparent;  /* Or any color with transparency */
     padding-bottom: 8rem;
+    width: 100%;
   }
   
 
@@ -97,7 +98,7 @@
 }
 
 .navFirst{
-    width: 50%;
+    width: 80%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -113,13 +114,14 @@
     width: 100%;
     /* font-size: 0.5rem; */
     position: relative;
-    left: 2rem;
+    left: 0.5rem;
 }
 
 #code{
     text-decoration: none;
     color: black;
     color: rgb(243, 243, 243);
+    padding-left: 0.3rem;
 }
 
 nav ul{
@@ -135,6 +137,7 @@ nav ul{
     width: 0.8rem;
     margin-right: 0.2rem;
     margin-left: 0.2rem;
+    filter: invert(1); 
 }
 
 .hamburger-menu{
@@ -142,7 +145,7 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: grey;
+    background-color: rgb(60, 60, 60);
     border-radius: 50%;
     padding: 0.5rem;
 }
@@ -216,8 +219,7 @@ nav ul li:not(:first-child){
     }
 
     .navFirst img{
-        width: 0.6rem;
-        margin-right: 0.2rem;
+        width: 0.7rem;
     }
   }
   
@@ -240,7 +242,7 @@ nav ul li:not(:first-child){
 
     .navFirst img{
         width: 0.8rem;
-        margin-right: 0.2rem;
+        /* margin-right: 0.2rem; */
     }
   }
 
@@ -267,8 +269,9 @@ nav ul li:not(:first-child){
 
     .navFirst img{
         width: 0.8rem;
-        margin-right: 0.2rem;
+        /* margin-right: 0.2rem; */
     }
+
   }
   
   
