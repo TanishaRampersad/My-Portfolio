@@ -58,11 +58,11 @@
 .banner{
     width: 100vw;
     height: 100vh;
-    background-color: #999D9E;
+    background-color: /*rgb(106, 105, 105) #999D9E */ rgb(140, 140, 140);
     overflow: hidden;
     position: relative;
     padding-top: 8rem;
-    color: rgb(243, 243, 243);
+    color: rgb(240, 240, 240);
 }
 
 .banner h3{
@@ -135,17 +135,16 @@
     font-weight: 800;
     animation: scrollLeft 25s linear infinite; /* Infinite scrolling animation */
     position: relative;
+    color:#fbfbfb;
 }
 
-.circle{
-    width: 0.9rem;
-    height: 0.9rem;
-    background-color: white;
-    border-radius: 50%;
+.dash{
+    width: 3rem;
+    height: 4.5rem;
     filter: invert(1); 
-    border: invert(1);
     vertical-align: middle;
 }
+
 
 
 /*
@@ -167,6 +166,65 @@ Duplicate the text with a pseudo-element
     }
 }
 */
+
+
+
+
+/*------------ TABLE SECTION -------------**/
+
+.work{
+    position: relative;
+    height: auto;
+    font-family: 'Avenir-light';
+    background-color: #ececec;
+}
+
+.table1{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    position: relative;
+}
+
+.table1 table {
+    width: 90%;
+    /* border: 2px solid aqua;  */
+    border-collapse: collapse; /* Ensures borders don't double up */
+}
+
+.table1 tr {
+    border-bottom: 1px solid rgb(206, 206, 206); 
+}
+
+.table1 tr:hover{
+    cursor: pointer;
+}
+
+.table1 th {
+    text-align: left; 
+    padding: 3rem 5%;
+    border-bottom: 1px solid  rgb(206, 206, 206);
+    color:#838383;
+}
+
+.table1 td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5%; 
+    color:rgb(49, 49, 49);
+}
+
+.table1 p {
+    margin: 0; /* Removes default margin from the <p> tag */
+    padding-right: 5%; /* Optional: Adjusts spacing if needed */
+}
+
+
+
+
+
+
 
 
 
@@ -304,7 +362,7 @@ Duplicate the text with a pseudo-element
     }
     
     .banner-text{
-        max-width: 40%;
+        max-width: 35%;
         position: relative;
         text-align: left;  
     }
@@ -322,5 +380,20 @@ Duplicate the text with a pseudo-element
     .circle{
         width: 1.2rem;
         height: 1.2rem;
+    }
+
+    .banner h3{
+        font-size: 1.6rem;
+    }
+
+    .table1 td{
+        font-size: 4.5rem;
+        font-weight: 600;
+    }
+
+    .table1 td p{
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-size: 1.2rem;
     }
 }

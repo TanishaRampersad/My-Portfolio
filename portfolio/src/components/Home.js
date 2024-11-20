@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import gsap from 'gsap';
 import './Home.css'
-import circle from '../images/circle.png';
+import dash from '../images/horizontal-line-remove-button.png'
 
 export default function Home() {
     useEffect(() => {
@@ -38,7 +38,7 @@ export default function Home() {
         <section className="banner">
             <div className="flex">
                 <div className="banner-text">
-                    <h3>"Exploring the intersection of design, development and imagination"</h3>
+                    <h3 className="h3">"Exploring the intersection of design, development and imagination"</h3>
                 </div>
             </div>
 
@@ -85,11 +85,44 @@ export default function Home() {
             {/* Second option*/}
 
             <div className="myNameSection">
-              <h1>Tanisha Rampersad <img className="circle" src={circle} alt='circle'/> Tanisha Rampersad <img className="circle" src={circle} alt='circle'/> Tanisha Rampersad <img className="circle" src={circle} alt='circle'/></h1>
+              <h1>Tanisha Rampersad <img className="dash" src={dash} alt='circle'/> Tanisha Rampersad <img className="dash" src={dash} alt='circle'/> </h1>
             </div>
 
 
 
+        </section>
+
+
+
+        <section className="work">
+          <div className="table1">
+            <table>
+              <tr>
+                <th>CREATIVE PROJECTS</th>
+              </tr>
+              <tr>
+                <td>Amaranth Spa <p>Development</p></td>
+              </tr>
+              <tr>
+                <td>Prussian Shopping Cart <p>Design and Development</p></td>
+              </tr>
+              <tr>
+                <td>Flipkart <p>Design</p></td>
+              </tr>
+              <tr>
+                <td>Stripe <p>Design</p></td>
+              </tr>
+            </table>
+          </div>
+
+          <table>
+            <tr>
+              <th>Other Work</th>
+            </tr>
+            <tr>
+              <td>Woolworths Workshop <p>Design Workshop Facilitation</p></td>
+            </tr>
+          </table>
         </section>
 
         </>
