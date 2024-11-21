@@ -291,7 +291,7 @@ Duplicate the text with a pseudo-element
 /* --------- EXTRA WORK -------------*/
 
 .videos{
-    height: 100vh;
+    height: auto;
     margin-top: 5rem;
 }
 
@@ -526,8 +526,8 @@ Duplicate the text with a pseudo-element
 
     .videos{
         height: 100vh;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
 
