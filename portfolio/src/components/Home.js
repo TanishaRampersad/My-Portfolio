@@ -2,6 +2,10 @@ import { useEffect } from "react"
 import gsap from 'gsap';
 import './Home.css'
 import dash from '../images/horizontal-line-remove-button.png'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Home() {
     useEffect(() => {
@@ -29,6 +33,42 @@ export default function Home() {
     }
 
     infiniteScroll()
+
+
+
+
+    /* video horizontal scroll */
+
+    function horizontalScroll() {
+
+      const firstRow = document.querySelector('.first-row')
+      const secondRow = document.querySelector('.second-row')
+
+      const tween = gsap.to(firstRow, {x: 160, ease: "power1:Out"})
+
+      ScrollTrigger.create({
+        trigger: firstRow,
+        start: "top bottom",
+        animation: tween,
+        end: "bottom top",
+        scrub: true
+      })
+
+      const secondTween = gsap.to(secondRow, {x: -160, ease: "power1:Out"})
+
+      ScrollTrigger.create({
+        trigger: secondRow,
+        start: "top bottom",
+        animation: secondTween,
+        end: "bottom top",
+        scrub: true
+      })
+  }
+
+  horizontalScroll()
+
+
+
 
 
     })
@@ -101,10 +141,10 @@ export default function Home() {
                 <th>CREATIVE PROJECTS</th>
               </tr>
               <tr>
-                <td><p className="move-left">Amaranth Spa</p> <p className="move-right">Development</p></td>
+                <td><p className="move-left">Amaranth Spa</p> <p className="move-right">Design and Development</p></td>
               </tr>
               <tr>
-                <td><p className="move-left">Prussian Shopping Cart</p> <p className="move-right">Design and Development</p></td>
+                <td><p className="move-left">Prussian Shopping Cart</p> <p className="move-right">Development</p></td>
               </tr>
               <tr>
                 <td><p className="move-left">Flipkart</p> <p className="move-right">Design</p></td>
@@ -124,6 +164,43 @@ export default function Home() {
                 <td><p className="move-left">Woolworths Workshop</p> <p className="move-right">Design Workshop Facilitation</p></td>
               </tr>
             </table>
+          </div>
+
+        </section>
+
+
+        <section className="extra-work">
+
+          <div className="videos">
+
+            <div className="first-row">
+              <div className="box one">
+                <img alt=''/>
+              </div>
+
+              <div className="box two">
+                <img alt=''/>
+              </div>
+
+              <div className="box three">
+                <img alt=''/>
+              </div>
+            </div>
+
+            <div className="second-row">
+              <div className="box four">
+                <img alt=''/>
+              </div>
+
+              <div className="box five">
+                <img alt=''/>
+              </div>
+
+              <div className="box six">
+                <img alt=''/>
+              </div>
+            </div>
+
           </div>
 
         </section>
