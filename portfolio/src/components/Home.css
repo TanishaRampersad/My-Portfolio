@@ -218,7 +218,7 @@ Duplicate the text with a pseudo-element
 
 /* Hover effect */
 .table1 td:hover .move-left {
-    color: /*rgb(91, 103, 109) */ rgb(118, 140, 150) /*rgb(116, 102, 131)*/; 
+    color: /*#838383*/ /*rgb(91, 103, 109) */rgb(118, 140, 150) /*rgb(116, 102, 131)*/; 
     transform: translateX(-10px); 
     transition: transform 0.5s ease forwards;
 }
