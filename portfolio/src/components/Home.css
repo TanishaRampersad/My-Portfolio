@@ -193,7 +193,7 @@ Duplicate the text with a pseudo-element
 }
 
 .table1 tr {
-    border-bottom: 1px solid rgb(206, 206, 206); 
+    border-bottom: 1.3px solid rgb(206, 206, 206); 
 }
 
 .table1 tr:hover{
@@ -204,7 +204,8 @@ Duplicate the text with a pseudo-element
     text-align: left; 
     padding: 3rem 5%;
     border-bottom: 1px solid  rgb(206, 206, 206);
-    color:#838383;
+    color:#777777;
+    font-weight:bolder;
 }
 
 .table1 td {
@@ -215,9 +216,74 @@ Duplicate the text with a pseudo-element
     color:rgb(49, 49, 49);
 }
 
-.table1 p {
-    margin: 0; /* Removes default margin from the <p> tag */
-    padding-right: 5%; /* Optional: Adjusts spacing if needed */
+/* Hover effect */
+.table1 td:hover .move-left {
+    color: /*rgb(91, 103, 109) */ rgb(118, 140, 150) /*rgb(116, 102, 131)*/; 
+    transform: translateX(-10px); 
+    transition: transform 0.5s ease forwards;
+}
+
+
+/* Hover effect */
+.table1 td:hover p{
+    transform: translateX(10px); 
+    transition: transform 0.5s ease; 
+    color: /*#838383*/ rgb(118, 140, 150); 
+}
+
+
+
+/* TABLE 2*/
+.table2{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    position: relative;
+    padding-bottom: 10%;
+}
+
+.table2 table {
+    width: 90%;
+    /* border: 2px solid aqua;  */
+    border-collapse: collapse; /* Ensures borders don't double up */
+}
+
+.table2 tr {
+    border-bottom: 1px solid rgb(206, 206, 206); 
+}
+
+.table2 tr:hover{
+    cursor: pointer;
+}
+
+.table2 th {
+    text-align: left; 
+    padding: 3rem 5%;
+    border-bottom: 1px solid  rgb(206, 206, 206);
+    color:#838383;
+}
+
+.table2 td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5%; 
+    color:rgb(49, 49, 49);
+}
+
+/* Hover effect */
+.table2 td:hover .move-left {
+    color: /*rgb(91, 103, 109) */ rgb(118, 140, 150) /*rgb(116, 102, 131)*/; 
+    transform: translateX(-10px); 
+    transition: transform 0.5s ease;
+}
+
+
+/* Hover effect */
+.table2 td:hover p{
+    transform: translateX(10px); 
+    transition: transform 0.5s ease; 
+    color: /*#838383*/ rgb(118, 140, 150); 
 }
 
 
@@ -386,12 +452,23 @@ Duplicate the text with a pseudo-element
         font-size: 1.6rem;
     }
 
-    .table1 td{
+    .table1 td .move-left{
         font-size: 4.5rem;
         font-weight: 600;
     }
 
     .table1 td p{
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .table2 td .move-left{
+        font-size: 4.5rem;
+        font-weight: 600;
+    }
+
+    .table2 td p{
         font-size: 1.5rem;
         font-weight: 600;
         font-size: 1.2rem;

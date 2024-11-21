@@ -101,28 +101,31 @@ export default function Home() {
                 <th>CREATIVE PROJECTS</th>
               </tr>
               <tr>
-                <td>Amaranth Spa <p>Development</p></td>
+                <td><p className="move-left">Amaranth Spa</p> <p className="move-right">Development</p></td>
               </tr>
               <tr>
-                <td>Prussian Shopping Cart <p>Design and Development</p></td>
+                <td><p className="move-left">Prussian Shopping Cart</p> <p className="move-right">Design and Development</p></td>
               </tr>
               <tr>
-                <td>Flipkart <p>Design</p></td>
+                <td><p className="move-left">Flipkart</p> <p className="move-right">Design</p></td>
               </tr>
               <tr>
-                <td>Stripe <p>Design</p></td>
+                <td><p className="move-left">Stripe</p> <p className="move-right">Design</p></td>
               </tr>
             </table>
           </div>
 
-          <table>
-            <tr>
-              <th>Other Work</th>
-            </tr>
-            <tr>
-              <td>Woolworths Workshop <p>Design Workshop Facilitation</p></td>
-            </tr>
-          </table>
+          <div className="table2">
+            <table>
+              <tr>
+                <th>OTHER WORK</th>
+              </tr>
+              <tr>
+                <td><p className="move-left">Woolworths Workshop</p> <p className="move-right">Design Workshop Facilitation</p></td>
+              </tr>
+            </table>
+          </div>
+
         </section>
 
         </>
