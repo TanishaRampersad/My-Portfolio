@@ -47,6 +47,15 @@
 
 /* ----------------------- Main --------------------------- */
 
+/* html {
+    scroll-snap-type: y mandatory; /* Snap vertically 
+  } */
+  
+  /* section {
+    scroll-snap-align: start; /* Snap to the top of each section 
+  }
+   */
+
 *{
     scroll-behavior: smooth;
   }

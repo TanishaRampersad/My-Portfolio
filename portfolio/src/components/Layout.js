@@ -7,6 +7,7 @@ import gsap from 'gsap';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 import { useLocation } from 'react-router-dom';
 import './Layout.css';
+
 //import MouseFollower from "mouse-follower";
 //import 'mouse-follower/dist/mouse-follower.min.css';
 
@@ -16,6 +17,7 @@ gsap.registerPlugin(ScrollToPlugin);
 
 export default function Layout() {
   const { pathname } = useLocation();
+
   useEffect(() => {
 
 
