@@ -288,7 +288,7 @@ Duplicate the text with a pseudo-element
 
 
 
-/* --------- EXTRA WORK -------------*/
+/* --------- EXTRA WORK SECTION-------------*/
 
 .videos{
     height: auto;
@@ -307,7 +307,7 @@ Duplicate the text with a pseudo-element
 
 .first-row{
     display: flex;
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
 }
 
 .second-row{

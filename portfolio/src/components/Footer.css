@@ -1,0 +1,161 @@
+
+@font-face {
+    font-family: 'Avenir-light'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-book'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Roman'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Avenir-medium'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Avenir-Roman'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Black'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+    font-family: 'Avenir-book';
+}
+
+.footer-section{
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+}
+
+.footer{
+    background-color: rgb(32, 32, 32);
+    color: rgb(247, 247, 247);
+}
+
+.footer h1{
+    font-size: 5rem;
+    margin-left: 1rem;
+}
+
+.connect{
+    display: flex;
+    padding-top: 5rem;
+}
+
+.connect img{
+    margin-left: 5rem;
+}
+
+.get-in-touch{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background-color:  rgb(43, 93, 111);
+    /* background-color: rgb(219, 219, 219); */
+    color: rgb(247, 247, 247);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.flex-end{
+    position: absolute;
+    right: 20%;
+}
+
+.connect-button hr {
+    z-index: 1;
+    margin-top: 8rem;
+    border: 0.5px solid rgb(166, 166, 166);
+}
+
+.connect-button{
+    /* display: flex; */
+    display:contents;
+    position: relative;
+    justify-content: flex-end;
+    right: 20%;
+    padding-bottom: 5rem;
+}
+
+.socials{
+    padding-bottom: 1rem;
+    padding-top: 10rem;
+    position: relative;
+    /* background-color: blueviolet; */
+}
+
+.socials-section{
+    text-align: left;
+}
+
+.socials p{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.socials h4{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.7rem;
+    color: gray;
+    padding-bottom: 1rem;
+}
+
+/* .socials-section{
+    background-color: antiquewhite;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+} */
+
+.socials p:hover{
+    color:rgb(64, 167, 204);
+}
+
+.socials-list{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#social-link + #social-link{
+    margin-left: 1.5rem;
+}

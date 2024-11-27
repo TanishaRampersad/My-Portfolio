@@ -50,7 +50,7 @@ export default function Home() {
 
       ScrollTrigger.create({
         trigger: firstRow,
-        start: "top bottom",
+        start: "top 90%",
         animation: tween,
         end: "bottom top",
         scrub: true,
@@ -60,7 +60,7 @@ export default function Home() {
 
       ScrollTrigger.create({
         trigger: secondRow,
-        start: "top bottom",
+        start: "top 90%",
         animation: secondTween,
         end: "bottom top",
         scrub: true,
