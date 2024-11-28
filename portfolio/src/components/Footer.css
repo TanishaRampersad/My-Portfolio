@@ -76,8 +76,8 @@
 }
 
 .get-in-touch{
-    width: 9rem;
-    height: 9rem;
+    width: 11rem;
+    height: 11rem;
     border-radius: 50%;
     background-color:  rgb(43, 93, 111);
     /* background-color: rgb(219, 219, 219); */
@@ -86,7 +86,7 @@
     justify-content: center; 
     align-items: center; 
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     cursor: pointer;
     z-index: 2;

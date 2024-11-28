@@ -134,6 +134,25 @@ export default function Home() {
           </section>
 
 
+          <section className="about-me">
+            <div className="me-section">
+
+              <div className="text">
+                <h1>I’m a curious and creative front-end developer and designer with a passion for bringing ideas to life. 
+                  From sleek interfaces to micro-interactions, I’m exploring the intersection of code and design to create engaging 
+                  web experiences.</h1>
+                  
+                  <p>Currently diving into the world of 3D rendering with Three.js and SVG animations with GSAP, I’m 
+                  excited about crafting projects that stand out and tell a story.</p>
+              </div>
+
+                <div className="aboutMe-link">
+                    <div className="AboutMe">About me</div>
+                </div>
+            </div>
+          </section>
+
+
 
           <section className="work">
             <div className="table1">
@@ -141,18 +160,47 @@ export default function Home() {
                 <tr>
                   <th>CREATIVE PROJECTS</th>
                 </tr>
+
                 <tr>
-                  <td><p className="move-left">Amaranth Spa</p> <p className="move-right">Design and Development</p></td>
+                  <td>
+                    <p className="move-left">Amaranth Spa</p>
+                    <p className="move-right">Design and Development</p>
+                  </td>
+                  <div className="tech-stack">
+                    <p className="tech">Html, CSS, Javascript, React, Gsap, Figma</p>
+                  </div>
                 </tr>
+                
                 <tr>
-                  <td><p className="move-left">Prussian Shopping Cart</p> <p className="move-right">Development</p></td>
+                  <td>
+                    <p className="move-left">Prussian Shopping Cart</p>
+                    <p className="move-right">Development</p>
+                  </td>
+                  <div className="tech-stack">
+                    <p className="tech">Html, CSS, Javascript, React, Node.js</p>
+                  </div>
                 </tr>
+
                 <tr>
-                  <td><p className="move-left">Flipkart</p> <p className="move-right">Design</p></td>
+                  <td>
+                    <p className="move-left">Flipkart</p>
+                    <p className="move-right">Design</p>
+                  </td>
+                  <div className="tech-stack">
+                    <p className="tech">Figma</p>
+                  </div>
                 </tr>
+
                 <tr>
-                  <td><p className="move-left">Stripe</p> <p className="move-right">Design</p></td>
+                  <td>
+                    <p className="move-left">Stripe</p>
+                    <p className="move-right">Design</p>
+                  </td>
+                  <div className="tech-stack">
+                    <p className="tech">Figma</p>
+                  </div>
                 </tr>
+
               </table>
             </div>
 
@@ -161,9 +209,17 @@ export default function Home() {
                 <tr>
                   <th>OTHER WORK</th>
                 </tr>
+
                 <tr>
-                  <td><p className="move-left">Woolworths Workshop</p> <p className="move-right">Design Workshop Facilitation</p></td>
+                  <td>
+                    <p className="move-left">Woolworths Workshop</p>
+                    <p className="move-right">Design Workshop Facilitation</p>
+                  </td>
+                  <div className="tech-stack">
+                    <p className="tech">Figma</p>
+                  </div>
                 </tr>
+
               </table>
             </div>
 
