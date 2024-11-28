@@ -276,6 +276,9 @@ Duplicate the text with a pseudo-element
 .table1 tr:hover{
     cursor: pointer;
 }
+.table1 .Link{
+    justify-content: space-between;
+}
 
 .table1 th {
     text-align: left; 

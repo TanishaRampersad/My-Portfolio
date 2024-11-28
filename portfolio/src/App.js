@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Work from './components/Work';
 import Error from './components/Error';
 import Layout from './components/Layout';
+import Amaranth from './components/Amaranth';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="work" element={<Work />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="amaranth" element={<Amaranth />} />
       <Route path="*" element={<Error />} />  {/* Catch-all for unknown routes */}
     </Route>
   </Routes>

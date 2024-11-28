@@ -18,8 +18,8 @@ gsap.registerPlugin(ScrollToPlugin);
 export default function Layout() {
   const { pathname } = useLocation();
 
-  useEffect(() => {
 
+  useEffect(() => {
 
   gsap.to(window, { duration: 1, scrollTo: { y: 0, autoKill: true } });
 

@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Work from './components/Work';
 import Error from './components/Error';
+import Amaranth from './components/Amaranth';
 
 const router = createBrowserRouter(
   [
@@ -34,6 +35,11 @@ const router = createBrowserRouter(
         {
           path: 'contact',
           element: <Contact />,
+          errorElement: <Error />,
+        },
+        {
+          path: 'amaranth',
+          element: <Amaranth />,
           errorElement: <Error />,
         },
       ],

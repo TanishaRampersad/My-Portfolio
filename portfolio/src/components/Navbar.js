@@ -40,7 +40,7 @@ export default function Navbar() {
   
       return(
         <>
-          <nav>
+          <nav className='navigation'>
             <div className='navFirst navResponsive'>
               <h3><img src={copyright} alt="copyright" /><Link id='code' to='/'>Code by Tanisha</Link></h3>
             </div>

@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import './Home.css'
 import dash from '../images/horizontal-line-remove-button.png'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { HashLink as Link} from 'react-router-hash-link';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -161,15 +162,19 @@ export default function Home() {
                   <th>CREATIVE PROJECTS</th>
                 </tr>
 
-                <tr>
-                  <td>
-                    <p className="move-left">Amaranth Spa</p>
-                    <p className="move-right">Design and Development</p>
-                  </td>
-                  <div className="tech-stack">
-                    <p className="tech">Html, CSS, Javascript, React, Gsap, Figma</p>
-                  </div>
-                </tr>
+                
+                  <tr>
+                    <Link className="link" to="/Amaranth">
+                      <td>
+                        <p className="move-left">Amaranth Spa</p>
+                        <p className="move-right">Design and Development</p>
+                      </td>
+                      <div className="tech-stack">
+                        <p className="tech">Html, CSS, Javascript, React, Gsap, Figma</p>
+                      </div>
+                    </Link>
+                  </tr>
+              
                 
                 <tr>
                   <td>

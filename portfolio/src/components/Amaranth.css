@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Avenir-light'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-book'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Roman'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Avenir-medium'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Avenir-Roman'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Black'; /* Name you want to use for the font */
+    src: url('../Fonts/Avenir-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* ----------------------- Main --------------------------- */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: none;
+    font-family: 'Avenir-book';
+}
+
+.home-link {
+   padding-top: 8rem;
+    color: rgb(96, 96, 96);
+}
+
+.home-link h1{
+    cursor: pointer !important;
+}
+
+.amaranth .navigation {
+    background-color: #060606; /* Custom navbar color for Amaranth page */
+  }
+  
