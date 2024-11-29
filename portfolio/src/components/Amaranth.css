@@ -55,7 +55,7 @@
 }
 
 .home-link {
-   padding-top: 8rem;
+   padding-top: 7rem;
     color: rgb(96, 96, 96);
 }
 
@@ -66,4 +66,78 @@
 .amaranth .navigation {
     background-color: #060606; /* Custom navbar color for Amaranth page */
   }
+
+.heading{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+}
+
+.heading hr{
+    width: 40%;
+    border: 0.01rem solid #89898983;
+}
   
+.heading h2{
+    font-size: 5rem;
+    font-weight: 600;
+    color:#171717;
+}
+
+.role{
+    padding-top: 4rem;
+}
+
+.role-heading{
+    color:#898989;
+    font-size: 0.9rem;
+}
+
+.horizontal-line{
+    padding-top: 1.5rem;
+}
+
+.role-text{
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.arrow{
+    width: 1.1rem;
+    position: absolute;
+    right: 20%;
+    transform: rotate(-50deg);
+    filter: invert(1);
+}
+
+
+.site{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    background-color:  rgb(43, 93, 111);
+    /* background-color: rgb(219, 219, 219); */
+    color: rgb(247, 247, 247);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transform: translateY(-50%);
+    position: relative;
+    z-index: 2;
+}
+
+.visit-site{
+    transform: translateX(-90%);
+    margin-top: 5rem;
+    /* transform: translateY(30%); */
+    padding-right: 5rem;
+    position: absolute;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    z-index: 1; 
+}
