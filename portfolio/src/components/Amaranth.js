@@ -2,6 +2,7 @@ import { useEffect} from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./Amaranth.css";
 import arrow from "../images/right-arrow (1).png";
+import amaranthVideo from '../images/oldAmaranth.mp4';
 //import * as THREE from "three";
 //import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import gsap from 'gsap'
@@ -116,6 +117,18 @@ export default function Amaranth() {
             </section>
             <section className="heading">
                 <h2>Amaranth</h2>
+
+            <div className="project-about-section">
+                <div className="about-amaranth">
+                    <p className="role-heading">About</p>
+                        <div className="horizontal-line">
+                            <hr />
+                        </div>
+                    <p>Amaranth is a Korean Spa & Massage Center located in the heart of Bangkok, Thailand. 
+                        They use  traditional Korean practices, with high quality natural ingredients to rejuvenate 
+                        the skin and soothe one’s soul.</p>
+                </div>
+
                 <div className="role">
                     <p className="role-heading">Role/Services</p>
                     <div className="horizontal-line">
@@ -123,6 +136,9 @@ export default function Amaranth() {
                     </div>
                     <p className="role-text">Design and Development</p>
                 </div>
+            </div>
+
+
                 <div className="visit-site">
                     <div className="site">
                         <p>Live Site</p>
@@ -130,7 +146,8 @@ export default function Amaranth() {
                     </div>
                 </div>
             </section>
-            <section className="amaranth-model" style={{width: '50%', height: '60vh', }}>
+
+            <section className="amaranth-model" style={{width: '40%', height: '60vh', }}>
                     <spline-viewer 
                         url="https://prod.spline.design/6Pm5agL7JlZiEQp9/scene.splinecode"
                         style={{
@@ -141,6 +158,28 @@ export default function Amaranth() {
                           }}
                     ></spline-viewer>
 
+            </section>
+
+
+            <section className="amaranth-problem">
+                <div className="amaranth-text">
+                    <div className="old-amaranth">
+                        <video className="amaranth-old-website" src={amaranthVideo} autoPlay loop muted playsInline >Your browser does not support the video tag.</video>
+                        <p>
+                            The inspiration to redesign Amaranth Spa's website came from recognizing the spa's 
+                            untapped potential to better connect with both existing and new customers. The outdated 
+                            design and poor usability were limiting the spa's ability to communicate its unique offerings 
+                            and stand out in a competitive market. 
+                        </p>
+                    </div>
+                    <br/>
+                        
+                    <p>Drawing inspiration from modern wellness brands and trends 
+                        in digital design, the objective was to create a website that not only reflected the luxurious and 
+                        tranquil experience of Amaranth Spa but also provided a seamless, engaging interface for users, 
+                        intuitive navigation, vibrant visuals, and a refreshed brand identity.
+                    </p>
+                </div>
             </section>
         </div>
     );
