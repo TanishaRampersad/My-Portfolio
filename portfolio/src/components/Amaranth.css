@@ -131,7 +131,7 @@
 }
 
 .visit-site{
-    transform: translateX(-90%);
+    transform: translateX(-75%);
     margin-top: 5rem;
     /* transform: translateY(30%); */
     padding-right: 5rem;
@@ -146,4 +146,16 @@
     margin: 0 auto;
     display: block;
     /* margin-top: 0.5rem; */
+    width: 100%;
+  /* height: 80vh; /* This will keep the canvas full height but fixed 
+  position: relative;
+  overflow: hidden; */
 }
+
+.amaranth-model{
+    /* background-color: antiquewhite; */
+    margin: 0 auto;
+    margin-bottom: 15rem;
+    margin-top: 10rem;
+}
+
