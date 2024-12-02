@@ -190,7 +190,7 @@
     background-color: /*rgb(138, 162, 171)*/ #e8e9ea;
 }
 
-.amaranth-problem p{
+.old-amaranth p{
     width: 50%;
     margin-left: auto;
     text-align: left;
@@ -211,7 +211,6 @@
     margin-top: auto;
     margin-bottom: auto;
     object-fit: cover;
-    padding-left: 2rem;
     border: /*#bcbcbc*/ #a9b3b8 10px solid;
     margin-left: 2rem;
     border-radius: 2%;
@@ -225,7 +224,6 @@
     margin-top: auto;
     margin-bottom: auto;
     object-fit: cover;
-    padding-right: 2rem;
     border: /*#bcbcbc*/ #a9b3b8 10px solid;
     margin-right: 2rem;
     border-radius: 2%;
@@ -260,14 +258,6 @@
     /* text-align: center; */
 }
 
-.new-amaranth p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    /* font-size: 1.3rem; */
-    /* text-align: center; */
-}
 
 .old-amaranth h2{
     padding: 2rem;
@@ -282,4 +272,33 @@
 
 .top-section{
     display: flex;
+}
+
+.amaranth-top-section{
+    display: flex;
+}
+
+.paragraph-amaranth{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+}
+
+
+.paragraph-amaranth p{
+    display: flex;
+    width: 90%;
+}
+
+
+/* --------- Mobile devices --------- */
+.mobile-devices{
+    display: flex;
+    height: 100vh;
+    background-color: #616161;
+}
+
+.responsive-layout{
+    height: auto;
 }

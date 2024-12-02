@@ -3,10 +3,11 @@ import { HashLink as Link } from "react-router-hash-link";
 import "./Amaranth.css";
 import arrow from "../images/right-arrow (1).png";
 import amaranthVideo from '../images/oldAmaranth.mp4';
+import amarantBooking from '../images/amaranth-booking.mp4'
 //import * as THREE from "three";
 //import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import gsap from 'gsap'
-//import Spline from '@splinetool/react-spline';
+import Spline from '@splinetool/react-spline';
 //import { Viewer } from '@splinetool/viewer';
 
 
@@ -185,13 +186,18 @@ export default function Amaranth() {
                     <div className="new-amaranth">
                         <h2>Amaranth's Redesign</h2>
 
-                        <div className="top-section">
-                            <p>Drawing inspiration from modern wellness brands and trends 
-                                in digital design, the objective was to create a website that not only reflected the luxurious and 
-                                tranquil experience of Amaranth Spa but also provided a seamless, engaging interface for users, 
-                                intuitive navigation, vibrant visuals, and a refreshed brand identity.
-                            </p>
-                            <video className="amaranth-new-website" src={amaranthVideo} autoPlay loop muted playsInline >
+                        <div className="amaranth-top-section">
+                            <div className="paragraph-amaranth">
+                                <p>Drawing inspiration from modern wellness brands and trends 
+                                    in digital design, the objective was to create a website that not only reflected the luxurious and 
+                                    tranquil experience of Amaranth Spa but also provided a seamless, engaging interface for users, 
+                                    intuitive navigation, vibrant visuals, and a refreshed brand identity.</p>
+
+                                <br/> 
+
+                                <p>Technologies used: HTML, CSS, Javascript, React, GSAP, Figma</p>
+                            </div>
+                            <video className="amaranth-new-website" src={amarantBooking} autoPlay loop muted playsInline >
                                 Your browser does not support the video tag.
                             </video>   
                            
@@ -199,6 +205,25 @@ export default function Amaranth() {
                     </div>
 
                 </div>
+            </section>
+
+
+            <section className="responsive-layout">
+                <div className="mobile-devices">
+                    <Spline 
+                        scene="https://prod.spline.design/N2ea0wk5AoFu2167/scene.splinecode"
+                    />
+
+                    <Spline
+                        scene="https://prod.spline.design/QMTSpictZWi182hr/scene.splinecode" 
+                    />
+                    <Spline
+                        scene="https://prod.spline.design/U1FTDD2NhwQZmHuj/scene.splinecode" 
+                    />
+
+                </div>
+ 
+         
             </section>
         </div>
     );
