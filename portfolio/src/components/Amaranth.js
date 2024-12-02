@@ -164,21 +164,40 @@ export default function Amaranth() {
             <section className="amaranth-problem">
                 <div className="amaranth-text">
                     <div className="old-amaranth">
-                        <video className="amaranth-old-website" src={amaranthVideo} autoPlay loop muted playsInline >Your browser does not support the video tag.</video>
-                        <p>
-                            The inspiration to redesign Amaranth Spa's website came from recognizing the spa's 
-                            untapped potential to better connect with both existing and new customers. The outdated 
-                            design and poor usability were limiting the spa's ability to communicate its unique offerings 
-                            and stand out in a competitive market. 
-                        </p>
+                        <h2>Amaranth's old website</h2>
+
+                        <div className="top-section">
+                            <video className="amaranth-old-website" src={amaranthVideo} autoPlay loop muted playsInline >
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>
+                                The inspiration to redesign Amaranth Spa's website came from recognizing the spa's 
+                                untapped potential to better connect with both existing and new customers. The outdated 
+                                design and poor usability were limiting the spa's ability to communicate its unique offerings 
+                                and stand out in a competitive market. 
+                            </p>
+                        </div>
+
                     </div>
+
                     <br/>
-                        
-                    <p>Drawing inspiration from modern wellness brands and trends 
-                        in digital design, the objective was to create a website that not only reflected the luxurious and 
-                        tranquil experience of Amaranth Spa but also provided a seamless, engaging interface for users, 
-                        intuitive navigation, vibrant visuals, and a refreshed brand identity.
-                    </p>
+
+                    <div className="new-amaranth">
+                        <h2>Amaranth's Redesign</h2>
+
+                        <div className="top-section">
+                            <p>Drawing inspiration from modern wellness brands and trends 
+                                in digital design, the objective was to create a website that not only reflected the luxurious and 
+                                tranquil experience of Amaranth Spa but also provided a seamless, engaging interface for users, 
+                                intuitive navigation, vibrant visuals, and a refreshed brand identity.
+                            </p>
+                            <video className="amaranth-new-website" src={amaranthVideo} autoPlay loop muted playsInline >
+                                Your browser does not support the video tag.
+                            </video>   
+                           
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </div>
