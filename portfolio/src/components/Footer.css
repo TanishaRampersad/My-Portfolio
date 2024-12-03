@@ -68,7 +68,8 @@
 
 .connect{
     display: flex;
-    padding-top: 5rem;
+    padding-top: 8rem;
+    /* padding-bottom: 20rem; */
 }
 
 .connect img{
@@ -158,4 +159,35 @@
 
 #social-link + #social-link{
     margin-left: 1.5rem;
+}
+
+.connect-details{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.number{
+    margin-left: 5rem;
+    padding: 1rem 2rem;
+    border: 1px solid rgb(223, 215, 207);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.email{
+    margin-left: 1rem;
+    padding: 1rem 2rem;
+    border: 1px solid rgb(223, 215, 207);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.email a{
+    text-decoration: none;
+    color: rgb(223, 215, 207);
+}
+
+.number a{
+    text-decoration: none;
+    color:  rgb(223, 215, 207);
 }
