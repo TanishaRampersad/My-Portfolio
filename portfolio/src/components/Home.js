@@ -177,13 +177,15 @@ export default function Home() {
               
                 
                 <tr>
-                  <td>
-                    <p className="move-left">Prussian Shopping Cart</p>
-                    <p className="move-right">Development</p>
-                  </td>
-                  <div className="tech-stack">
-                    <p className="tech">Html, CSS, Javascript, React, Node.js</p>
-                  </div>
+                  <Link className="link" to="/Prussian">
+                    <td>
+                      <p className="move-left">Prussian Shopping Cart</p>
+                      <p className="move-right">Development</p>
+                    </td>
+                    <div className="tech-stack">
+                      <p className="tech">Html, CSS, Javascript, React, Node.js</p>
+                    </div>
+                  </Link>
                 </tr>
 
                 <tr>

@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Work from './components/Work';
 import Error from './components/Error';
 import Amaranth from './components/Amaranth';
+import Prussian from './components/Prussian';
 
 const router = createBrowserRouter(
   [
@@ -40,6 +41,11 @@ const router = createBrowserRouter(
         {
           path: 'amaranth',
           element: <Amaranth />,
+          errorElement: <Error />,
+        },
+        {
+          path: 'prussian',
+          element: <Prussian />,
           errorElement: <Error />,
         },
       ],
