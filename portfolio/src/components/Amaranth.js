@@ -209,6 +209,7 @@ export default function Amaranth() {
 
 
             <section className="responsive-layout">
+                <h1>Mobile</h1>
                 <div className="mobile-devices">
                     <Spline 
                         scene="https://prod.spline.design/N2ea0wk5AoFu2167/scene.splinecode"
