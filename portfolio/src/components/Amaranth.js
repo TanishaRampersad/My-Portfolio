@@ -176,7 +176,7 @@ export default function Amaranth() {
                 </Link>
             </section>
             <section className="heading">
-                <h2>Amaranth</h2>
+                <h2>Amaranth Spa</h2>
 
                 <div className="project-about-section">
                     <div className="about-amaranth">

@@ -297,12 +297,12 @@
 .mobile-devices{
     display: flex;
     height: 100vh;
-    background-color: #4e4e4e;
+    background-color: /*#4e4e4e */ rgb(43, 93, 111);
 }
 
 .responsive-layout{
     height: auto;
-    background-color: #4e4e4e;
+    background-color: /*#4e4e4e*/ rgb(43, 93, 111);
 }
 
 .responsive-layout h1{
