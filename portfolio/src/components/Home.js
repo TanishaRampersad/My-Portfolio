@@ -183,7 +183,7 @@ export default function Home() {
                       <p className="move-right">Development</p>
                     </td>
                     <div className="tech-stack">
-                      <p className="tech">Html, CSS, Javascript, React, Node.js</p>
+                      <p className="tech">Html, CSS, Javascript, React, Node.js, Express, Stripe</p>
                     </div>
                   </Link>
                 </tr>

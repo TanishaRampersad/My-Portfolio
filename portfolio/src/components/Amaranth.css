@@ -211,7 +211,7 @@
     margin-top: auto;
     margin-bottom: auto;
     object-fit: cover;
-    border: /*#bcbcbc*/ #a9b3b8 10px solid;
+    border: /*#bcbcbc*/ #a9b3b8 5px solid;
     margin-left: 2rem;
     border-radius: 2%;
 }
@@ -224,7 +224,7 @@
     margin-top: auto;
     margin-bottom: auto;
     object-fit: cover;
-    border: /*#bcbcbc*/ #a9b3b8 10px solid;
+    border: /*#bcbcbc*/ #a9b3b8 5px solid;
     margin-right: 2rem;
     border-radius: 2%;
 }

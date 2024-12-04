@@ -3,6 +3,7 @@ import './Prussian.css'
 import { HashLink as Link } from "react-router-hash-link";
 import arrow from "../images/right-arrow (1).png";
 import Spline from '@splinetool/react-spline';
+import cart from '../images/Prussian-cart.mp4';
 
 
 export default function Prussian() {
@@ -62,17 +63,18 @@ export default function Prussian() {
             <section className="prussian-problem">
                 <div className="prussian-text">
                     <div className="old-prussian">
-                        <h2>Amaranth's old website</h2>
+                        <h2>Prussian & Co. Shopping Cart</h2>
 
                         <div className="top-section">
-                            {/* <video id="myVideo" className="prussian-cart" src={} autoPlay loop muted playsInline >
+                            <video id="myVideo" className="prussian-cart" src={cart} autoPlay loop muted playsInline >
                                 Your browser does not support the video tag.
-                            </video> */}
+                            </video>
                             <p>
-                                The inspiration to redesign Amaranth Spa's website came from recognizing the spa's 
-                                untapped potential to better connect with both existing and new customers. The outdated 
-                                design and poor usability were limiting the spa's ability to communicate its unique offerings 
-                                and stand out in a competitive market. 
+                            Developed a dynamic cart system, allowing users to seamlessly add, 
+                            update, and remove items from their cart. Implemented localStorage functionality to persist cart data, 
+                            ensuring items remain available across pages and sessions. This feature solves the problem of 
+                            retaining user-selected items when navigating or refreshing the site, enhancing the overall shopping 
+                            experience and usability.
                             </p>
                         </div>
                     </div>
@@ -80,24 +82,33 @@ export default function Prussian() {
                     <br/>
 
                     <div className="new-prussian">
-                        <h2>Amaranth's Redesign</h2>
+                        <h2>Prussian & Co. Backend Checkout System</h2>
 
                         <div className="prussian-top-section">
                             <div className="paragraph-prussian">
-                                <p>Drawing inspiration from modern wellness brands and trends 
-                                    in digital design, the objective was to create a website that not only reflected the luxurious and 
-                                    tranquil experience of Amaranth Spa but also provided a seamless, engaging interface for users, 
-                                    intuitive navigation, vibrant visuals, and a refreshed brand identity.</p>
+                                <p>Took the initiative to explore backend development by using Node.js and Express to create a 
+                                    seamless checkout experience. Integrated Stripe to handle secure payment processing and added 
+                                    a custom thank-you page to enhance user satisfaction after purchase. 
+                                </p>
 
                                 <br/> 
 
-                                <p>Technologies used: HTML, CSS, Javascript, React, GSAP, Figma</p>
+                                <p>Technologies used: HTML, CSS, Javascript, Node.js, Express, Stripe</p>
                             </div>
                             {/* <video id="video" className="prussian-backend" src={} autoPlay loop muted playsInline >
                                 Your browser does not support the video tag.
                             </video>    */}
                         </div>
                     </div>
+
+
+                    <section className="prussian-responsive-layout">
+                        <div className="prussian-mobile-devices">
+                            <img alt=''/>
+                            <img alt=''/>
+                            <img alt=''/>
+                        </div>
+                    </section>
 
                 </div>
             </section>

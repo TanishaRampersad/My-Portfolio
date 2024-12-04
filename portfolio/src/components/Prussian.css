@@ -197,22 +197,13 @@ Link .button{
 
 
 
-
-
+/* ------- Prussian details ----------- */
 
 
  .prussian-problem{
     display: flex;
     background-color: /*rgb(138, 162, 171)*/ #e8e9ea;
 }
-
-/* .old-amaranth p{
-    width: 50%;
-    margin-left: auto;
-    text-align: left;
-    font-size: 1.1rem;
-    padding-right: 5rem;
-} */
 
 .prussian-text{
     display: flex;
@@ -227,7 +218,7 @@ Link .button{
     margin-top: auto;
     margin-bottom: auto;
     object-fit: cover;
-    border: /*#bcbcbc*/ #a9b3b8 10px solid;
+    border: /*#bcbcbc*/  #9da9b5 5px solid;
     margin-left: 2rem;
     border-radius: 2%;
 }
@@ -240,7 +231,7 @@ Link .button{
     margin-top: auto;
     margin-bottom: auto;
     object-fit: cover;
-    border: /*#bcbcbc*/ #a9b3b8 10px solid;
+    border: /*#bcbcbc*/ #bcc7cd 10px solid;
     margin-right: 2rem;
     border-radius: 2%;
 }
@@ -259,7 +250,7 @@ Link .button{
     display: flex;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    background-color: /*rgb(138, 162, 171)*/ rgb(218, 218, 218);
+    background-color: /*rgb(138, 162, 171)*/ #e8e9ea;
     display: flex;
     flex-direction: column;
 }
@@ -306,4 +297,25 @@ Link .button{
     display: flex;
     width: 80%;
     font-size: 1.1rem;
+}
+
+
+/* --------- Mobile devices --------- */
+.prussian-mobile-devices{
+    display: flex;
+    height: 60vh;
+}
+
+.prussian-responsive-layout{
+    height: auto;
+    border: /*#4e4e4e*/ #fe0c0c 1px solid;
+}
+
+.prussian-responsive-layout h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:rgb(246, 246, 246);
+    padding-top: 4rem;
 }
