@@ -111,6 +111,11 @@ Link .button{
  .about-prussian hr{
      width: 80%;
  }
+
+ hr{
+    height: 0,0625rem;
+    background-color: #cdcdcd;
+ }
  
  .role{
      padding-top: 4rem;

@@ -73,6 +73,58 @@ export default function Prussian() {
             }
         });
 
+
+
+        //Horizontal line animation
+        const horizontalLine = document.querySelectorAll('.firstLine')
+
+        if (horizontalLine.length > 0) {
+            horizontalLine.forEach((line) => {
+                // Set initial width to 50%
+                gsap.set(line, { width: '50%' });
+
+                // Animate width from 50% to 100% with a loop
+                gsap.fromTo(
+                    line,
+                    { width: '50%' },
+                    {
+                        width: '80%',
+                        ease: 'power1.inOut',
+                        duration: 3,
+                        repeat: -1,
+                        yoyo: true,
+                        stagger: 2,
+                        delay: 2,
+                    }
+                );
+            });
+        }
+
+
+        const secondLine = document.querySelectorAll('.secondLine')
+
+        // Ensure there are <hr> elements to animate
+        if (secondLine.length > 0) {
+            secondLine.forEach((line) => {
+                // Set initial width to 50%
+                gsap.set(line, { width: '50%' });
+
+                // Animate width from 50% to 100% with a loop
+                gsap.fromTo(
+                    line,
+                    { width: '30%' },
+                    {
+                        width: '80%',
+                        ease: 'power1.inOut',
+                        duration: 3,
+                        repeat: -1,
+                        yoyo: true,
+                        // stagger: { amount: 2, from: "start", grid: "auto" }
+                    }
+                );
+            });
+        }
+        
     });
 
     return(
@@ -90,7 +142,7 @@ export default function Prussian() {
                     <div className="about-prussian">
                         <p className="role-heading">About</p>
                         <div className="horizontal-line">
-                            <hr />
+                            <hr className="firstLine" />
                         </div>
                         <p>Prussian & Co. is a creative concept for an e-commerce platform designed to sell men's suits 
                             crafted from premium fabrics. The project focuses on elegance and functionality, catering to the 
@@ -101,7 +153,7 @@ export default function Prussian() {
                     <div className="role">
                         <p className="role-heading">Role/Services</p>
                         <div className="horizontal-line">
-                            <hr />
+                            <hr className="secondLine"  />
                         </div>
                         <p className="role-text">Development</p>
                     </div>
