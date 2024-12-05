@@ -19,25 +19,25 @@ export default function Prussian() {
                 end: "bottom 20%",         
                 onEnter: () => {
                     const video = document.getElementById("prussian");
-                    if (video.paused) video.play(); // Play video when it's in view
+                    if (video && video.paused) video.play(); // Play video when it's in view
                 },
                 onEnterBack: () => {
                     const video = document.getElementById("prussian");
-                    if (video.paused) video.play(); // Play video when scrolling back into view
+                    if (video && video.paused) video.play(); // Play video when scrolling back into view
                 },
                 onLeave: () => {
                     const video = document.getElementById("prussian");
-                    if (!video.paused) {
+                    if (video && !video.paused) {
                         video.pause();   // Pause the video when it's out of view
                     }
-                    video.currentTime = 0;  // Reset the video to the start when it leaves the view
+                    if (video) video.currentTime = 0;  // Reset the video to the start when it leaves the view
                 },
                 onLeaveBack: () => {
                     const video = document.getElementById("prussian");
-                    if (!video.paused) {
+                    if (video && !video.paused) {
                         video.pause();   // Pause the video when it's out of view
                     }
-                    video.currentTime = 0; 
+                    if (video) video.currentTime = 0; 
                 }
             }
         });
@@ -50,25 +50,25 @@ export default function Prussian() {
                 end: "bottom 20%",         
                 onEnter: () => {
                     const video = document.getElementById("backend-prussian");
-                    if (video.paused) video.play(); 
+                    if (video && video.paused) video.play(); 
                 },
                 onEnterBack: () => {
                     const video = document.getElementById("backend-prussian");
-                    if (video.paused) video.play();
+                    if (video && video.paused) video.play();
                 },
                 onLeave: () => {
                     const video = document.getElementById("backend-prussian");
-                    if (!video.paused) {
+                    if (video && !video.paused) {
                         video.pause();  
                     }
-                    video.currentTime = 0; 
+                    if (video) video.currentTime = 0; 
                 },
                 onLeaveBack: () => {
                     const video = document.getElementById("backend-prussian");
-                    if (!video.paused) {
+                    if (video && !video.paused) {
                         video.pause(); 
                     }
-                    video.currentTime = 0; 
+                    if (video) video.currentTime = 0; 
                 }
             }
         });
