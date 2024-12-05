@@ -98,7 +98,9 @@ export default function Amaranth() {
         // };
 
 
-         // Play/pause video when it's in view
+        // Play/pause video when it's in view
+        let isVideoPlaying = false; // To track if any video is currently playing
+
          gsap.to("#myVideo", {
             scrollTrigger: {
                 trigger: "#myVideo",    
@@ -106,16 +108,19 @@ export default function Amaranth() {
                 end: "bottom 20%",         
                 onEnter: () => {
                     const video = document.getElementById("myVideo");
-                    if (video && video.paused) video.play(); // Play video when it's in view
+                    if (video && video.paused && !isVideoPlaying) video.play(); // Play video when it's in view
+                    isVideoPlaying = true;  
                 },
                 onEnterBack: () => {
                     const video = document.getElementById("myVideo");
-                    if (video && video.paused) video.play(); // Play video when scrolling back into view
+                    if (video && video.paused && !isVideoPlaying) video.play(); // Play video when scrolling back into view
+                    isVideoPlaying = true;  
                 },
                 onLeave: () => {
                     const video = document.getElementById("myVideo");
                     if (video && !video.paused) {
                         video.pause();   // Pause the video when it's out of view
+                        isVideoPlaying = false;  
                     }
                     if (video) video.currentTime = 0;  // Reset the video to the start when it leaves the view
                 },
@@ -123,11 +128,14 @@ export default function Amaranth() {
                     const video = document.getElementById("myVideo");
                     if (video && !video.paused) {
                         video.pause();   // Pause the video when it's out of view
+                        isVideoPlaying = false;  
                     }
                     if (video) video.currentTime = 0; 
                 }
             }
         });
+
+       
 
         // Play/pause video when it's in view
         gsap.to("#video", {
@@ -137,16 +145,19 @@ export default function Amaranth() {
                 end: "bottom 20%",         
                 onEnter: () => {
                     const video = document.getElementById("video");
-                    if (video && video.paused) video.play(); 
+                    if (video && video.paused && !isVideoPlaying) video.play();
+                    isVideoPlaying = true;  
                 },
                 onEnterBack: () => {
                     const video = document.getElementById("video");
-                    if (video && video.paused) video.play();
+                    if (video && video.paused && !isVideoPlaying)  video.play();
+                    isVideoPlaying = true;  
                 },
                 onLeave: () => {
                     const video = document.getElementById("video");
                     if (video && !video.paused) {
                         video.pause();  
+                        isVideoPlaying = false;  
                     }
                     if (video) video.currentTime = 0; 
                 },
@@ -154,6 +165,7 @@ export default function Amaranth() {
                     const video = document.getElementById("video");
                     if (video && !video.paused) {
                         video.pause(); 
+                        isVideoPlaying = false;  
                     }
                     if (video) video.currentTime = 0; 
                 }
@@ -224,8 +236,8 @@ export default function Amaranth() {
     return (
         <div className="amaranth">
             <section className="home-link">
-                <Link>
-                    <h1>Back to Home</h1>
+                <Link className="link-to-home" to="/">
+                    <h1>Go back home</h1>
                 </Link>
             </section>
             <section className="heading">

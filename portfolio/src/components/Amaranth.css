@@ -54,6 +54,23 @@
     font-family: 'Avenir-book';
 }
 
+.home-link{
+    margin-left: 1rem;
+    margin-bottom: 5rem;
+}
+
+.link-to-home h1{
+    padding: 1rem 0.5rem;
+    border: 1px solid black;
+    background-color: #363636;
+    color: white;
+    border-radius: 25px;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .home-link {
    padding-top: 7rem;
     color: rgb(96, 96, 96);

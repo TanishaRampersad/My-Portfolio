@@ -12,6 +12,8 @@ export default function Prussian() {
     useEffect(() => {
 
         // Play/pause video when it's in view
+        let isVideoPlaying = false; // To track if any video is currently playing
+
         gsap.to("#prussian", {
             scrollTrigger: {
                 trigger: "#prussian",    
@@ -19,16 +21,19 @@ export default function Prussian() {
                 end: "bottom 20%",         
                 onEnter: () => {
                     const video = document.getElementById("prussian");
-                    if (video && video.paused) video.play(); // Play video when it's in view
+                    if (video && video.paused && !isVideoPlaying) video.play(); // Play video when it's in view
+                    isVideoPlaying = true;
                 },
                 onEnterBack: () => {
                     const video = document.getElementById("prussian");
-                    if (video && video.paused) video.play(); // Play video when scrolling back into view
+                    if (video && video.paused && !isVideoPlaying) video.play(); // Play video when scrolling back into view
+                    isVideoPlaying = true;
                 },
                 onLeave: () => {
                     const video = document.getElementById("prussian");
                     if (video && !video.paused) {
                         video.pause();   // Pause the video when it's out of view
+                        isVideoPlaying = false; // Mark video as paused
                     }
                     if (video) video.currentTime = 0;  // Reset the video to the start when it leaves the view
                 },
@@ -36,6 +41,7 @@ export default function Prussian() {
                     const video = document.getElementById("prussian");
                     if (video && !video.paused) {
                         video.pause();   // Pause the video when it's out of view
+                        isVideoPlaying = false;
                     }
                     if (video) video.currentTime = 0; 
                 }
@@ -43,6 +49,7 @@ export default function Prussian() {
         });
 
         // Play/pause video when it's in view
+
         gsap.to("#backend-prussian", {
             scrollTrigger: {
                 trigger: "#backend-prussian",    
@@ -50,16 +57,19 @@ export default function Prussian() {
                 end: "bottom 20%",         
                 onEnter: () => {
                     const video = document.getElementById("backend-prussian");
-                    if (video && video.paused) video.play(); 
+                    if (video && video.paused && !isVideoPlaying) video.play(); 
+                    isVideoPlaying = true;
                 },
                 onEnterBack: () => {
                     const video = document.getElementById("backend-prussian");
-                    if (video && video.paused) video.play();
+                    if (video && video.paused && !isVideoPlaying) video.play();
+                    isVideoPlaying = true;
                 },
                 onLeave: () => {
                     const video = document.getElementById("backend-prussian");
                     if (video && !video.paused) {
                         video.pause();  
+                        isVideoPlaying = false;
                     }
                     if (video) video.currentTime = 0; 
                 },
@@ -67,6 +77,7 @@ export default function Prussian() {
                     const video = document.getElementById("backend-prussian");
                     if (video && !video.paused) {
                         video.pause(); 
+                        isVideoPlaying = false;
                     }
                     if (video) video.currentTime = 0; 
                 }
@@ -130,7 +141,7 @@ export default function Prussian() {
     return(
         <>
             <div className="back-button">
-                <Link to="/Amaranth">
+                <Link to="/">
                     <button>Back to Home</button>
                 </Link>
             </div>
