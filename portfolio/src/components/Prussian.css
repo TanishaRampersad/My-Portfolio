@@ -240,7 +240,6 @@ Link .button{
 .old-prussian{
     display: flex;
     padding-top: 10rem;
-    padding-bottom: 10rem;
     background-color: /*rgb(138, 162, 171)*/ #e8e9ea;
     display: flex;
     flex-direction: column;

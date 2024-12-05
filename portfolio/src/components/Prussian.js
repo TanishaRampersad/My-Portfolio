@@ -4,10 +4,74 @@ import { HashLink as Link } from "react-router-hash-link";
 import arrow from "../images/right-arrow (1).png";
 import Spline from '@splinetool/react-spline';
 import cart from '../images/Prussian-cart.mp4';
+import backend from '../images/Prussian-backend.mp4';
+import gsap from 'gsap';
 
 
 export default function Prussian() {
     useEffect(() => {
+
+        // Play/pause video when it's in view
+        gsap.to("#prussian", {
+            scrollTrigger: {
+                trigger: "#prussian",    
+                start: "top 80%",       
+                end: "bottom 20%",         
+                onEnter: () => {
+                    const video = document.getElementById("prussian");
+                    if (video.paused) video.play(); // Play video when it's in view
+                },
+                onEnterBack: () => {
+                    const video = document.getElementById("prussian");
+                    if (video.paused) video.play(); // Play video when scrolling back into view
+                },
+                onLeave: () => {
+                    const video = document.getElementById("prussian");
+                    if (!video.paused) {
+                        video.pause();   // Pause the video when it's out of view
+                    }
+                    video.currentTime = 0;  // Reset the video to the start when it leaves the view
+                },
+                onLeaveBack: () => {
+                    const video = document.getElementById("prussian");
+                    if (!video.paused) {
+                        video.pause();   // Pause the video when it's out of view
+                    }
+                    video.currentTime = 0; 
+                }
+            }
+        });
+
+        // Play/pause video when it's in view
+        gsap.to("#backend-prussian", {
+            scrollTrigger: {
+                trigger: "#backend-prussian",    
+                start: "top 80%",       
+                end: "bottom 20%",         
+                onEnter: () => {
+                    const video = document.getElementById("backend-prussian");
+                    if (video.paused) video.play(); 
+                },
+                onEnterBack: () => {
+                    const video = document.getElementById("backend-prussian");
+                    if (video.paused) video.play();
+                },
+                onLeave: () => {
+                    const video = document.getElementById("backend-prussian");
+                    if (!video.paused) {
+                        video.pause();  
+                    }
+                    video.currentTime = 0; 
+                },
+                onLeaveBack: () => {
+                    const video = document.getElementById("backend-prussian");
+                    if (!video.paused) {
+                        video.pause(); 
+                    }
+                    video.currentTime = 0; 
+                }
+            }
+        });
 
     });
 
@@ -66,7 +130,7 @@ export default function Prussian() {
                         <h2>Prussian & Co. Shopping Cart</h2>
 
                         <div className="top-section">
-                            <video id="myVideo" className="prussian-cart" src={cart} autoPlay loop muted playsInline >
+                            <video id="prussian" className="prussian-cart" src={cart} autoPlay loop muted playsInline >
                                 Your browser does not support the video tag.
                             </video>
                             <p>
@@ -95,9 +159,9 @@ export default function Prussian() {
 
                                 <p>Technologies used: HTML, CSS, Javascript, Node.js, Express, Stripe</p>
                             </div>
-                            {/* <video id="video" className="prussian-backend" src={} autoPlay loop muted playsInline >
+                            <video id="backend-prussian" className="prussian-backend" src={backend} autoPlay loop muted playsInline >
                                 Your browser does not support the video tag.
-                            </video>    */}
+                            </video>   
                         </div>
                     </div>
 
