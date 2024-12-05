@@ -189,23 +189,27 @@ export default function Home() {
                 </tr>
 
                 <tr>
-                  <td>
-                    <p className="move-left">Flipkart</p>
-                    <p className="move-right">Design</p>
-                  </td>
-                  <div className="tech-stack">
-                    <p className="tech">Figma</p>
-                  </div>
+                  <a className="link" target="_blank" rel="noopener noreferrer" href='https://www.figma.com/design/5e3zq5MNzdiM8urAk0xy9D/Flipkart-Case-Study---Tanisha-Rampersad?node-id=0-1&t=7hbuf2bkbkfwCoSh-1'>
+                    <td>
+                      <p className="move-left">Flipkart</p>
+                      <p className="move-right">Design</p>
+                    </td>
+                    <div className="tech-stack">
+                      <p className="tech">Figma</p>
+                    </div>
+                  </a>
                 </tr>
 
                 <tr>
-                  <td>
-                    <p className="move-left">Stripe</p>
-                    <p className="move-right">Design</p>
-                  </td>
-                  <div className="tech-stack">
-                    <p className="tech">Figma</p>
-                  </div>
+                  <a className="link" target="_blank" rel="noopener noreferrer" href='https://www.behance.net/gallery/214077327/Stripe-Case-Study'>
+                    <td>
+                      <p className="move-left">Stripe</p>
+                      <p className="move-right">Design</p>
+                    </td>
+                    <div className="tech-stack">
+                      <p className="tech">Figma</p>
+                    </div>
+                  </a>
                 </tr>
 
               </table>
@@ -218,13 +222,15 @@ export default function Home() {
                 </tr>
 
                 <tr>
-                  <td>
-                    <p className="move-left">Woolworths Workshop</p>
-                    <p className="move-right">Design Workshop Facilitation</p>
-                  </td>
-                  <div className="tech-stack">
-                    <p className="tech">Figma</p>
-                  </div>
+                  <a className="link" target="_blank" rel="noopener noreferrer" href='https://www.behance.net/gallery/214080607/Woolworths-Workshop'>
+                    <td>
+                      <p className="move-left">Woolworths Workshop</p>
+                      <p className="move-right">Design Workshop Facilitation</p>
+                    </td>
+                    <div className="tech-stack">
+                      <p className="tech">Figma</p>
+                    </div>
+                  </a>
                 </tr>
 
               </table>
