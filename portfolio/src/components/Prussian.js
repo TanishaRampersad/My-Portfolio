@@ -141,9 +141,11 @@ export default function Prussian() {
     return(
         <>
             <div className="back-button">
-                <Link to="/">
-                    <button>Back to Home</button>
-                </Link>
+                <section className="home-link">
+                    <Link className="link-to-home" to="/">
+                        <h1>Go back home</h1>
+                    </Link>
+                </section>
             </div>
 
             <section className="heading">

@@ -234,7 +234,7 @@ export default function Amaranth() {
     }, []); // Add an empty dependency array to run once when the component mounts
 
     return (
-        <div className="amaranth">
+        <div className="amaranth-back">
             <section className="home-link">
                 <Link className="link-to-home" to="/">
                     <h1>Go back home</h1>
