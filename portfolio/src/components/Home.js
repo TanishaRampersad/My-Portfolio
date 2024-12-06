@@ -199,7 +199,7 @@ export default function Home() {
             <div className="table1">
               <table>
                 <tr>
-                  <th>CREATIVE PROJECTS That I did</th>
+                  <th>CREATIVE PROJECTS</th>
                 </tr>
 
                 

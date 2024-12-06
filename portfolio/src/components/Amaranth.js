@@ -7,6 +7,7 @@ import amarantBooking from '../images/amaranth-booking.mp4'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap'
 import Spline from '@splinetool/react-spline';
+import LocomotiveScroll from 'locomotive-scroll';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -242,6 +243,37 @@ export default function Amaranth() {
           visitSite()
 
 
+          const scrollContainer = document.querySelector(".smoothScrollContainer");
+
+            const locomotiveScroll = new LocomotiveScroll({
+              el: scrollContainer,
+              smooth: true,
+            });
+
+            ScrollTrigger.scrollerProxy(".smoothScrollContainer", {
+                scrollTop(value) {
+                  return arguments.length
+                    ? locomotiveScroll.scrollTo(value, { duration: 0 })
+                    : locomotiveScroll.scroll.instance.scroll.y;
+                },
+                getBoundingClientRect() {
+                  return {
+                    top: 0,
+                    left: 0,
+                    width: window.innerWidth,
+                    height: window.innerHeight
+                  };
+                },
+                pinType: document.querySelector(".smoothScrollContainer").style.transform
+                  ? "transform"
+                  : "fixed"
+              });
+              
+              locomotiveScroll.on("scroll", ScrollTrigger.update);
+              ScrollTrigger.refresh();
+              
+
+
 
         // Cleanup script when component unmounts
         return () => {
@@ -252,7 +284,7 @@ export default function Amaranth() {
     }, []); // Add an empty dependency array to run once when the component mounts
 
     return (
-        <div className="amaranth-back">
+        <div className="amaranth-back smoothScrollContainer">
             <section className="home-link">
                 <Link className="link-to-home" to="/">
                     <h1>Go back home</h1>

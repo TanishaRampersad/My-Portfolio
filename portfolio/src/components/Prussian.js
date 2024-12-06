@@ -7,6 +7,8 @@ import cart from '../images/Prussian-cart.mp4';
 import backend from '../images/Prussian-backend.mp4';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import LocomotiveScroll from 'locomotive-scroll';
+//import 'locomotive-scroll/src/locomotive-scroll.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,7 +50,11 @@ export default function Prussian() {
                         isVideoPlaying = false;
                     }
                     if (video) video.currentTime = 0; 
-                }
+                },
+                onUpdate: (self) => {
+                    console.log("Scroll progress:", self.progress); // Custom logic
+                    // You can also update other elements here
+                  },
             }
         });
 
@@ -84,7 +90,11 @@ export default function Prussian() {
                         isVideoPlaying = false;
                     }
                     if (video) video.currentTime = 0; 
-                }
+                },
+                onUpdate: (self) => {
+                    console.log("Scroll progress:", self.progress); // Custom logic
+                    // You can also update other elements here
+                  },
             }
         });
 
@@ -153,15 +163,65 @@ export default function Prussian() {
               end: "top 10%",
               scrub: 2, //5 second delay
               //markers: true,
+              onUpdate: (self) => {
+                console.log("Scroll progress:", self.progress); // Custom logic
+                // You can also update other elements here
+              },
             }}
             );
           }
           visitSite()
+
+
+          let ticking = false;
+
+            window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                // Your scroll-related logic here
+                ticking = false;
+                });
+
+                ticking = true;
+            }
+            });
+
+
+            const scrollContainer = document.querySelector(".smoothScrollContainer");
+
+            const locomotiveScroll = new LocomotiveScroll({
+              el: scrollContainer,
+              smooth: true,
+            });
+
+            ScrollTrigger.scrollerProxy(".smoothScrollContainer", {
+                scrollTop(value) {
+                  return arguments.length
+                    ? locomotiveScroll.scrollTo(value, { duration: 0 })
+                    : locomotiveScroll.scroll.instance.scroll.y;
+                },
+                getBoundingClientRect() {
+                  return {
+                    top: 0,
+                    left: 0,
+                    width: window.innerWidth,
+                    height: window.innerHeight
+                  };
+                },
+                pinType: document.querySelector(".smoothScrollContainer").style.transform
+                  ? "transform"
+                  : "fixed"
+              });
+              
+              locomotiveScroll.on("scroll", ScrollTrigger.update);
+              ScrollTrigger.refresh();
+              
+
         
     });
 
     return(
-        <>
+        <div className="smoothScrollContainer">
             <div className="back-button">
                 <section className="home-link">
                     <Link className="link-to-home" to="/">
@@ -263,6 +323,6 @@ export default function Prussian() {
 
                 </div>
             </section>
-        </>
+        </div>
     )
 }
