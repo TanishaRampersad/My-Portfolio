@@ -4,6 +4,8 @@ import './Home.css'
 import dash from '../images/horizontal-line-remove-button.png'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { HashLink as Link} from 'react-router-hash-link';
+import bottle from '../images/Bottle 3d.mp4';
+import horizontalScroll from '../images/horizontalScroll.mp4';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -281,11 +283,13 @@ export default function Home() {
 
               <div className="first-row">
                 <div className="box one">
-                  <img alt=''/>
+                  <video className="my-bottle" src={bottle} alt='3d Bottle' autoPlay loop muted playsInline>
+                  </video>
                 </div>
 
                 <div className="box two">
-                  <img alt=''/>
+                  <video className="H-scroll" src={horizontalScroll} alt='Horizontal Scroll' autoPlay loop muted playsInline>
+                  </video>
                 </div>
 
                 <div className="box three">

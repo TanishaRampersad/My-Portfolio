@@ -407,10 +407,28 @@ Duplicate the text with a pseudo-element
 
 .one{
     background-color: rgba(201, 207, 208, 0.656);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-bottle{
+    width: 85%;
+    height: 100%;
+    transform: scaleY(1.2); 
 }
 
 .two{
     background-color: rgba(203, 208, 207, 0.707);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.H-scroll{
+    width: 85%;
+    height: 100%;
+    transform: scaleY(1.2); 
 }
 
 .three{
