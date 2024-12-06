@@ -8,6 +8,7 @@ import bottle from '../images/Bottle 3d.mp4';
 import horizontalScroll from '../images/horizontalScroll.mp4';
 import scrollAnimation from '../images/scroll animation.mp4';
 import singer from '../images/singer.mp4';
+import modelView from '../images/modelView.mp4';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -306,11 +307,12 @@ export default function Home() {
 
                 <div className="box five">
                   <video className="v-scroll" src={scrollAnimation} alt='Vertical Scroll' autoPlay loop muted playsInline>
-                  </video>
+                  </video> 
                 </div>
 
                 <div className="box six">
-                  <img alt=''/>
+                  <video className="modelView" src={modelView} alt='Model View' autoPlay loop muted playsInline>
+                    </video>
                 </div>
               </div>
 

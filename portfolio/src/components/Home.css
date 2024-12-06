@@ -464,6 +464,15 @@ Duplicate the text with a pseudo-element
 
 .six{
     background-color: rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modelView{
+    width: 85%;
+    height: 100%;
+    transform: scaleY(1.2);
 }
 
 
