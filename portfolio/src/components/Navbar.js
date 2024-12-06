@@ -7,35 +7,57 @@ import { HashLink as Link} from 'react-router-hash-link';
 import gsap from 'gsap';
 
 
+
 export default function Navbar() {
 
-    useEffect(() => {  
-      let navLink = document.querySelectorAll('#navigationLink');
-  
-      navLink.forEach (link => {
-        link.addEventListener('click', () => {
+  useEffect(() => {
+
+    // navigation links
+    let navLink = document.querySelectorAll('#navigationLink');
+
+    // Add click event listener to each navigation link
+    navLink.forEach((link) => {
+      link.addEventListener('click', () => {
+        // Scroll to the top of the page
+        gsap.to(window, { duration: 1, scrollTo: { y: 0, autoKill: true } });
+      });
+    });
+
+    // Hover dot effect on the navigation section
+    let navText = document.querySelectorAll('#navigationLink');
+    let dots = document.querySelectorAll('.dot');
+
+    navText.forEach((nav, index) => {
+      const dot = dots[index];
+
+      nav.addEventListener('mouseenter', () => {
+        dot.classList.add('dot--visible');
+      });
+
+      nav.addEventListener('mouseleave', () => {
+        dot.classList.remove('dot--visible');
+      });
+    });
+
+    // Cleanup event listeners when component unmounts
+    return () => {
+      navLink.forEach((link) => {
+        link.removeEventListener('click', () => {
           gsap.to(window, { duration: 1, scrollTo: { y: 0, autoKill: true } });
-        })
-      })
-  
-  
-     // Hover dot effect on the navigation section
-      let navText = document.querySelectorAll('#navigationLink');
-      let dots = document.querySelectorAll('.dot');
-  
+        });
+      });
+
       navText.forEach((nav, index) => {
         const dot = dots[index];
-    
-        nav.addEventListener('mouseenter', () => {
+        nav.removeEventListener('mouseenter', () => {
           dot.classList.add('dot--visible');
         });
-    
-        nav.addEventListener('mouseleave', () => {
+        nav.removeEventListener('mouseleave', () => {
           dot.classList.remove('dot--visible');
         });
       });
-  
-    });
+    };
+  }, []);
   
   
       return(
@@ -50,7 +72,7 @@ export default function Navbar() {
             <div className='navEnd'>
                 <ul>
                     <li className='nav-item'>
-                    <Link className='link'to="/"> { "{Work}"}</Link>
+                    <Link to='#work' className='link'> { "{Work}"}</Link>
                         <div className='d-padding'>
                             <div className='dot'></div>
                         </div>

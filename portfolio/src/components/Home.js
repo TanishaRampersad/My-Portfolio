@@ -195,7 +195,7 @@ export default function Home() {
 
 
 
-          <section className="work">
+          <section className="work" id='work' >
             <div className="table1">
               <table>
                 <tr>
