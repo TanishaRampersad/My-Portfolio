@@ -58,6 +58,7 @@
 
 *{
     scroll-behavior: smooth;
+    overscroll-behavior-y: none
   }
   
   .layout {
@@ -191,6 +192,21 @@ nav ul li:not(:first-child){
     text-decoration: none;
     color: rgb(243, 243, 243);
 }
+
+.link:after{
+    content: '';
+    position: absolute;
+    bottom: 0.5rem;
+    left: 2rem;
+    width: 0;
+    height: 1px; 
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s ease; 
+}
+
+.link:hover::after {
+    width: 70%;
+  }
 
 
 .dot{
