@@ -32,7 +32,7 @@ export default function Footer() {
           trigger: getInTouch,
           start: 'top 80%',
           end: "top 60%",
-          scrub: 2, //5 second delay
+          scrub: 3, //5 second delay
           //markers: true,
         }}
         );
