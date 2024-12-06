@@ -425,15 +425,19 @@ Duplicate the text with a pseudo-element
     align-items: center;
 }
 
+.three{
+    background-color: rgba(206, 207, 200, 0.665);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .H-scroll{
     width: 85%;
     height: 100%;
     transform: scaleY(1.2); 
 }
 
-.three{
-    background-color: rgba(206, 207, 200, 0.665);
-}
 
 .four{
     background-color: rgba(205, 201, 200, 0.707);
@@ -441,6 +445,15 @@ Duplicate the text with a pseudo-element
 
 .five{
     background-color: rgba(200, 203, 206, 0.709);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.v-scroll{
+    width: 85%;
+    height: 100%;
+    transform: scaleY(1.2);
 }
 
 .six{

@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { HashLink as Link} from 'react-router-hash-link';
 import bottle from '../images/Bottle 3d.mp4';
 import horizontalScroll from '../images/horizontalScroll.mp4';
+import scrollAnimation from '../images/scroll animation.mp4';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -288,12 +289,12 @@ export default function Home() {
                 </div>
 
                 <div className="box two">
-                  <video className="H-scroll" src={horizontalScroll} alt='Horizontal Scroll' autoPlay loop muted playsInline>
-                  </video>
+               
                 </div>
 
                 <div className="box three">
-                  <img alt=''/>
+                <video className="H-scroll" src={horizontalScroll} alt='Horizontal Scroll' autoPlay loop muted playsInline>
+                  </video> 
                 </div>
               </div>
 
@@ -303,7 +304,8 @@ export default function Home() {
                 </div>
 
                 <div className="box five">
-                  <img alt=''/>
+                  <video className="v-scroll" src={scrollAnimation} alt='Vertical Scroll' autoPlay loop muted playsInline>
+                  </video>
                 </div>
 
                 <div className="box six">
