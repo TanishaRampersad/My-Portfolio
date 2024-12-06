@@ -212,9 +212,8 @@ Duplicate the text with a pseudo-element
 }
 
 .aboutMe-link{
-    transform: translateY(140%);
+    transform: translateY(180%);
     padding-right: 5rem;
-    position: absolute;
     cursor: pointer;
     position: absolute;
     right: 0;

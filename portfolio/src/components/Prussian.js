@@ -6,6 +6,10 @@ import Spline from '@splinetool/react-spline';
 import cart from '../images/Prussian-cart.mp4';
 import backend from '../images/Prussian-backend.mp4';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 
 export default function Prussian() {
@@ -135,6 +139,24 @@ export default function Prussian() {
                 );
             });
         }
+
+
+        function visitSite(){
+
+            const visitSite = document.querySelector('.visit-site');
+        
+            gsap.fromTo(visitSite, {y: "0"}, {y: "-60%", ease: "power1.inOut",
+        
+            scrollTrigger: {
+              trigger: visitSite,
+              start: 'top 80%',
+              end: "top 10%",
+              scrub: 2, //5 second delay
+              //markers: true,
+            }}
+            );
+          }
+          visitSite()
         
     });
 

@@ -70,9 +70,45 @@ export default function Home() {
 
   horizontalScroll()
 
-  
 
-    })
+  // animation for the about me link
+  function aboutMe() {
+    const aboutMe = document.querySelector('.aboutMe-link');
+  
+    gsap.fromTo(aboutMe, { y: '180%' }, { y: '120%', ease: 'power1.inOut', 
+    
+    scrollTrigger: {
+        trigger: aboutMe, 
+        start: 'top 100%', 
+        end: 'top 10%',   
+        scrub: 3,
+        //markers: true
+      }}
+    );
+  }
+  
+  aboutMe();
+
+
+  function bannerText(){
+
+    const bannerText = document.querySelector('.banner-text');
+
+    gsap.fromTo(bannerText, {y: "0"}, {y: "-150%", ease: "power1.inOut",
+
+    scrollTrigger: {
+      trigger: bannerText,
+      start: 'top 48%',
+      end: "bottom 10%",
+      scrub: 4, //5 second delay
+      //markers: true,
+    }}
+    );
+  }
+  bannerText()
+
+
+})
    
     return(
         <>

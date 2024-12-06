@@ -1,7 +1,13 @@
 import { useEffect } from "react"
 import './Footer.css'
 import messaging from '../images/chat (1).gif'
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 //import lottie from 'lottie-web';
+
+gsap.registerPlugin(ScrollTrigger);
+
+
 
 export default function Footer() {
     useEffect(() => {
@@ -14,6 +20,24 @@ export default function Footer() {
     //     autoplay: true,  // Start automatically
     //     path: '../images/connect.json' // Path to your Flaticon JSON file
     // });
+
+
+    function getInTouch(){
+
+        const getInTouch = document.querySelector('.get-in-touch');
+    
+        gsap.fromTo(getInTouch, {y: "0"}, {y: "-15%", ease: "power1.inOut",
+    
+        scrollTrigger: {
+          trigger: getInTouch,
+          start: 'top 80%',
+          end: "top 60%",
+          scrub: 2, //5 second delay
+          //markers: true,
+        }}
+        );
+      }
+      getInTouch()
 
     }, [])
          

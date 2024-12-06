@@ -10,6 +10,7 @@ import Spline from '@splinetool/react-spline';
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 export default function Amaranth() {
     useEffect(() => {
         // Dynamically load the script
@@ -223,6 +224,23 @@ export default function Amaranth() {
             });
         }
 
+        function visitSite(){
+
+            const visitSite = document.querySelector('.amaranth-visit-site');
+        
+            gsap.fromTo(visitSite, {y: "0"}, {y: "-60%", ease: "power1.inOut",
+        
+            scrollTrigger: {
+              trigger: visitSite,
+              start: 'top 80%',
+              end: "top 10%",
+              scrub: 2, //5 second delay
+              //markers: true,
+            }}
+            );
+          }
+          visitSite()
+
 
 
         // Cleanup script when component unmounts
@@ -263,8 +281,8 @@ export default function Amaranth() {
                     </div>
                 </div>
 
-                <div className="visit-site">
-                    <div className="site">
+                <div className="amaranth-visit-site">
+                    <div className="amaranth-site">
                         <p>Live Site</p>
                         <img className="arrow" src={arrow} alt="arrow" />
                     </div>

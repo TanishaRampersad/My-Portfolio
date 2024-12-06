@@ -185,7 +185,7 @@
 }
 
 
-.site{
+.amaranth-site{
     width: 11rem;
     height: 11rem;
     border-radius: 50%;
@@ -198,12 +198,12 @@
     text-align: center;
     font-size: 1rem;
     cursor: pointer;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
     position: relative;
     z-index: 2;
 }
 
-.visit-site{
+.amaranth-visit-site{
     transform: translateX(-40%);
     margin-top: 5rem;
     /* transform: translateY(30%); */
