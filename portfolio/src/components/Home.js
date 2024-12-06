@@ -206,7 +206,7 @@ export default function Home() {
                   <tr>
                     <Link className="link" to="/Amaranth">
                       <td>
-                        <p className="move-left">Amaranth Spa</p>
+                        <p className="move-left">Amaranth Spa Website</p>
                         <p className="move-right">Design and Development</p>
                       </td>
                       <div className="tech-stack">
