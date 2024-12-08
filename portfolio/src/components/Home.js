@@ -9,6 +9,7 @@ import horizontalScroll from '../images/horizontalScroll.mp4';
 import scrollAnimation from '../images/scroll animation.mp4';
 import singer from '../images/singer.mp4';
 import modelView from '../images/modelView.mp4';
+import splitScreen from '../images/splitScreen.mp4';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -229,11 +230,11 @@ export default function Home() {
                 </tr>
 
                 <tr>
-                  <a className="link" target="_blank" rel="noopener noreferrer" href='https://www.figma.com/design/5e3zq5MNzdiM8urAk0xy9D/Flipkart-Case-Study---Tanisha-Rampersad?node-id=0-1&t=7hbuf2bkbkfwCoSh-1'>
-                    <td>
+                  <a className="link flipkart" target="_blank" rel="noopener noreferrer" href='https://www.figma.com/design/5e3zq5MNzdiM8urAk0xy9D/Flipkart-Case-Study---Tanisha-Rampersad?node-id=0-1&t=7hbuf2bkbkfwCoSh-1'>
+                    <tbody>
                       <p className="move-left">Flipkart</p>
                       <p className="move-right">Design</p>
-                    </td>
+                    </tbody>
                     <div className="tech-stack">
                       <p className="tech">Figma</p>
                     </div>
@@ -242,10 +243,10 @@ export default function Home() {
 
                 <tr>
                   <a className="link" target="_blank" rel="noopener noreferrer" href='https://www.behance.net/gallery/214077327/Stripe-Case-Study'>
-                    <td>
+                    <tbody>
                       <p className="move-left">Stripe</p>
                       <p className="move-right">Design</p>
-                    </td>
+                    </tbody>
                     <div className="tech-stack">
                       <p className="tech">Figma</p>
                     </div>
@@ -263,10 +264,10 @@ export default function Home() {
 
                 <tr>
                   <a className="link" target="_blank" rel="noopener noreferrer" href='https://www.behance.net/gallery/214080607/Woolworths-Workshop'>
-                    <td>
+                    <tbody>
                       <p className="move-left">Woolworths Workshop</p>
                       <p className="move-right">Design Workshop Facilitation</p>
-                    </td>
+                    </tbody>
                     <div className="tech-stack">
                       <p className="tech">Figma</p>
                     </div>
@@ -302,7 +303,8 @@ export default function Home() {
 
               <div className="second-row">
                 <div className="box four">
-                  <img alt=''/>
+                  <video className="split" src={splitScreen} alt='Vertical Scroll' autoPlay loop muted playsInline>
+                    </video> 
                 </div>
 
                 <div className="box five">

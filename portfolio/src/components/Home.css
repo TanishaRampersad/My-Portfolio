@@ -299,6 +299,34 @@ Duplicate the text with a pseudo-element
     color:rgb(49, 49, 49);
 }
 
+.table1 tbody{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%; 
+    padding-right: 5%;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    color:rgb(49, 49, 49);
+}
+
+.table1 .move-left{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.table1 .move-right{
+    font-size: 1.3rem;
+}
+
+.table2 .move-left{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.table2 .move-right{
+    font-size: 1.3rem;
+}
 
 
 /* Hover effect */
@@ -348,7 +376,7 @@ Duplicate the text with a pseudo-element
     color:#838383;
 }
 
-.table2 td {
+.table2 tbody {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -447,6 +475,15 @@ Duplicate the text with a pseudo-element
 
 .four{
     background-color: rgba(205, 201, 200, 0.707);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.split{
+    width: 85%;
+    height: 100%;
+    transform: scaleY(1.2);
 }
 
 .five{

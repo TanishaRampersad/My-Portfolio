@@ -62,7 +62,7 @@ export default function Footer() {
 
                     <div className="connect-details">
                         <div className="email">
-                            <a href="mailto:Tanisharampersad24@gmail.com" class="email-button">Tanisharampersad24@gmail.com</a>
+                            <a href="mailto:Tanisharampersad24@gmail.com" className="email-button">Tanisharampersad24@gmail.com</a>
                         </div>
                         <div className="number">
                             <a href="tel:+27 84 827 8120">+27 84 827 8120</a>
