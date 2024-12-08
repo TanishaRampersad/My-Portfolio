@@ -3,6 +3,7 @@ import './Footer.css'
 import messaging from '../images/chat (1).gif'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useLocation } from "react-router-dom";
 //import lottie from 'lottie-web';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -10,7 +11,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 export default function Footer() {
+
+    const location = useLocation();
+
+        // Check if we're on the contact page to apply a different style
+        const isContactPage = location.pathname === "/contact";
+
+        
     useEffect(() => {
+
+        
 
     // Load the Lottie animation
     // lottie.loadAnimation({
@@ -43,7 +53,7 @@ export default function Footer() {
          
         return(
             <>
-            <div className="footer">
+            <div id={isContactPage ? "about-footer" : "default-footer"} className="footer">
                 {/* <div id="animated-icon" style={{ width: '200px', height: '200px' }}></div> */}
 
                 <div className="footer-section">
@@ -73,8 +83,13 @@ export default function Footer() {
                         <div className="socials-section">
                             <h4>SOCIALS</h4>
                             <div className="socials-list">
-                                <p id='social-link'>Linkedin</p>
-                                <p id='social-link'>Facebook</p>
+                                <a className="linkedin" target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/tanisha-rampersad-18269b14a/'>
+                                    <p id='social-link linked'>Linkedin</p>
+                                </a>
+                                
+                                <a className="facebook" target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/Tanish244/'>
+                                    <p id='social-link'>Facebook</p>
+                                </a>
                             </div>
                         </div>
                     </div>

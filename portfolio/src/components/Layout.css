@@ -85,7 +85,7 @@
     right: 0;
     z-index: 1000;  /* Ensures it's above other content */
     background: transparent;  /* Or any color with transparency */
-    padding-bottom: 8rem;
+    /* padding-bottom: 8rem; */
     width: 100%;
     pointer-events: none;
   }
@@ -216,6 +216,9 @@ nav ul li:not(:first-child){
     color: rgb(188, 24, 24);
 }
 
+/* #about-footer h1{
+    color: rgb(255, 255, 255);
+} */
 
 
 
@@ -230,7 +233,7 @@ nav ul li:not(:first-child){
   
   
   
-  
+
   
   /* phones */
   @media (min-width: 381px) and (max-width: 600px) {

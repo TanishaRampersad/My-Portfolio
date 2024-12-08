@@ -5,10 +5,16 @@ import { useEffect } from 'react';
 import hamburger from '../images/hamburger.png';
 import { HashLink as Link} from 'react-router-hash-link';
 import gsap from 'gsap';
+import { useLocation } from "react-router-dom";
 
 
 
 export default function Navbar() {
+
+  const location = useLocation();
+
+        // Check if we're on the contact page to apply a different style
+        const isCPage = location.pathname === "/contact";
 
   useEffect(() => {
 
@@ -62,7 +68,7 @@ export default function Navbar() {
   
       return(
         <>
-          <nav className='navigation'>
+          <nav className='navigation' id={isCPage ? "about-contact" : "default-contact"}>
             <div className='navFirst navResponsive'>
               <h3><img src={copyright} alt="copyright" /><Link id='code' to='/'>Code by Tanisha</Link></h3>
             </div>

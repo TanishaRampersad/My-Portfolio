@@ -57,13 +57,14 @@
 }
 
 .footer{
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(22, 27, 39);
     color: rgb(247, 247, 247);
 }
 
 .footer h1{
     font-size: 5rem;
     margin-left: 1rem;
+    color: rgb(240, 240, 240);
 }
 
 .connect{
@@ -81,7 +82,6 @@
     height: 11rem;
     border-radius: 50%;
     background-color:  rgb(43, 93, 111);
-    /* background-color: rgb(219, 219, 219); */
     color: rgb(247, 247, 247);
     display: flex; 
     justify-content: center; 
@@ -123,6 +123,7 @@
 
 .socials-section{
     text-align: left;
+   
 }
 
 .socials p{
@@ -149,7 +150,7 @@
 } */
 
 .socials p:hover{
-    color:rgb(64, 167, 204);
+    color: rgb(138, 171, 182);
 }
 
 .socials-list{
@@ -157,8 +158,13 @@
     justify-content: flex-end;
 }
 
-#social-link + #social-link{
-    margin-left: 1.5rem;
+.facebook{
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.linkedin{
+    text-decoration: none;
 }
 
 .connect-details{
@@ -167,9 +173,9 @@
 }
 
 .number{
-    margin-left: 5rem;
+    margin-left: 4rem;
     padding: 1rem 2rem;
-    border: 1px solid rgb(223, 215, 207);
+    border: 1px solid rgb(240, 240, 240);;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -177,17 +183,40 @@
 .email{
     margin-left: 1rem;
     padding: 1rem 2rem;
-    border: 1px solid rgb(223, 215, 207);
+    border: 1px solid rgb(240, 240, 240);;
     border-radius: 25px;
     cursor: pointer;
 }
 
 .email a{
     text-decoration: none;
-    color: rgb(223, 215, 207);
+    color: rgb(240, 240, 240);
 }
 
 .number a{
     text-decoration: none;
-    color:  rgb(223, 215, 207);
+    color: rgb(240, 240, 240);
 }
+
+
+
+
+/* Custom Footer Style for Contact Page */
+#about-footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+#about-footer .connect{
+    display: none;
+}
+
+#about-footer .connect-button{
+    display: none;
+}
+
+#about-footer .connect-details{
+    display: none;
+}
+
