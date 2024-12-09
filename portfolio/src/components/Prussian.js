@@ -7,7 +7,7 @@ import cart from '../images/Prussian-cart.mp4';
 import backend from '../images/Prussian-backend.mp4';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import LocomotiveScroll from 'locomotive-scroll';
+//import LocomotiveScroll from 'locomotive-scroll';
 //import 'locomotive-scroll/src/locomotive-scroll.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -187,34 +187,34 @@ export default function Prussian() {
             });
 
 
-            const scrollContainer = document.querySelector(".smoothScrollContainer");
+            // const scrollContainer = document.querySelector(".smoothScrollContainer");
 
-            const locomotiveScroll = new LocomotiveScroll({
-              el: scrollContainer,
-              smooth: true,
-            });
+            // const locomotiveScroll = new LocomotiveScroll({
+            //   el: scrollContainer,
+            //   smooth: true,
+            // });
 
-            ScrollTrigger.scrollerProxy(".smoothScrollContainer", {
-                scrollTop(value) {
-                  return arguments.length
-                    ? locomotiveScroll.scrollTo(value, { duration: 0 })
-                    : locomotiveScroll.scroll.instance.scroll.y;
-                },
-                getBoundingClientRect() {
-                  return {
-                    top: 0,
-                    left: 0,
-                    width: window.innerWidth,
-                    height: window.innerHeight
-                  };
-                },
-                pinType: document.querySelector(".smoothScrollContainer").style.transform
-                  ? "transform"
-                  : "fixed"
-              });
+            // ScrollTrigger.scrollerProxy(".smoothScrollContainer", {
+            //     scrollTop(value) {
+            //       return arguments.length
+            //         ? locomotiveScroll.scrollTo(value, { duration: 0 })
+            //         : locomotiveScroll.scroll.instance.scroll.y;
+            //     },
+            //     getBoundingClientRect() {
+            //       return {
+            //         top: 0,
+            //         left: 0,
+            //         width: window.innerWidth,
+            //         height: window.innerHeight
+            //       };
+            //     },
+            //     pinType: document.querySelector(".smoothScrollContainer").style.transform
+            //       ? "transform"
+            //       : "fixed"
+            //   });
               
-              locomotiveScroll.on("scroll", ScrollTrigger.update);
-              ScrollTrigger.refresh();
+            //   locomotiveScroll.on("scroll", ScrollTrigger.update);
+            //   ScrollTrigger.refresh();
               
 
         
@@ -244,7 +244,7 @@ export default function Prussian() {
                             modern gentleman.
                         </p>
                     </div>
-
+ss
                     <div className="role">
                         <p className="role-heading">Role/Services</p>
                         <div className="horizontal-line">

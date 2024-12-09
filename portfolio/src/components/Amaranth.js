@@ -7,7 +7,7 @@ import amarantBooking from '../images/amaranth-booking.mp4'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap'
 import Spline from '@splinetool/react-spline';
-import LocomotiveScroll from 'locomotive-scroll';
+//import LocomotiveScroll from 'locomotive-scroll';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -243,34 +243,34 @@ export default function Amaranth() {
           visitSite()
 
 
-          const scrollContainer = document.querySelector(".smoothScrollContainer");
+        //   const scrollContainer = document.querySelector(".smoothScrollContainer");
 
-            const locomotiveScroll = new LocomotiveScroll({
-              el: scrollContainer,
-              smooth: true,
-            });
+        //     const locomotiveScroll = new LocomotiveScroll({
+        //       el: scrollContainer,
+        //       smooth: true,
+        //     });
 
-            ScrollTrigger.scrollerProxy(".smoothScrollContainer", {
-                scrollTop(value) {
-                  return arguments.length
-                    ? locomotiveScroll.scrollTo(value, { duration: 0 })
-                    : locomotiveScroll.scroll.instance.scroll.y;
-                },
-                getBoundingClientRect() {
-                  return {
-                    top: 0,
-                    left: 0,
-                    width: window.innerWidth,
-                    height: window.innerHeight
-                  };
-                },
-                pinType: document.querySelector(".smoothScrollContainer").style.transform
-                  ? "transform"
-                  : "fixed"
-              });
+        //     ScrollTrigger.scrollerProxy(".smoothScrollContainer", {
+        //         scrollTop(value) {
+        //           return arguments.length
+        //             ? locomotiveScroll.scrollTo(value, { duration: 0 })
+        //             : locomotiveScroll.scroll.instance.scroll.y;
+        //         },
+        //         getBoundingClientRect() {
+        //           return {
+        //             top: 0,
+        //             left: 0,
+        //             width: window.innerWidth,
+        //             height: window.innerHeight
+        //           };
+        //         },
+        //         pinType: document.querySelector(".smoothScrollContainer").style.transform
+        //           ? "transform"
+        //           : "fixed"
+        //       });
               
-              locomotiveScroll.on("scroll", ScrollTrigger.update);
-              ScrollTrigger.refresh();
+        //       locomotiveScroll.on("scroll", ScrollTrigger.update);
+        //       ScrollTrigger.refresh();
               
 
 

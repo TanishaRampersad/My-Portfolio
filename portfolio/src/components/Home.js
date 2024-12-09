@@ -286,34 +286,34 @@ export default function Home() {
 
               <div className="first-row">
                 <div className="box one">
-                  <video className="my-bottle" src={bottle} alt='3d Bottle' autoPlay loop muted playsInline>
+                  <video className="my-bottle" src={bottle} alt='3d Bottle' autoPlay loop muted playsInline preload="auto">
                   </video>
                 </div>
 
                 <div className="box two">
-                  <video className="singer" src={singer} alt='Singer React Website' autoPlay loop muted playsInline>
+                  <video className="singer" src={singer} alt='Singer React Website' autoPlay loop muted playsInline preload="auto">
                     </video> 
                 </div>
 
                 <div className="box three">
-                  <video className="H-scroll" src={horizontalScroll} alt='Horizontal Scroll' autoPlay loop muted playsInline>
+                  <video className="H-scroll" src={horizontalScroll} alt='Horizontal Scroll' autoPlay loop muted playsInline preload="auto">
                     </video> 
                 </div>
               </div>
 
               <div className="second-row">
                 <div className="box four">
-                  <video className="split" src={splitScreen} alt='Vertical Scroll' autoPlay loop muted playsInline>
+                  <video className="split" src={splitScreen} alt='Vertical Scroll' autoPlay loop muted playsInline preload="auto">
                     </video> 
                 </div>
 
                 <div className="box five">
-                  <video className="v-scroll" src={scrollAnimation} alt='Vertical Scroll' autoPlay loop muted playsInline>
+                  <video className="v-scroll" src={scrollAnimation} alt='Vertical Scroll' autoPlay loop muted playsInline preload="auto">
                   </video> 
                 </div>
 
                 <div className="box six">
-                  <video className="modelView" src={modelView} alt='Model View' autoPlay loop muted playsInline>
+                  <video className="modelView" src={modelView} alt='Model View' autoPlay loop muted playsInline preload="auto">
                     </video>
                 </div>
               </div>

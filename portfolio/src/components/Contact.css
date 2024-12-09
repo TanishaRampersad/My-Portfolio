@@ -143,3 +143,27 @@
 input:focus, textarea:focus, select:focus {
     outline: none;
 }
+
+
+.submitButton{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    background-color:  rgb(43, 93, 111);
+    color: rgb(247, 247, 247);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 2;
+    /* transform: translateY(-50%); */
+}
+
+.submitButton input{
+    background-color:  rgb(43, 93, 111);
+    cursor: pointer;
+    margin: 0 auto;
+}

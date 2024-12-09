@@ -1,8 +1,29 @@
 import { useEffect } from "react"
 import './Contact.css';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Contact() {
     useEffect(() => {
+
+        function submitAnimation() {
+            const submit = document.querySelector('.submitButton');
+
+            const tween = gsap.to(submit, {x: 400, ease: 'power1.inOut'})
+
+            ScrollTrigger.create({
+                trigger: submit,
+                start: 'top 100%',
+                end: 'top 40%',
+                animation: tween,
+                scrub: true
+            })
+        }
+
+        submitAnimation()
+        
 
     })
 
@@ -42,7 +63,9 @@ export default function Contact() {
                             <label htmlFor="userMessage">Your message?</label>
                             <textarea id="userMessage" name="message" rows="4" placeholder="Type your message here..."></textarea>
 
-                            <div className='submitButton'><input type="submit" value="Submit"></input></div>
+                            <div className="submit-container">
+                                <div className='submitButton'><input type="submit" value="Submit"></input></div>
+                            </div>
                         </form>
                     </section>
 
