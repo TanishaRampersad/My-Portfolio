@@ -69,7 +69,7 @@
 }
 
 .center{
-    margin-top: 8rem;
+    margin-top: 4rem;
     background-color: rgb(22, 27, 39);
     display: flex;
     justify-content: center;
@@ -202,7 +202,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .L p:hover{
-    color: rgb(78, 123, 140);
+    color: rgb(138, 171, 182);
 }
 
 .F{
@@ -210,7 +210,73 @@ input:focus, textarea:focus, select:focus {
 }
 
 .F p:hover{
-    color: rgb(78, 123, 140);
+    color:rgb(138, 171, 182);
+}
+
+
+
+
+
+.contact-home-link{
+    margin-left: 1rem;
+    /* margin-bottom: 5rem; */
+    margin-top: 0;
+}
+
+.contact-link-to-home {
+    text-decoration: none; /* Removes the underline */
+    
+  }
+
+.contact-link-to-home h1{
+    padding: 1rem 0.5rem;
+    position: relative;
+    background-color: #535a63;
+    color: white;
+    border-radius: 25px;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.contact-link-to-home:focus, .contact-link-to-home:active {
+    outline: none;       
+    text-decoration: none;
+}
+
+
+/* Underline effect on hover and click */
+.contact-link-to-home h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0.7rem;
+    left: 14px;
+    width: 0;
+    transform: translateX(-2%);
+    height: 1px; 
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s ease; 
+  }
+
+  .contact-link-to-home h1:hover::after {
+    width: 80%;
+  }
+
+.contact-home-link {
+   padding-top: 7rem;
+    /* color: rgb(96, 96, 96); */
+}
+
+.contact-home-link h1{
+    cursor: pointer !important;
+}
+
+.contact-link-section{
+    background-color:  rgb(22, 27, 39);
+    padding-top: 3rem;
 }
 
 

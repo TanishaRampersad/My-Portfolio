@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import './Contact.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { HashLink as Link } from "react-router-hash-link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,7 +19,7 @@ export default function Contact() {
                 start: 'top 100%',
                 end: 'top 40%',
                 animation: tween,
-                scrub: true
+                scrub: 3,
             })
         }
 
@@ -30,9 +31,16 @@ export default function Contact() {
     
     return(
         <>
-
+            <div className="contact-link-section">
+                <section className="contact-home-link">
+                    <Link className="contact-link-to-home" to="/">
+                        <h1>Go back home</h1>
+                    </Link>
+                </section>
+    
             <div className="contactSection">
                 <div className="center">
+
                     <section className="contactSection1">
                         <div className="contact-heading">
                             <h1>Get in Touch</h1>
@@ -91,6 +99,7 @@ export default function Contact() {
                         </div>
                     </section>
                 </div>
+            </div>
             </div>
         </>
     )
