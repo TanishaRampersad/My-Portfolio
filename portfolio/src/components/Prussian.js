@@ -244,7 +244,7 @@ export default function Prussian() {
                             modern gentleman.
                         </p>
                     </div>
-ss
+                    
                     <div className="role">
                         <p className="role-heading">Role/Services</p>
                         <div className="horizontal-line">

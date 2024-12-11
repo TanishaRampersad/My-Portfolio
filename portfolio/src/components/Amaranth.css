@@ -137,6 +137,10 @@
     /* background-color: aqua; */
 }
 
+.project-about-section p{
+    color:rgb(40, 40, 40);
+}
+
 .about-amaranth{
     width: 60%;
     padding-top: 2rem;
@@ -235,6 +239,11 @@
 .amaranth-problem{
     display: flex;
     background-color: /*rgb(138, 162, 171)*/ #e8e9ea;
+}
+
+.amaranth-problem h2,
+.amaranth-problem p{
+    color:rgb(40, 40, 40);
 }
 
 /* .old-amaranth p{

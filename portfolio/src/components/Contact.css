@@ -224,8 +224,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .contact-link-to-home {
-    text-decoration: none; /* Removes the underline */
-    
+    text-decoration: none; 
   }
 
 .contact-link-to-home h1{
