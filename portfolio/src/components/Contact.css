@@ -145,6 +145,21 @@ input:focus, textarea:focus, select:focus {
 }
 
 
+.submit-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.submit-container hr{
+    width: 100%;
+    background-color: rgb(85, 84, 84);
+    height: 0.8px;
+    border: none;
+}
+
+
 .submitButton{
     width: 11rem;
     height: 11rem;
@@ -159,7 +174,8 @@ input:focus, textarea:focus, select:focus {
     text-transform: uppercase;
     cursor: pointer;
     z-index: 2;
-    /* transform: translateY(-50%); */
+    position: absolute;
+    /* transform: translateX(100%); */
 }
 
 .submitButton input{
@@ -167,3 +183,34 @@ input:focus, textarea:focus, select:focus {
     cursor: pointer;
     margin: 0 auto;
 }
+
+.contactSection2 h5{
+    color: rgb(138, 138, 138);
+    padding-bottom: 1rem;
+}
+
+.topContact{
+    margin-bottom: 3rem;
+}
+
+.topContact p{
+    line-height: 2rem;
+}
+
+.L{
+    text-decoration: none;
+}
+
+.L p:hover{
+    color: rgb(78, 123, 140);
+}
+
+.F{
+    text-decoration: none;
+}
+
+.F p:hover{
+    color: rgb(78, 123, 140);
+}
+
+

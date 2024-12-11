@@ -11,7 +11,7 @@ export default function Contact() {
         function submitAnimation() {
             const submit = document.querySelector('.submitButton');
 
-            const tween = gsap.to(submit, {x: 400, ease: 'power1.inOut'})
+            const tween = gsap.to(submit, {x: 180, ease: 'power1.inOut'})
 
             ScrollTrigger.create({
                 trigger: submit,
@@ -64,6 +64,7 @@ export default function Contact() {
                             <textarea id="userMessage" name="message" rows="4" placeholder="Type your message here..."></textarea>
 
                             <div className="submit-container">
+                                <hr/>
                                 <div className='submitButton'><input type="submit" value="Submit"></input></div>
                             </div>
                         </form>
@@ -80,11 +81,11 @@ export default function Contact() {
                         <div className="bottomContact">
                             <h5>Socials</h5>
                             
-                            <a className="linkedin" target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/tanisha-rampersad-18269b14a/'>
+                            <a className="L" target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/tanisha-rampersad-18269b14a/'>
                                 <p>Linkedin</p>
                             </a>
 
-                            <a className="facebook" target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/Tanish244/'>
+                            <a className="F" target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/Tanish244/'>
                                 <p>Facebook</p>
                             </a>
                         </div>
