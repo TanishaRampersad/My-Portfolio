@@ -189,7 +189,7 @@ export default function Home() {
               </div>
 
                 <div className="aboutMe-link">
-                    <div className="AboutMe">About me</div>
+                  <Link className="about-link" to="/about"><div className="AboutMe">About me</div></Link>
                 </div>
             </div>
           </section>

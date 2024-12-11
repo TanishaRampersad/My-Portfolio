@@ -4,6 +4,7 @@ import messaging from '../images/chat (1).gif'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLocation } from "react-router-dom";
+import { HashLink as Link} from 'react-router-hash-link';
 //import lottie from 'lottie-web';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -66,7 +67,9 @@ export default function Footer() {
                     <div className="connect-button">
                         <hr/>
                         <div className="flex-end">
-                            <div className="get-in-touch flex-end">Get in touch</div>
+                            <Link to='/contact'>
+                                <div className="get-in-touch flex-end">Get in touch</div>
+                            </Link>
                         </div>
                     </div>
 

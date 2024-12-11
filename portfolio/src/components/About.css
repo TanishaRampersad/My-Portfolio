@@ -1,20 +1,20 @@
 
 @font-face {
-    font-family: 'Avenir-light'; /* Name you want to use for the font */
+    font-family: 'Avenir-light'; 
     src: url('../Fonts/Avenir-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Avenir-book'; /* Name you want to use for the font */
+    font-family: 'Avenir-book'; 
     src: url('../Fonts/Avenir-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Avenir-Roman'; /* Name you want to use for the font */
+    font-family: 'Avenir-Roman'; 
     src: url('../Fonts/Avenir-Roman.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -22,7 +22,7 @@
 
 
 @font-face {
-    font-family: 'Avenir-medium'; /* Name you want to use for the font */
+    font-family: 'Avenir-medium'; 
     src: url('../Fonts/Avenir-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -53,23 +53,56 @@
     padding-top: 10rem;
 }
 
+.heading-aboutMe{
+    width: 60%;
+    /* margin: auto; */
+    /* margin-left: auto; */
+    /* text-align: right; */
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    /* border: 1px solid green; */
+    transform: translateX(10%);
+}
+
+.heading-aboutMe p{
+    font-family: 'Avenir-medium';
+    font-size: 1.9rem;
+    margin-right: 0;
+    /* font-style: italic; */
+}
+
 .about-me p{ 
     color: rgb(40, 40, 40);
 }
 
+
+
 .aboutMe-first-paragraph{
     width: 100%;
+    background: linear-gradient(to bottom, white, rgb(235, 238, 239));
 }
 
 .about-flex p{
-    width: 40%;
-    border: 4px solid pink;
+    width: 80%;
+    transform: translateY(30%);
+    /* border: 4px solid pink; */
     margin: 0 auto;
+    text-align: left;
+    font-family: 'Avenir-light';
+    font-size: 1.1rem;
+    line-height: 1.8rem;
 }
 
 .about-flex{
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+
+.about-p{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    transform: translateX(5%);
 }
 
 .about-flex img{
@@ -79,6 +112,28 @@
     scale: 0.9;
     /* margin-left: 2rem; */
     margin: 0 auto;
-    border: solid 4px green;
+    /* border: solid 4px green; */
     /* transform: translateX(-6%); */
+}
+
+.about-p p{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+
+.aboutMe-connection{
+    width: 100%;
+    /* background-color: rgb(209, 217, 220); */
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+
+.aboutMe-connection p{
+    font-size: 1.8rem;
+    width: 50%;
+    margin: 0 auto;
 }

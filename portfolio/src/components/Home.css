@@ -226,6 +226,10 @@ Duplicate the text with a pseudo-element
     z-index: 1; 
 }
 
+.about-link{
+    text-decoration: none;
+}
+
 .text{
     display: flex;
     justify-content: space-between;
