@@ -205,7 +205,7 @@ nav ul li:not(:first-child){
     left: 2rem;
     width: 0;
     height: 1px; 
-    background-color: rgb(255, 255, 255);
+    background-color: var(--underline-color, rgb(255, 255, 255)); 
     transition: width 0.3s ease; 
 }
 
@@ -224,6 +224,66 @@ nav ul li:not(:first-child){
 /* #about-footer h1{
     color: rgb(255, 255, 255);
 } */
+
+
+
+
+
+/* ----- Nav About page ------- */
+.nav-about-page #code{
+    color:  rgb(41, 41, 41);
+}
+
+.nav-about-page .navFirst img{
+    filter: invert(0);
+}
+
+.nav-about-page .nav-item .link{
+    color: rgb(41, 41, 41);
+}
+
+.nav-about-page .link:after{
+    background-color: rgb(41, 41, 41);
+}
+
+
+
+
+/* ------ Nav Amaranth page --- */
+.nav-amaranth-page #code {
+    color:  rgb(41, 41, 41) !important;
+}
+
+.nav-amaranth-page .navFirst img{
+    filter: invert(0);
+}
+
+.nav-amaranth-page .nav-item .link{
+    color: rgb(41, 41, 41);
+}
+
+.nav-amaranth-page .link:after{
+    background-color: rgb(41, 41, 41);
+}
+
+
+/* ------ Nav Prussian page --- */
+.prussian-nav #code{
+    color: black;
+}
+
+.prussian-nav  .navFirst img{
+    filter: invert(0);
+}
+
+.prussian-nav .nav-item .link{
+    color: rgb(41, 41, 41);
+}
+
+.prussian-nav .link:after{
+    background-color: rgb(41, 41, 41);
+}
+
 
 
 

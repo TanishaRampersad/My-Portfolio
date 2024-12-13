@@ -1,4 +1,4 @@
-// import './Navbar.css';
+import './Navbar.css';
 import copyright from '../images/copyright.png'
 import React from 'react'
 import { useEffect } from 'react'; 
@@ -15,6 +15,10 @@ export default function Navbar() {
 
         // Check if we're on the contact page to apply a different style
         const isCPage = location.pathname === "/contact";
+        const isAboutPage = location.pathname === "/about";
+        const isAmaranthPage = window.location.pathname === "/amaranth";
+        const isPrussianPage = window.location.pathname === "/prussian";
+
 
   useEffect(() => {
 
@@ -68,7 +72,7 @@ export default function Navbar() {
   
       return(
         <>
-          <nav className='navigation' id={isCPage ? "about-contact" : "default-contact"}>
+        <nav className={`navigation ${isCPage ? "about-contact" : "default-contact"} ${isAboutPage ? "nav-about-page" : "default-about"} ${isAmaranthPage ? "nav-amaranth-page" : "default-amaranth"} ${isPrussianPage ? "prussian-nav" : "default-prussian"}`}>
             <div className='navFirst navResponsive'>
               <h3><img src={copyright} alt="copyright" /><Link id='code' to='/'>Code by Tanisha</Link></h3>
             </div>

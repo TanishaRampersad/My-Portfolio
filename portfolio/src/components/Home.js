@@ -15,7 +15,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 export default function Home() {
-
     useEffect(() => {
 
       function infiniteScroll() {
@@ -113,6 +112,40 @@ export default function Home() {
   bannerText()
 
 
+
+  function navChange() {
+    //const nav = document.querySelector('.navigation');
+    const name = document.querySelector('#code');
+    const banner = document.querySelector('.banner');
+    const img = document.querySelector('.navFirst img');
+    const navText = document.querySelectorAll('.nav-item .link')
+
+
+    // const myName = gsap.to(name, {color: 'black', ease: 'power1.inOut'})
+    // const image = gsap.to(img, {filter:'invert(0)'})
+
+    const myTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: banner, // Element to trigger the ScrollTrigger
+        start: 'bottom 20%', // Start point
+        scrub: true, // Smooth scrubbing
+      },
+    });
+
+    myTimeline
+    .to(name, { color: 'black', ease: 'power1.inOut' })
+    .to(img, { filter: 'invert(0)' })
+    .to(navText, { color: 'black' })
+    .to(".link", { "--underline-color": "black" })
+     
+ 
+  
+
+  }
+
+  navChange()
+
+
 })
    
     return(
@@ -205,7 +238,7 @@ export default function Home() {
 
                 
                   <tr>
-                    <Link className="link" to="/Amaranth">
+                    <Link className="link" to="/amaranth">
                       <td>
                         <p className="move-left">Amaranth Spa</p>
                         <p className="move-right">Design and Development</p>
@@ -218,7 +251,7 @@ export default function Home() {
               
                 
                 <tr>
-                  <Link className="link" to="/Prussian">
+                  <Link className="link" to="/prussian">
                     <td>
                       <p className="move-left">Prussian Shopping Cart</p>
                       <p className="move-right">Development</p>
