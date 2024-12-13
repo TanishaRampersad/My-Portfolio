@@ -120,15 +120,17 @@ export default function Home() {
     const img = document.querySelector('.navFirst img');
     const navText = document.querySelectorAll('.nav-item .link')
 
-
-    // const myName = gsap.to(name, {color: 'black', ease: 'power1.inOut'})
-    // const image = gsap.to(img, {filter:'invert(0)'})
-
     const myTimeline = gsap.timeline({
       scrollTrigger: {
-        trigger: banner, // Element to trigger the ScrollTrigger
-        start: 'bottom 20%', // Start point
-        scrub: true, // Smooth scrubbing
+        trigger: banner, 
+        start: 'bottom 20%', 
+        scrub: true, 
+        onUpdate: (self) => {
+          // update the underline color on scroll
+          const progress = self.progress; // Get the scroll progress (0 to 1)
+          const underlineColor = progress > 0.5 ? 'black' : 'white'; // Change color based on scroll progress
+          gsap.set(".textLink", { "--underline-color": underlineColor });
+        },
       },
     });
 
@@ -136,10 +138,18 @@ export default function Home() {
     .to(name, { color: 'black', ease: 'power1.inOut' })
     .to(img, { filter: 'invert(0)' })
     .to(navText, { color: 'black' })
-    .to(".link", { "--underline-color": "black" })
-     
- 
-  
+    .to(".textLink", {
+      onStart: () => {
+        // Change the CSS variable for the underline color
+        gsap.set(".link", { "--underline-color": "black" }); 
+      }
+    })
+    .to(".textLink", {
+      onComplete: () => {
+        // Reset the underline color after the animation
+        gsap.set(".link", { "--underline-color": "white" }); 
+      }
+    });
 
   }
 
