@@ -74,6 +74,10 @@
     text-decoration: none;
 }
 
+#closingTag{
+    opacity:0;
+}
+
 
 .about-contact-link-to-home:focus, .about-contact-link-to-home:active {
     outline: none;       

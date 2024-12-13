@@ -285,8 +285,8 @@ export default function Amaranth() {
 
     return (
         <div className="amaranth-back smoothScrollContainer">
-            <section className="home-link">
-                <Link className="link-to-home" to="/">
+            <section className="amaranth-home-link">
+                <Link className="amaranth-link-to-home" to="/">
                     <h1>Go back home</h1>
                 </Link>
             </section>

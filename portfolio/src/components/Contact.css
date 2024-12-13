@@ -228,10 +228,11 @@ input:focus, textarea:focus, select:focus {
   }
 
 .contact-link-to-home h1{
-    padding: 1rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     position: relative;
-    background-color: #535a63;
-    color: white;
+    
+    color: rgb(238, 238, 238);
+    border: 1px solid rgb(238, 238, 238);
     border-radius: 25px;
     width: 8rem;
     display: flex;
@@ -251,7 +252,7 @@ input:focus, textarea:focus, select:focus {
 .contact-link-to-home h1:after {
     content: '';
     position: absolute;
-    bottom: 0.7rem;
+    bottom: 0.3rem;
     left: 14px;
     width: 0;
     transform: translateX(-2%);

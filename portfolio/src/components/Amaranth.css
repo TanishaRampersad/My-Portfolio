@@ -54,17 +54,22 @@
     font-family: 'Avenir-book';
 }
 
-.home-link{
+.amaranth-home-link{
     margin-left: 1rem;
     margin-bottom: 5rem;
 }
 
-.link-to-home h1{
-    padding: 1rem 0.5rem;
+.amaranth-link-to-home{
+    text-decoration: none;
+}
+
+
+.amaranth-link-to-home h1{
+    padding: 0.5rem 0.5rem;
     position: relative;
-    border: 1px solid rgb(163, 37, 37);
-    background-color: #3a3a3a;
-    color: white;
+    border: 1px solid black;
+    background-color: /*#535a63 */ /*rgb(72, 72, 72)*/ white;
+    color: rgb(41, 41, 41);
     border-radius: 25px;
     width: 8rem;
     display: flex;
@@ -74,7 +79,7 @@
 }
 
 
-.link-to-home:focus, .link-to-home:active {
+.amaranth-link-to-home:focus, .amaranth-link-to-home:active {
     outline: none;       
     text-decoration: none;
 }
@@ -85,28 +90,28 @@
 }
 
 /* Underline effect on hover and click */
-.link-to-home h1:after {
+.amaranth-link-to-home h1:after {
     content: '';
     position: absolute;
-    bottom: 0.7rem;
+    bottom: 0.4rem;
     left: 14px;
     width: 0;
     transform: translateX(-2%);
     height: 1px; 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(41, 41, 41);
     transition: width 0.3s ease; 
   }
 
-  .link-to-home h1:hover::after {
+  .amaranth-link-to-home h1:hover::after {
     width: 80%;
   }
 
-.home-link {
+.amaranth-home-link {
    padding-top: 7rem;
     /* color: rgb(96, 96, 96); */
 }
 
-.home-link h1{
+.amaranth-home-link h1{
     cursor: pointer !important;
 }
 

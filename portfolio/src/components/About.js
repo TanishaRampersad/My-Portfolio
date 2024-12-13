@@ -15,14 +15,13 @@ export default function About() {
         function textAnimation() {
             const text = document.querySelector('#closingTag')
 
-           const textAnime = gsap.fromTo(text,{y:0, opacity: 0}, {y: -30, ease: 'power1.inOut', opacity:1})
+           const textAnime = gsap.to(text, {y: -30, ease: 'power1.inOut', opacity:1, duration: 2})
 
            ScrollTrigger.create({
             trigger: text,
             animation: textAnime,
             start: 'top 90%',
             end: 'top 50%',
-            scrub: 3
            })
         }
 
