@@ -48,6 +48,68 @@
     font-family: 'Avenir-book';
 }
 
+
+.about-contact-home-link{
+    margin-left: 1rem;
+    /* margin-bottom: 5rem; */
+    margin-top: 0;
+    transform: translateY(-90%);
+}
+
+.about-contact-link-to-home {
+    text-decoration: none; 
+  }
+
+.about-contact-link-to-home h1{
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    background-color: /*#535a63 */ /*rgb(72, 72, 72)*/ white;
+    border: 1px solid black;
+    color: black;
+    border-radius: 25px;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.about-contact-link-to-home:focus, .about-contact-link-to-home:active {
+    outline: none;       
+    text-decoration: none;
+}
+
+
+/* Underline effect on hover and click */
+.about-contact-link-to-home h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0.4rem;
+    left: 14px;
+    width: 0;
+    transform: translateX(-2%);
+    height: 1px; 
+    background-color: /*rgb(255, 255, 255)*/ black;
+    transition: width 0.3s ease; 
+  }
+
+  .about-contact-link-to-home h1:hover::after {
+    width: 80%;
+  }
+
+.about-contact-home-link {
+   padding-top: 7rem;
+    /* color: rgb(96, 96, 96); */
+}
+
+.about-contact-home-link h1{
+    cursor: pointer !important;
+}
+
+
+
+
 .about-me{ 
     width: 100%;
     padding-top: 10rem;
@@ -57,9 +119,9 @@
     width: 60%;
     /* margin: auto; */
     /* margin-left: auto; */
-    /* text-align: right; */
+    /* text-align: left; */
     margin-top: 3rem;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     /* border: 1px solid green; */
     transform: translateX(10%);
 }
@@ -69,6 +131,10 @@
     font-size: 1.9rem;
     margin-right: 0;
     /* font-style: italic; */
+}
+
+.hText{
+    opacity: 0;
 }
 
 .about-me p{ 
@@ -136,4 +202,5 @@
     font-size: 1.8rem;
     width: 50%;
     margin: 0 auto;
+    transform: translateY(50%);
 }

@@ -1,19 +1,61 @@
 import { useEffect } from "react";
 import './About.css';
 import tan from '../images/tan.jpg';
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { HashLink as Link } from "react-router-hash-link";
 //import coconut from '../images/me-cocontut.jpg';
 //import me from '../images/Ime.jpg';
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function About() {
     useEffect(() => {
+
+        function textAnimation() {
+            const text = document.querySelector('#closingTag')
+
+           const textAnime = gsap.fromTo(text,{y:0, opacity: 0}, {y: -30, ease: 'power1.inOut', opacity:1})
+
+           ScrollTrigger.create({
+            trigger: text,
+            animation: textAnime,
+            start: 'top 90%',
+            end: 'top 50%',
+            scrub: 3
+           })
+        }
+
+        textAnimation()
+
+
+        function heading(){
+            const heading = document.querySelector('.hText')
+
+            gsap.to(heading, {
+                opacity: 1,
+                ease:'power1.inOut',
+                duration: 1.5,
+                delay: 0.5,
+            })
+        }
+
+        heading()
 
     })
 
     return(
         <>
             <section className="about-me">
+
+                <section className="about-contact-home-link">
+                    <Link className="about-contact-link-to-home" to="/">
+                        <h1>Go back home</h1>
+                    </Link>
+                </section>
+
                 <div className="heading-aboutMe">
-                    <p>My journey into the world of Product design and Front-end development began with a simple question: 
+                    <p className="hText">My journey into the world of Product design and Front-end development began with a simple question: 
                         How do tech people design and build beautiful websites? This curiosity quickly evolved into a 
                         passion of creating fully functional user experiences.
                     </p>
@@ -62,7 +104,7 @@ export default function About() {
                 </p> */}
 
                 <div className="aboutMe-connection">
-                    <p>Let’s create something amazing together! Whether you have an idea you’d like to bring to life or just 
+                    <p id='closingTag'>Let’s create something amazing together! Whether you have an idea you’d like to bring to life or just 
                         want to chat about design and development, I’d love to hear from you.
                     </p>
                 </div>
