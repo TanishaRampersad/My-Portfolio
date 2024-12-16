@@ -358,12 +358,12 @@
 .mobile-devices{
     display: flex;
     height: 100vh;
-    background-color: /*#4e4e4e */ rgb(43, 93, 111);
+    background-color: /*#4e4e4e */ rgb(218, 218, 218);
 }
 
 .responsive-layout{
     height: auto;
-    background-color: /*#4e4e4e*/ rgb(43, 93, 111);
+    background-color: /*#4e4e4e*/ rgb(218, 218, 218);
 }
 
 .responsive-layout h1{
@@ -371,7 +371,7 @@
     justify-content: center;
     font-size: 2.5rem;
     font-weight: 600;
-    color:rgb(246, 246, 246);
+    color:rgb(41, 41, 41);
     padding-top: 4rem;
 }
 
