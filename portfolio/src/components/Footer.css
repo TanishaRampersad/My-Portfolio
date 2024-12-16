@@ -118,12 +118,15 @@
     padding-bottom: 1rem;
     padding-top: 10rem;
     position: relative;
-    /* background-color: blueviolet; */
+   
+    width: 100%;
 }
 
 .socials-section{
     text-align: left;
-   
+  
+   width: 13.5%;
+   margin-left: auto;
 }
 
 .socials p{
@@ -135,7 +138,6 @@
 
 .socials h4{
     display: flex;
-    justify-content: flex-end;
     font-size: 0.7rem;
     color: gray;
     padding-bottom: 1rem;
