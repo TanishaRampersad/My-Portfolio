@@ -313,7 +313,7 @@ Link .button{
 .new-prussian{
     display: flex;
     padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     background-color: /*rgb(138, 162, 171)*/ #e8e9ea;
     display: flex;
     flex-direction: column;
@@ -367,12 +367,16 @@ Link .button{
 /* --------- Mobile devices --------- */
 .prussian-mobile-devices{
     display: flex;
-    height: 60vh;
+    justify-content:space-between;
+    align-items: center;
+    height: 80vh;
+    /* background-color: #838d98; */
 }
 
 .prussian-responsive-layout{
     height: auto;
-    border: /*#4e4e4e*/ #fe0c0c 1px solid;
+    margin-bottom: 5rem;
+    /* border: #fe0c0c 1px solid; */
 }
 
 .prussian-responsive-layout h1{
@@ -382,4 +386,8 @@ Link .button{
     font-weight: 600;
     color:rgb(246, 246, 246);
     padding-top: 4rem;
+}
+
+.prussian-cart-model{
+    transform: translateX(15%);
 }

@@ -315,9 +315,17 @@ export default function Prussian() {
 
                     <section className="prussian-responsive-layout">
                         <div className="prussian-mobile-devices">
-                            <img alt=''/>
-                            <img alt=''/>
-                            <img alt=''/>
+                            <Spline
+                                scene="https://prod.spline.design/7Vc9pcljYpWgSSW1/scene.splinecode" 
+                            />
+
+                            <Spline className="prussian-cart-model"
+                                scene="https://prod.spline.design/7rzCgMYhFbQCzJfS/scene.splinecode" 
+                            />
+
+                            <Spline
+                                scene="https://prod.spline.design/r1yLeU2XMFVSsRK5/scene.splinecode" 
+                            />
                         </div>
                     </section>
 
