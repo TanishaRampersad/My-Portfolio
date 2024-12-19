@@ -256,27 +256,41 @@ Duplicate the text with a pseudo-element
     position: relative;
 }
 
+
+
 .table1 table {
     width: 90%;
-    /* border: 2px solid aqua;  */
     border-collapse: collapse; /* Ensures borders don't double up */
 }
 
 .tech-stack{ 
-    width: 100%;
+    width: 30%;
     display: flex;
     justify-content: flex-end;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 1rem;
-    padding-top: 0rem;
-    color:#8d8d8d;
-    transform: translateY(-80%);
+    transform: translateY(-20%);
+    /* border: 1px solid red; */
 }
 
-.tech{
-    font-size: 0.9rem;
+.amaranth-tech{
+    width: 30%;
 }
+
+
+.tech{
+    text-align: end;
+}
+
+#tech-names{
+    color: #9c9c9c;
+}
+
+
+.table1 tbody{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 .table1 tr {
     border-bottom: 1.3px solid rgb(206, 206, 206); 
@@ -284,13 +298,16 @@ Duplicate the text with a pseudo-element
 
 .table1 p{
     color: rgb(57, 57, 57);
+    display: flex;
+    flex-direction: row;
 }
 
 .table1 tr:hover{
     cursor: pointer;
 }
-.table1 .Link{
-    justify-content: space-between;
+
+.table1 tbody td .Link{
+    width: 50%;
 }
 
 .table2 p{
@@ -306,35 +323,29 @@ Duplicate the text with a pseudo-element
     cursor:crosshair;
 }
 
-.table1 td {
+
+.table1 tbody td{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 5%; 
     padding-right: 5%;
     padding-top: 3rem;
-    padding-bottom: 0rem;
+    padding-bottom: 3rem;
     color:rgb(49, 49, 49);
 }
 
-.table1 tbody{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 5%; 
-    padding-right: 5%;
-    padding-top: 3rem;
-    padding-bottom: 0rem;
-    color:rgb(49, 49, 49);
-}
-
-.table1 .move-left{
+.table1 .name-move-left{
     font-size: 4.5rem;
     font-weight: 600;
 }
 
+.table .work-move-left{
+    font-size: 1rem;
+}
+
 .table1 .move-right{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .table2 .move-left{
@@ -342,13 +353,10 @@ Duplicate the text with a pseudo-element
     font-weight: 600;
 }
 
-.table2 .move-right{
-    font-size: 1.3rem;
-}
-
 
 /* Hover effect */
-.table1 tr:hover .move-left {
+.table1 tr:hover .work-move-left,
+.table1 tr:hover .name-move-left {
     color: rgb(118, 140, 150);
     transform: translateX(-10px);
     transition: transform 0.5s ease, color 0.5s ease;
@@ -356,7 +364,7 @@ Duplicate the text with a pseudo-element
 
 /* Hover effect */
 .table1 tr:hover .tech,
-.table1 tr:hover p{
+.table1 tr:hover #tech-names{
     transform: translateX(10px); 
     transition: transform 0.5s ease; 
     color: /*#838383*/ rgb(118, 140, 150); 
@@ -365,61 +373,110 @@ Duplicate the text with a pseudo-element
 
 
 /* ------- TABLE 2 ----------*/
-.table2{
-    display: flex;
-    justify-content: center;
-    padding-top: 10%;
-    position: relative;
-    padding-bottom: 10%;
-}
-
-.table2 table {
-    width: 90%;
-    /* border: 2px solid aqua;  */
-    border-collapse: collapse; /* Ensures borders don't double up */
-}
-
-.table2 tr {
-    border-bottom: 1px solid rgb(206, 206, 206);
-}
-
-.table2 tr:hover{
-    cursor: pointer;
-}
-
-.table2 th {
-    text-align: left; 
-    padding: 3rem 5%;
-    border-bottom: 1px solid  rgb(206, 206, 206);
-    color:#838383;
-}
-
-.table2 tbody {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 5%; 
-    padding-right: 5%;
-    padding-top: 3rem;
-    padding-bottom: 0rem;
-    color:rgb(49, 49, 49);
-}
-
-/* Hover effect */
-.table2 tr:hover .move-left {
-    color: /*rgb(91, 103, 109) */ rgb(118, 140, 150) /*rgb(116, 102, 131)*/; 
-    transform: translateX(-10px); 
-    transition: transform 0.5s ease;
-}
+    .table2{
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+        position: relative;
+        margin-bottom: 10rem;
+    }
 
 
-/* Hover effect */
-.table2 tr:hover .tech,
-.table2 tr:hover p{
-    transform: translateX(10px); 
-    transition: transform 0.5s ease; 
-    color: /*#838383*/ rgb(118, 140, 150); 
-}
+    .table2 table {
+        width: 90%;
+        border-collapse: collapse; /* Ensures borders don't double up */
+    }
+
+
+    .table2 tbody{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .table2 tr {
+        border-bottom: 1.3px solid rgb(206, 206, 206); 
+    }
+
+    .table2 p{
+        color: rgb(57, 57, 57);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .table2 tr:hover{
+        cursor: pointer;
+    }
+
+    .table2 tbody td .Link{
+        width: 50%;
+    }
+
+    .table2 p{
+        color: rgb(57, 57, 57);
+    }
+
+    .table2 th {
+        text-align: left; 
+        padding: 3rem 5%;
+        border-bottom: 1px solid  rgb(206, 206, 206);
+        color:#777777;
+        font-weight:bolder;
+        cursor:crosshair;
+    }
+
+
+    .table2 tbody td{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5%; 
+        padding-right: 5%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        color:rgb(49, 49, 49);
+    }
+
+    .table2 .name-move-left{
+        font-size: 4.5rem;
+        font-weight: 600;
+    }
+
+    .table2 .work-move-left{
+        font-size: 1rem;
+    }
+
+    .table2 .move-right{
+        font-size: 1rem;
+    }
+
+    .table2 .move-left{
+        font-size: 4.5rem;
+        font-weight: 600;
+    }
+
+    .table2 .move-right{
+        font-size: 1.1rem;
+    }
+
+
+    /* Hover effect */
+    .table2 tr:hover .work-move-left,
+    .table2 tr:hover .name-move-left {
+        color: rgb(118, 140, 150);
+        transform: translateX(-10px);
+        transition: transform 0.5s ease, color 0.5s ease;
+    }
+
+    /* Hover effect */
+    .table2 tr:hover .tech,
+    .table2 tr:hover #tech-names{
+        transform: translateX(10px); 
+        transition: transform 0.5s ease; 
+        color: /*#838383*/ rgb(118, 140, 150); 
+    }
+
 
 
 
@@ -539,7 +596,7 @@ Duplicate the text with a pseudo-element
 
 
 /*smaller phones */
-@media (max-width: 380px) {
+@media (min-width: 100px) and (max-width: 380px) {
    
 }
 
@@ -578,6 +635,68 @@ Duplicate the text with a pseudo-element
         width: 0.9rem;
         height: 0.9rem;
     }
+
+    /*------------ About Me Section -------------**/
+
+    .AboutMe{
+        width: 8rem;
+        height: 8rem;
+        font-size: 1rem;
+        transform: translateY(-50%);
+        transform: translateX()
+    }
+
+    .about-me{
+        padding-top: 4rem;
+    }
+
+    .me-section {
+        padding-top: 0.5rem;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .me-section p {
+        width: 95%;
+        margin: 0; 
+        text-align: left; 
+        transform: translateY(20%);
+        font-size: 1rem;
+    }
+    .me-section h1 {
+        width: 95%; 
+        font-size: 1rem;
+        margin: 0; 
+    }
+    
+    .me-section p{
+        color: rgb(57, 57, 57);
+    }
+    
+    .aboutMe-link{
+        transform: translateY(180%);
+        padding-right: 1rem;
+        right: 0;
+        z-index: 1; 
+    }
+    
+    .about-link{
+        text-decoration: none;
+    }
+    
+    .text{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding-bottom: 5rem;
+        align-items: center;
+    }
+    
+
+
     
 }
 
