@@ -59,7 +59,7 @@ export default function Footer() {
 
                 <div className="footer-section">
                     <div className="connect">
-                        <img src={messaging} alt='messaging' style={{ width: '100px', height: '100px'}}/>
+                        <img className="mobile-svg" src={messaging} alt='messaging'/>
                         <h1>Let's Connect</h1>
                     </div>
 

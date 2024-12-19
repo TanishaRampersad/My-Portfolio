@@ -70,11 +70,15 @@
 .connect{
     display: flex;
     padding-top: 8rem;
-    /* padding-bottom: 20rem; */
 }
 
 .connect img{
-    margin-left: 5rem;
+    margin-left: 0;
+}
+
+.mobile-svg{
+    width: 8rem;
+    height: 8rem;
 }
 
 .get-in-touch{
@@ -118,13 +122,11 @@
     padding-bottom: 1rem;
     padding-top: 10rem;
     position: relative;
-   
     width: 100%;
 }
 
 .socials-section{
     text-align: left;
-  
    width: 13.5%;
    margin-left: auto;
 }
@@ -222,3 +224,92 @@
     display: none;
 }
 
+
+
+/*--------- Media Query -------- */
+
+/* phones */
+@media (min-width: 381px) and (max-width: 600px) {
+    .footer h1{
+        font-size: 2rem;
+        margin-left: 0.3rem;
+    }
+
+    .connect{
+        padding-top: 3rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .connect img{
+        margin-left: 0rem;
+    }
+
+    .mobile-svg{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .get-in-touch{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        font-size: 0.5rem;
+    }
+
+    .connect-button hr {
+        margin-top: 7rem;
+    }
+
+    .connect-details{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .number{
+        margin-left: 0rem;
+        padding: 0.7rem 0.7rem;
+        width: 40%;
+    }
+    
+    .email{
+        margin-left: 0rem;
+        padding: 0.7rem 0.5rem;
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .email a{
+       font-size: 0.8rem;
+    }
+    
+    .number a{
+        font-size: 0.8rem;
+    }
+
+    .socials{
+        padding-bottom: 1rem;
+        padding-top: 4rem;
+        width: 100%;
+    }
+
+    .socials p{
+        font-size: 0.8rem;
+    }
+    
+    .socials h4{
+        font-size: 0.5rem;
+        padding-bottom: 1rem;
+    }
+    
+    .facebook{
+        margin-left: 0.5rem;
+        text-decoration: none;
+    }
+
+    .socials-section{
+        width: 33.5%;
+    }
+}
