@@ -260,64 +260,7 @@ export default function Home() {
 
           <section className="work" id='work' >
             <div className="table1">
-              {/* <table>
-                <tr>
-                  <th>CREATIVE PROJECTS</th>
-                </tr>
-
-                
-                  <tr>
-                    <Link className="link" to="/amaranth">
-                      <td>
-                        <p className="move-left">Amaranth Spa</p>
-                        <p className="move-right">Design and Development</p>
-                      </td>
-                      <div className="tech-stack">
-                        <p className="tech">Html, CSS, Javascript, React, Gsap, Figma</p>
-                      </div>
-                    </Link>
-                  </tr>
-              
-                
-                <tr>
-                  <Link className="link" to="/prussian">
-                    <td>
-                      <p className="move-left">Prussian Shopping Cart</p>
-                      <p className="move-right">Development</p>
-                    </td>
-                    <div className="tech-stack">
-                      <p className="tech">Html, CSS, Javascript, React, Node.js, Express, Stripe</p>
-                    </div>
-                  </Link>
-                </tr>
-
-                <tr>
-                  <a className="link flipkart" target="_blank" rel="noopener noreferrer" href='https://www.figma.com/design/5e3zq5MNzdiM8urAk0xy9D/Flipkart-Case-Study---Tanisha-Rampersad?node-id=0-1&t=7hbuf2bkbkfwCoSh-1'>
-                    <tbody>
-                      <p className="move-left">Flipkart</p>
-                      <p className="move-right">Design</p>
-                    </tbody>
-                    <div className="tech-stack">
-                      <p className="tech">Figma</p>
-                    </div>
-                  </a>
-                </tr>
-
-                <tr>
-                  <a className="link" target="_blank" rel="noopener noreferrer" href='https://www.behance.net/gallery/214077327/Stripe-Case-Study'>
-                    <tbody>
-                      <p className="move-left">Stripe</p>
-                      <p className="move-right">Design</p>
-                    </tbody>
-                    <div className="tech-stack">
-                      <p className="tech">Figma</p>
-                    </div>
-                  </a>
-                </tr>
-
-              </table> */}
-
-
+        
               <table>
                 <thead>
                   <tr>
