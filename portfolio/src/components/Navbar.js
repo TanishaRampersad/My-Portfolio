@@ -80,19 +80,21 @@ export default function Navbar() {
             <div className='dot'></div>
   
             <div className='navEnd'>
-                <ul>
+                <ul className="nav-list">
                     <li className='nav-item'>
                     <Link to='#work' className='link textLink'> { "/Work"}</Link>
                         <div className='d-padding'>
                             <div className='dot'></div>
                         </div>
                     </li>
+
                     <li className='nav-item'>
                     <Link className='link textLink' to="/about">{ "/About"}</Link>
                         <div className='d-padding'>
-                        <div className='dot'></div>
+                          <div className='dot'></div>
                         </div>
                     </li>
+
                     <li className='nav-item'>
                     <Link className='link textLink' to="/contact">{ "/Contact"}</Link>
                         <div className='d-padding'>

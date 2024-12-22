@@ -124,12 +124,8 @@
 
 .heading-aboutMe{
     width: 60%;
-    /* margin: auto; */
-    /* margin-left: auto; */
-    /* text-align: left; */
-    margin-top: 3rem;
+    margin-top: 0.2rem;
     margin-bottom: 3rem;
-    /* border: 1px solid green; */
     transform: translateX(10%);
 }
 
@@ -137,7 +133,6 @@
     font-family: 'Avenir-medium';
     font-size: 1.9rem;
     margin-right: 0;
-    /* font-style: italic; */
 }
 
 .hText{
