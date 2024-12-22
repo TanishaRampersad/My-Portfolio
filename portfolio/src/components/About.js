@@ -61,6 +61,7 @@ export default function About() {
                 </div>
                 <div className="aboutMe-first-paragraph">
                     <div className="about-flex">
+                        <img src={tan} alt='Tanisha'/>
                         <div className="about-p">
                             <p>With a solid foundation in HTML, CSS, and JavaScript, I build responsive, interactive web interfaces. 
                                 My current toolkit includes React for dynamic applications, Three.js for 3D experiences, and GSAP for 
@@ -85,7 +86,7 @@ export default function About() {
                             </p>
 
                         </div>
-                        <img src={tan} alt='Tanisha'/>
+                       
                     </div>
                 </div>
 
