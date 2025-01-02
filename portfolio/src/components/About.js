@@ -76,7 +76,7 @@ export default function About() {
                             <p>Every project is an opportunity to blend art and 
                                 functionality—whether through thoughtful micro-interactions or animated objects and models that 
                                 seamlessly complement the rest of the design, evoking emotions while serving a clear purpose.
-                            </p> 
+                            </p>
                             {/* <br/> */}
                             {/* <br/> */}
                             <p>
