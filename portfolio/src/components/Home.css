@@ -595,12 +595,6 @@ Duplicate the text with a pseudo-element
 /* ---------  Media Query -------------*/
 
 
-/*smaller phones */
-@media (min-width: 100px) and (max-width: 380px) {
-   
-}
-
-
 
 /* phones */
 @media (min-width: 381px) and (max-width: 600px) {
