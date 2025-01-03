@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import './About.css';
-import tan from '../images/tan.jpg';
+//import tan from '../images/tan.jpg';
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { HashLink as Link } from "react-router-hash-link";
+import me from '../images/me.jpg';
 //import coconut from '../images/me-cocontut.jpg';
 //import me from '../images/Ime.jpg';
 
@@ -86,7 +87,7 @@ export default function About() {
                             </p>
 
                         </div>
-                        <img src={tan} alt='Tanisha'/>
+                        <img src={me} alt='Tanisha'/>
                     </div>
                 </div>
 

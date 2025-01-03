@@ -271,8 +271,10 @@ export default function Home() {
                   <tr>
                     <td>
                       <Link className="link" to="/amaranth">
-                        <p className="name-move-left">Amaranth Spa</p>
-                        <p className="work-move-left">Design and Development</p>
+                        <div className="text-wrapper">
+                          <p className="name-move-left">Amaranth Spa</p>
+                          <p className="work-move-left">Design and Development</p>
+                        </div>
                       </Link>
 
                       <div className="tech-stack amaranth-tech">
@@ -283,8 +285,10 @@ export default function Home() {
                   <tr>
                     <td>
                       <Link className="link" to="/prussian">
-                        <p className="name-move-left">Prussian Shopping Cart</p>
-                        <p className="work-move-left">Development</p>
+                        <div className="text-wrapper">
+                          <p className="name-move-left">Prussian Shopping Cart</p>
+                          <p className="work-move-left">Development</p>
+                        </div>
                       </Link>
                       <div className="tech-stack">
                         <p className="tech move-right" id='tech-names'>Html, CSS, Javascript, React, Node.js, Express, Stripe</p>
@@ -294,8 +298,10 @@ export default function Home() {
                   <tr>
                     <td>
                       <a className="link flipkart" target="_blank" rel="noopener noreferrer" href='https://www.figma.com/design/5e3zq5MNzdiM8urAk0xy9D/Flipkart-Case-Study---Tanisha-Rampersad?node-id=0-1&t=7hbuf2bkbkfwCoSh-1'>
-                        <p className="name-move-left">Flipkart</p>
-                        <p className="work-move-left">Design</p>
+                        <div className="text-wrapper">
+                          <p className="name-move-left">Flipkart</p>
+                          <p className="work-move-left">Design</p>
+                        </div>
                       </a>
                       <div className="tech-stack">
                         <p className="tech move-right" id='tech-names'>Figma</p>
@@ -305,8 +311,10 @@ export default function Home() {
                   <tr>
                     <td>
                       <a className="link" target="_blank" rel="noopener noreferrer" href='https://www.behance.net/gallery/214077327/Stripe-Case-Study'>
-                        <p className="name-move-left">Stripe</p>
-                        <p className="work-move-left">Design</p>
+                        <div className="text-wrapper">
+                          <p className="name-move-left">Stripe</p>
+                          <p className="work-move-left">Design</p>
+                        </div>
                       </a>
                       <div className="tech-stack">
                         <p className="tech move-right" id='tech-names'>Figma</p>
@@ -330,8 +338,10 @@ export default function Home() {
                   <tr>
                     <td>
                       <a className="link" target="_blank" rel="noopener noreferrer" href='https://www.behance.net/gallery/214080607/Woolworths-Workshop'>
-                          <p className="name-move-left">Woolworths Workshop</p>
-                          <p className="work-move-left">Design Workshop Facilitation</p>
+                        <div className="text-wrapper">
+                            <p className="name-move-left">Woolworths Workshop</p>
+                            <p className="work-move-left">Design Workshop Facilitation</p>
+                        </div>
                       </a>
                       
                       <div className="tech-stack">

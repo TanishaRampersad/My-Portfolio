@@ -328,12 +328,22 @@ Duplicate the text with a pseudo-element
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 5%; 
-    padding-right: 5%;
     padding-top: 3rem;
     padding-bottom: 3rem;
     color:rgb(49, 49, 49);
 }
+
+
+.table1 tbody td a{
+    width: 100%;
+}
+
+.table1 .text-wrapper {
+    display: flex;
+    padding-left: 3%;
+    flex-direction: column;
+    width: 100%; 
+  }
 
 .table1 .name-move-left{
     font-size: 4.5rem;
@@ -431,12 +441,26 @@ Duplicate the text with a pseudo-element
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 5%; 
-        padding-right: 5%;
         padding-top: 3rem;
         padding-bottom: 3rem;
         color:rgb(49, 49, 49);
+        overflow-x: visible; /* Prevent clipping of the text */
     }
+
+    .table2 tbody td a{
+        width: 100%;
+    }
+
+    .table2 .text-wrapper {
+        display: flex;
+        padding-left: 3%;
+        flex-direction: column;
+        width: 100%; /* Ensure the wrapper takes up full width */
+      }
+
+      .tech-stack{
+        padding-right: 3%;
+      }
 
     .table2 .name-move-left{
         font-size: 4.5rem;
