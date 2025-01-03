@@ -196,6 +196,7 @@ Duplicate the text with a pseudo-element
     margin: 0 auto;
     padding-top: 1rem;
     position: relative;
+    height: auto;
 }
 
 .me-section p {
