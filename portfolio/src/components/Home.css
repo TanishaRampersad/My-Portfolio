@@ -196,7 +196,6 @@ Duplicate the text with a pseudo-element
     margin: 0 auto;
     padding-top: 1rem;
     position: relative;
-    height: auto;
 }
 
 .me-section p {
@@ -237,6 +236,7 @@ Duplicate the text with a pseudo-element
     position: relative;
     padding-bottom: 5rem;
     align-items: center;
+    border: 1px solid green;
 }
 
 
