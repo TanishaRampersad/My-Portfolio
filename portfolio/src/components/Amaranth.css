@@ -222,6 +222,7 @@
     position: absolute;
     right: 0;
     z-index: 1; 
+    overflow: visible;
 }
 
 .WebGL{
@@ -342,8 +343,9 @@
 .paragraph-amaranth{
     display: flex;
     flex-direction: column;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
+    width: 50%;
 }
 
 

@@ -233,6 +233,7 @@ Link .button{
      position: absolute;
      right: 0;
      z-index: 1; 
+     overflow: visible;
  }
  
  .prussian-model{
@@ -245,6 +246,11 @@ Link .button{
      align-items: center; 
      position: relative;
      background-color: #838d98; 
+     overflow: visible;
+ }
+
+ .prussian-model main{
+    overflow: visible;
  }
 
 
@@ -352,8 +358,9 @@ Link .button{
 .paragraph-prussian{
     display: flex;
     flex-direction: column;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
+    width: 50%;
 }
 
 
