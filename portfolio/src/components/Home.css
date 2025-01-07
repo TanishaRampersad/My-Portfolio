@@ -60,16 +60,15 @@
     width: 100vw;
     height: 100vh;
     background-color: /*rgb(106, 105, 105) #999D9E */ /*rgb(140, 140, 140)*/ rgb(138, 162, 171);
-    overflow: hidden;
+    /* overflow: visible; */
     position: relative;
-    padding-top: 8rem;
+    /* padding-top: 8rem; */
     color: rgb(240, 240, 240);
 }
 
 .banner h3{
     font-family: 'Avenir-light';
     font-size: 1rem;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -79,12 +78,14 @@
     justify-content: center;
     position: relative;
     top: 78%;
+    overflow: visible;
 }
 
 .banner-text{
     max-width: 80%;
     position: relative;
-    text-align: center;  
+    text-align: center; 
+    z-index: 10;  /* Ensure it's above other elements */ 
 }
 
 .scroll-div{
@@ -188,14 +189,22 @@ Duplicate the text with a pseudo-element
     z-index: 2;
 }
 
+.about-me{
+    overflow: hidden;
+    min-height: 38rem;
+}
+
+
 .me-section {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
     width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     padding-top: 1rem;
     position: relative;
+    overflow: visible;
 }
 
 .me-section p {
@@ -218,12 +227,13 @@ Duplicate the text with a pseudo-element
 }
 
 .aboutMe-link{
-    transform: translateY(180%);
+    /* transform: translateY(180%); */
     padding-right: 5rem;
     cursor: pointer;
     position: absolute;
     right: 0;
     z-index: 1; 
+    overflow: visible;
 }
 
 .about-link{
@@ -234,9 +244,8 @@ Duplicate the text with a pseudo-element
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding-bottom: 5rem;
+    padding-bottom: 0rem;
     align-items: center;
-    border: 1px solid green;
 }
 
 
@@ -253,7 +262,7 @@ Duplicate the text with a pseudo-element
 .table1{
     display: flex;
     justify-content: center;
-    padding-top: 10%;
+    /* padding-top: 0%; */
     position: relative;
 }
 
@@ -516,6 +525,7 @@ Duplicate the text with a pseudo-element
     width: 5rem;
     height: 4rem;
     margin-right: 1rem;
+    overflow: visible;
 }
 
 .box + .box{
@@ -524,6 +534,7 @@ Duplicate the text with a pseudo-element
 
 .first-row{
     display: flex;
+    overflow: visible;
     /* padding-left: 1rem; */
 }
 
@@ -531,6 +542,7 @@ Duplicate the text with a pseudo-element
     display: flex;
     margin-top: 0.5rem;
     justify-content: flex-end;
+    overflow: visible;
 }
 
 .one{

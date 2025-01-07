@@ -101,6 +101,7 @@
 .flex-end{
     position: absolute;
     right: 20%;
+    overflow: visible;
 }
 
 .connect-button hr {
