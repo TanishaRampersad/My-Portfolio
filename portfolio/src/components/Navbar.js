@@ -1,7 +1,7 @@
 import './Navbar.css';
 import copyright from '../images/copyright.png'
 import React from 'react'
-import { useEffect } from 'react'; 
+import { useState, useEffect } from 'react'; 
 import hamburger from '../images/hamburger.png';
 import { HashLink as Link} from 'react-router-hash-link';
 import gsap from 'gsap';
@@ -12,6 +12,7 @@ import { useLocation } from "react-router-dom";
 export default function Navbar() {
 
   const location = useLocation();
+  const [navbarStyle, setNavbarStyle] = useState('');
 
         // Check if we're on the contact page to apply a different style
         const isCPage = location.pathname === "/contact";
@@ -22,57 +23,62 @@ export default function Navbar() {
 
   useEffect(() => {
 
-    // navigation links
-    let navLink = document.querySelectorAll('#navigationLink');
+     // Check if the page has already been reloaded
+     const hasReloaded = localStorage.getItem('hasReloaded');
+    
 
-    // Add click event listener to each navigation link
-    navLink.forEach((link) => {
+    function locationChange() {
+      if (location.pathname === '/contact') {
+        setNavbarStyle('about-contact');
+      } else if (location.pathname === '/about') {
+        setNavbarStyle('nav-about-page');
+        if (!hasReloaded) {
+          localStorage.setItem('hasReloaded', 'true');
+          window.location.reload();
+        }
+      } else if (location.pathname === '/amaranth') {
+        setNavbarStyle('nav-amaranth-page');
+        if (!hasReloaded) {
+          localStorage.setItem('hasReloaded', 'true');
+          window.location.reload();
+        }
+      } else if (location.pathname === '/prussian') {
+        setNavbarStyle('prussian-nav');
+        if (!hasReloaded) {
+          localStorage.setItem('hasReloaded', 'true');
+          window.location.reload();
+        }
+      } else {
+        setNavbarStyle('default-style');
+      }
+    }
+
+    locationChange();
+
+    // Scroll to top when a link is clicked
+    const navLinks = document.querySelectorAll('#navigationLink');
+    navLinks.forEach((link) => {
       link.addEventListener('click', () => {
-        // Scroll to the top of the page
         gsap.to(window, { duration: 1, scrollTo: { y: 0, autoKill: true } });
       });
     });
 
-    // Hover dot effect on the navigation section
-    let navText = document.querySelectorAll('#navigationLink');
-    let dots = document.querySelectorAll('.dot');
-
-    navText.forEach((nav, index) => {
-      const dot = dots[index];
-
-      nav.addEventListener('mouseenter', () => {
-        dot.classList.add('dot--visible');
-      });
-
-      nav.addEventListener('mouseleave', () => {
-        dot.classList.remove('dot--visible');
-      });
-    });
-
-    // Cleanup event listeners when component unmounts
     return () => {
-      navLink.forEach((link) => {
+      // Cleanup event listeners when component unmounts
+      navLinks.forEach((link) => {
         link.removeEventListener('click', () => {
           gsap.to(window, { duration: 1, scrollTo: { y: 0, autoKill: true } });
         });
       });
 
-      navText.forEach((nav, index) => {
-        const dot = dots[index];
-        nav.removeEventListener('mouseenter', () => {
-          dot.classList.add('dot--visible');
-        });
-        nav.removeEventListener('mouseleave', () => {
-          dot.classList.remove('dot--visible');
-        });
-      });
+      localStorage.removeItem('hasReloaded');
     };
-  }, []);
+  }, [location]); // Effect runs whenever location changes
   
   
       return(
         <>
-        <nav className={`navigation ${isCPage ? "about-contact" : "default-contact"} ${isAboutPage ? "nav-about-page" : "default-about"} ${isAmaranthPage ? "nav-amaranth-page" : "default-amaranth"} ${isPrussianPage ? "prussian-nav" : "default-prussian"}`}>
+        <nav className={`navigation ${isCPage ? "about-contact" : "default-contact"} ${isAboutPage ? "nav-about-page" : "default-about"} ${isAmaranthPage ? "nav-amaranth-page" : "default-amaranth"} ${isPrussianPage ? "prussian-nav" : "default-prussian"} ${navbarStyle}`}>
             <div className='navFirst navResponsive'>
               <h3><img src={copyright} alt="copyright" /><Link id='code' to='/'>Code by Tanisha</Link></h3>
             </div>
