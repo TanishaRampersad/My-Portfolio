@@ -329,7 +329,7 @@ export default function Amaranth() {
                         width: '100%',
                         height: '100%',
                         transform: 'scale(2.1)', // Slightly enlarged the model
-                        transformOrigin: 'center center' // Keep the model centered
+                        transformOrigin: 'center center' 
                     }}
                 ></spline-viewer>
             </section>
