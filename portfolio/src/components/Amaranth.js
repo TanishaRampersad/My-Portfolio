@@ -7,9 +7,36 @@ import amarantBooking from '../images/amaranth-booking.mp4'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap'
 import Spline from '@splinetool/react-spline';
+import { Canvas } from '@react-three/fiber';
+import { useGLTF } from '@react-three/drei';
+//import ThreeCanvas from './ThreeCanvas';
+//import { OrbitControls } from '@react-three/drei';
 //import LocomotiveScroll from 'locomotive-scroll';
 
 gsap.registerPlugin(ScrollTrigger);
+
+
+function Model() {
+    // Use the useGLTF hook to load the GLTF model
+    const { scene } = useGLTF('/images/amaranth_imac.gltf');
+  
+    return (
+      <primitive object={scene} />
+    );
+  }
+
+  function myThreeCanvas() {
+    return (
+      <Canvas>
+        {/* Set up the camera, lighting, and other necessary elements */}
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[10, 10, 10]} intensity={1} />
+        <Model />
+      </Canvas>
+    );
+  }
+
+  myThreeCanvas()
 
 
 export default function Amaranth() {
@@ -21,6 +48,7 @@ export default function Amaranth() {
         script.type = 'module';
         script.async = true;
         document.body.appendChild(script);
+       
 
         // //Model render
         // const canvas = document.querySelector(".WebGL");
@@ -323,7 +351,7 @@ export default function Amaranth() {
             </section>
 
             <section className="amaranth-model" style={{ width: '40%', height: '60vh' }}>
-                <spline-viewer 
+                {/* <spline-viewer 
                     url="https://prod.spline.design/6Pm5agL7JlZiEQp9/scene.splinecode"
                     style={{
                         width: '100%',
@@ -331,7 +359,9 @@ export default function Amaranth() {
                         transform: 'scale(2.1)', // Slightly enlarged the model
                         transformOrigin: 'center center' 
                     }}
-                ></spline-viewer>
+                ></spline-viewer> */}
+                <ThreeCanvas />
+          
             </section>
 
             <section className="amaranth-problem">
