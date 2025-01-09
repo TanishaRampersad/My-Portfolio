@@ -7,36 +7,14 @@ import amarantBooking from '../images/amaranth-booking.mp4'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap'
 import Spline from '@splinetool/react-spline';
-import { Canvas } from '@react-three/fiber';
-import { useGLTF } from '@react-three/drei';
+//import { Canvas } from '@react-three/fiber';
+//import { useGLTF } from '@react-three/drei';
 //import ThreeCanvas from './ThreeCanvas';
 //import { OrbitControls } from '@react-three/drei';
 //import LocomotiveScroll from 'locomotive-scroll';
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-function Model() {
-    // Use the useGLTF hook to load the GLTF model
-    const { scene } = useGLTF('/images/amaranth_imac.gltf');
-  
-    return (
-      <primitive object={scene} />
-    );
-  }
-
-  function myThreeCanvas() {
-    return (
-      <Canvas>
-        {/* Set up the camera, lighting, and other necessary elements */}
-        <ambientLight intensity={0.5} />
-        <directionalLight position={[10, 10, 10]} intensity={1} />
-        <Model />
-      </Canvas>
-    );
-  }
-
-  myThreeCanvas()
 
 
 export default function Amaranth() {
@@ -320,7 +298,7 @@ export default function Amaranth() {
                 </Link>
             </section>
             <section className="heading">
-                <h2>Amaranth Spa</h2>
+                <h2 id='heading-h'>Amaranth Spa</h2>
 
                 <div className="project-about-section">
                     <div className="about-amaranth">
@@ -351,7 +329,7 @@ export default function Amaranth() {
             </section>
 
             <section className="amaranth-model" style={{ width: '40%', height: '60vh' }}>
-                {/* <spline-viewer 
+                <spline-viewer 
                     url="https://prod.spline.design/6Pm5agL7JlZiEQp9/scene.splinecode"
                     style={{
                         width: '100%',
@@ -359,9 +337,8 @@ export default function Amaranth() {
                         transform: 'scale(2.1)', // Slightly enlarged the model
                         transformOrigin: 'center center' 
                     }}
-                ></spline-viewer> */}
-                <ThreeCanvas />
-          
+                ></spline-viewer>
+                
             </section>
 
             <section className="amaranth-problem">
@@ -370,9 +347,11 @@ export default function Amaranth() {
                         <h2>Amaranth's old website</h2>
 
                         <div className="top-section">
-                            <video id="myVideo" className="amaranth-old-website" src={amaranthVideo} autoPlay loop muted playsInline >
-                                Your browser does not support the video tag.
-                            </video>
+                            <div className="A-vid">
+                                <video id="myVideo" className="amaranth-old-website" src={amaranthVideo} autoPlay loop muted playsInline >
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                             <p>
                                 The inspiration to redesign Amaranth Spa's website came from recognizing the spa's 
                                 untapped potential to better connect with both existing and new customers. The outdated 
@@ -398,9 +377,11 @@ export default function Amaranth() {
 
                                 <p>Technologies used: HTML, CSS, Javascript, React, GSAP, Figma</p>
                             </div>
-                            <video id="video" className="amaranth-new-website" src={amarantBooking} autoPlay loop muted playsInline >
-                                Your browser does not support the video tag.
-                            </video>   
+                            <div className="A-new-vid">
+                                <video id="video" className="amaranth-new-website" src={amarantBooking} autoPlay loop muted playsInline >
+                                    Your browser does not support the video tag.
+                                </video>  
+                            </div> 
                         </div>
                     </div>
 
@@ -412,13 +393,25 @@ export default function Amaranth() {
                 <div className="mobile-devices">
                     <Spline 
                         scene="https://prod.spline.design/N2ea0wk5AoFu2167/scene.splinecode"
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                        }}
                     />
 
                     <Spline
                         scene="https://prod.spline.design/QMTSpictZWi182hr/scene.splinecode" 
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                        }}
                     />
-                    <Spline
+                    <Spline 
                         scene="https://prod.spline.design/U1FTDD2NhwQZmHuj/scene.splinecode" 
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                        }}
                     />
                 </div>
             </section>
