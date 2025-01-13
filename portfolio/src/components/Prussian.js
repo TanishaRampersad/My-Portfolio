@@ -239,14 +239,14 @@ export default function Prussian() {
                         <div className="horizontal-line">
                             <hr className="firstLine" />
                         </div>
-                        <p>Prussian & Co. is a creative concept for an e-commerce platform designed to sell men's suits 
+                        <p  className="role-text">Prussian & Co. is a creative concept for an e-commerce platform designed to sell men's suits 
                             crafted from premium fabrics. The project focuses on elegance and functionality, catering to the 
                             modern gentleman.
                         </p>
                     </div>
                     
-                    <div className="role">
-                        <p className="role-heading">Role/Services</p>
+                    <div className="prussian-role">
+                        <p className="prussian-role-heading">Role/Services</p>
                         <div className="horizontal-line">
                             <hr className="secondLine"  />
                         </div>

@@ -144,7 +144,6 @@ Link .button{
  
  .project-about-section{
      display: flex;
-     /* background-color: aqua; */
  }
 
   
@@ -154,13 +153,10 @@ Link .button{
  
  .about-prussian{
      width: 60%;
-     padding-top: 2rem;
-     padding-bottom: 2rem;
  }
  
  .about-prussian p{
      width: 80%;
-     padding-top: 2rem;
  }
  
  .about-prussian hr{
@@ -172,14 +168,12 @@ Link .button{
     background-color: #cdcdcd;
  }
  
- .role{
-     padding-top: 4rem;
-     /* background-color: bisque; */
+ .prussian-role{
      display: block;
      width: 40%;
  }
  
- .role-heading{
+ .prussian-role-heading{
      color:#898989;
      font-size: 0.9rem;
  }
@@ -398,3 +392,71 @@ Link .button{
 .prussian-cart-model{
     transform: translateX(15%);
 }
+
+
+
+
+/*--------- Media queries ----------*/
+
+/* phones */
+@media (min-width: 320px) and (max-width: 600px) {
+    .home-link{
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .link-to-home h1{
+        padding: 0.4rem 0.3rem; 
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+
+    .heading{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    .heading h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    
+    .about-prussian{
+        width: 100%;
+    }
+    
+    .about-prussian p{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .about-prussian hr{
+        width: 90%;
+    }
+
+    .prussian-role{
+        display: block;
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .prussian-role-heading{
+        font-size: 0.8rem;
+    }
+
+    .role-text{
+        padding-top: 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 768px) {}
+
+
+
+@media (min-width: 769px) and (max-width: 1110px) {}
