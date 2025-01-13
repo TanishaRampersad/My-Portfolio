@@ -306,17 +306,18 @@ export default function Amaranth() {
                         <div className="horizontal-line">
                             <hr className="firstLine" />
                         </div>
-                        <p>Amaranth is a Korean Spa & Massage Center located in the heart of Bangkok, Thailand. 
+                        <p className="role-t">Amaranth is a Korean Spa & Massage Center located in the heart of Bangkok, Thailand. 
                             They use  traditional Korean practices, with high quality natural ingredients to rejuvenate 
-                            the skin and soothe one’s soul.</p>
+                            the skin and soothe one’s soul.
+                        </p>
                     </div>
 
-                    <div className="role">
+                    <div className="my-role">
                         <p className="role-heading">Role/Services</p>
                         <div className="horizontal-line">
                             <hr className="secondLine" />
                         </div>
-                        <p className="role-text">Design and Development</p>
+                        <p className="role-t">Design and Development</p>
                     </div>
                 </div>
 
@@ -352,7 +353,7 @@ export default function Amaranth() {
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <p>
+                            <p id="p">
                                 The inspiration to redesign Amaranth Spa's website came from recognizing the spa's 
                                 untapped potential to better connect with both existing and new customers. The outdated 
                                 design and poor usability were limiting the spa's ability to communicate its unique offerings 

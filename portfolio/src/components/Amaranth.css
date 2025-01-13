@@ -139,7 +139,6 @@
 
 .project-about-section{
     display: flex;
-    /* background-color: aqua; */
 }
 
 .project-about-section p{
@@ -148,22 +147,22 @@
 
 .about-amaranth{
     width: 60%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 .about-amaranth p{
     width: 80%;
-    padding-top: 2rem;
 }
 
 .about-amaranth hr{
     width: 80%;
 }
 
+.my-role{
+    margin-top: 0;
+    padding-top: 0;
+}
+
 .role{
-    padding-top: 4rem;
-    /* background-color: bisque; */
     display: block;
     width: 40%;
 }
@@ -171,6 +170,7 @@
 .role-heading{
     color:#898989;
     font-size: 0.9rem;
+    padding-top: 4rem;
 }
 
 .role hr{
@@ -181,7 +181,7 @@
     padding-top: 1.5rem;
 }
 
-.role-text{
+.role-t{
     padding-top: 1.5rem;
 }
 
@@ -266,7 +266,7 @@
 }
 
 .amaranth-old-website{
-    width: 55%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -278,9 +278,21 @@
     border-radius: 2%;
 }
 
+.A-vid{
+    width: 50%;
+    display: flex;
+}
+
+.A-new-vid{
+    width: 50%;
+    display: flex;
+}
+
 .amaranth-new-website{
-    width: 55%;
+    width: 100%;
     height: 100%;
+    padding-left: 0;
+    margin-left: 0;
     display: flex;
     align-items: center;
     margin-top: auto;
@@ -337,6 +349,8 @@
 
 .amaranth-top-section{
     display: flex;
+    justify-content: gap;
+    align-items:center;
 }
 
 .paragraph-amaranth{
@@ -406,7 +420,6 @@
         width: 100%;
         padding-top: 3rem;
         padding-bottom: 5rem;
-        /* border: 1px solid blue; */
     }
 
     #heading-h{
@@ -417,7 +430,6 @@
     .project-about-section {
         display: flex;
         flex-direction: column;
-        border: 1px solid blue;
         width: 100%;
     }
     
@@ -436,10 +448,9 @@
         width: 100%;
     }
     
-    .role {
+    .my-role {
         padding-top: 2rem;
         width: 100%; 
-        border: 1px solid green;
         box-sizing: border-box;
     }
     
@@ -449,15 +460,14 @@
     
     .role hr {
         width: 100%;
-        border: 1px solid limegreen;
     }
     
-    .role-text {
+    .role-t {
         font-size: 1rem;
         width: 100%;
-        display: flex !important;
-        flex-direction: row !important;
-        border: 1px solid pink;
+        display: flex;
+        flex-direction: row;
+        padding-top: 1rem;
     }
 
     .arrow{
@@ -580,6 +590,12 @@
         font-size: 0.8rem;
     }
 
+    
+    .A-new-vid{
+        padding-left: 0;
+        margin-left: 0;
+    }
+
     .amaranth-new-website{
         width: 100%;
         height: 100%;
@@ -610,7 +626,7 @@
         height: 100vh;
         width: 80vw;
     }
-        
+     
 
 
     
@@ -618,7 +634,421 @@
 
 /* Tablets */
 @media (min-width: 601px) and (max-width: 768px) {
+    .amaranth-home-link{
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+    }    
+    
+    .amaranth-link-to-home h1{
+        padding: 0.3rem 0.3rem;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
 
+    .amaranth-back{
+        padding-top: 1rem;
+    }
+
+    .amaranth-home-link {
+        margin-top: 0rem;
+    }
+
+    .heading{
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    #heading-h{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .project-about-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-amaranth {
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    
+    .about-amaranth p {
+        width: 100%;
+        padding-top: 2rem;
+    }
+    
+    .about-amaranth hr {
+        width: 100%;
+    }
+    
+    .my-role {
+        padding-top: 2rem;
+        width: 100%; 
+        box-sizing: border-box;
+    }
+    
+    .role-heading {
+        font-size: 0.8rem;
+    }
+    
+    .role hr {
+        width: 100%;
+    }
+    
+    .role-t {
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 1rem;
+    }
+
+    .arrow{
+        width: 0.5rem;
+        right: 0%;
+        transform: rotate(-50deg);
+    }
+
+    .amaranth-site{
+        width: 9rem;
+        height: 9rem;
+        transform: translateY(-40%);
+        transform: translateX(100%);
+    }
+    
+    .amaranth-visit-site{
+        margin-top: 5rem;
+        padding-right: 5rem;
+        position: absolute;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        z-index: 1; 
+        overflow: visible;
+    }
+
+    .amaranth-site p{
+        font-size: 0.8rem;
+    }
+
+    /* 3d model - still busy */
+
+    .amaranth-problem h2{
+        font-size: 2rem;
+    }
+
+    .paragraph-amaranth p{
+        margin-right: auto;
+        margin-left: 2rem;
+    }
+
+    .new-amaranth h2{
+        margin-right: auto;
+        padding-left: 0;
+        margin-left: 2rem;
+    }
+
+    #p{
+        font-size: 0.9rem;
+    }
+
+    .top-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 1rem;
+    }
+
+    .A-vid{
+        width: 85%;
+        margin-left: 2rem;
+    }
+
+    .top-section video{
+        width: 100%;
+        height: 100%;
+    }
+
+    .amaranth-old-website{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        border: /*#bcbcbc*/ #a9b3b8 3px solid;
+    }
+
+    .old-amaranth{
+        display: flex;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+
+    .old-amaranth p{
+        margin-top: 1.5rem;
+        width: 100%;
+        padding-left: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .new-amaranth{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .amaranth-top-section{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid green;
+    }
+
+        
+    .paragraph-amaranth{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .A-new-vid{
+        width: 85%;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+
+    .paragraph-amaranth p{
+        display: flex;
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    
+    .A-new-vid{
+        padding-left: 0;
+        margin-left: 0;
+        transform: translateX(-2%);
+    }
+
+    .amaranth-new-website{
+        width: 100%;
+        height: 100%;
+        margin-right: 2rem;
+    }
 }
 
-@media (min-width: 769px) {}
+
+
+@media (min-width: 769px) and (max-width: 1110px) {
+    .amaranth-home-link{
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+    }    
+    
+    .amaranth-link-to-home h1{
+        padding: 0.3rem 0.3rem;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+
+    .amaranth-back{
+        padding-top: 1rem;
+    }
+
+    .amaranth-home-link {
+        margin-top: 0rem;
+    }
+
+    .heading{
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    #heading-h{
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    .project-about-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-amaranth {
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    
+    .about-amaranth p {
+        width: 100%;
+        padding-top: 2rem;
+    }
+    
+    .about-amaranth hr {
+        width: 100%;
+    }
+    
+    .my-role {
+        padding-top: 2rem;
+        width: 100%; 
+        box-sizing: border-box;
+    }
+    
+    .role-heading {
+        font-size: 0.8rem;
+    }
+    
+    .role hr {
+        width: 100%;
+    }
+    
+    .role-t {
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 1rem;
+    }
+
+    .arrow{
+        width: 0.5rem;
+        right: 0%;
+        transform: rotate(-50deg);
+    }
+
+    .amaranth-site{
+        width: 9rem;
+        height: 9rem;
+        transform: translateY(-40%);
+        transform: translateX(100%);
+    }
+    
+    .amaranth-visit-site{
+        margin-top: 5rem;
+        padding-right: 5rem;
+        position: absolute;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        z-index: 1; 
+        overflow: visible;
+    }
+
+    .amaranth-site p{
+        font-size: 0.8rem;
+    }
+
+    /* 3d model - still busy */
+
+    .amaranth-problem h2{
+        font-size: 2rem;
+    }
+
+    .paragraph-amaranth p{
+        margin-right: auto;
+        margin-left: 2rem;
+    }
+
+    .new-amaranth h2{
+        margin-right: auto;
+        padding-left: 0;
+        margin-left: 2rem;
+    }
+
+    #p{
+        font-size: 1rem;
+        margin-top: 2rem;
+        width: 80%;
+    }
+
+    .top-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 1rem;
+    }
+
+    .A-vid{
+        width: 70%;
+        margin-left: 2rem;
+    }
+
+    .top-section video{
+        width: 100%;
+        height: 100%;
+    }
+
+    .amaranth-old-website{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        border: /*#bcbcbc*/ #a9b3b8 3px solid;
+    }
+
+    .old-amaranth{
+        display: flex;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+
+    .old-amaranth p{
+        margin-top: 1.5rem;
+        width: 100%;
+        padding-left: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .new-amaranth{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .amaranth-top-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+        
+    .paragraph-amaranth{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .A-new-vid{
+        width: 70%;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+
+    .paragraph-amaranth p{
+        display: flex;
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    
+    .A-new-vid{
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 2rem;
+        transform: translateX(-17%);
+    }
+
+    .amaranth-new-website{
+        width: 100%;
+        height: 100%;
+        margin-right: 2rem;
+    }
+}
