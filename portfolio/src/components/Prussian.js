@@ -277,9 +277,11 @@ export default function Prussian() {
                         <h2>Prussian & Co. Shopping Cart</h2>
 
                         <div className="top-section">
-                            <video id="prussian" className="prussian-cart" src={cart} autoPlay loop muted playsInline >
-                                Your browser does not support the video tag.
-                            </video>
+                            <div className="p-video">
+                                <video id="prussian" className="prussian-cart" src={cart} autoPlay loop muted playsInline >
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                             <p>
                             Developed a dynamic cart system, allowing users to seamlessly add, 
                             update, and remove items from their cart. Implemented localStorage functionality to persist cart data, 
@@ -306,9 +308,12 @@ export default function Prussian() {
 
                                 <p>Technologies used: HTML, CSS, Javascript, Node.js, Express, Stripe</p>
                             </div>
-                            <video id="backend-prussian" className="prussian-backend" src={backend} autoPlay loop muted playsInline >
-                                Your browser does not support the video tag.
-                            </video>   
+
+                            <div className="pru-video">
+                                <video id="backend-prussian" className="prussian-backend" src={backend} autoPlay loop muted playsInline >
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>  
                         </div>
                     </div>
 

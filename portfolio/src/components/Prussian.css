@@ -144,6 +144,7 @@ Link .button{
  
  .project-about-section{
      display: flex;
+     align-items: center;
  }
 
   
@@ -275,8 +276,18 @@ Link .button{
     flex-direction: column;
 }
 
+.p-video{
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.pru-video{
+    width: 50%;
+    margin-right: 2rem;
+}
+
 .prussian-cart{
-    width: 55%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -284,12 +295,11 @@ Link .button{
     margin-bottom: auto;
     object-fit: cover;
     border: /*#bcbcbc*/  #9da9b5 5px solid;
-    margin-left: 2rem;
     border-radius: 2%;
 }
 
 .prussian-backend{
-    width: 55%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -297,7 +307,6 @@ Link .button{
     margin-bottom: auto;
     object-fit: cover;
     border: /*#bcbcbc*/ #bcc7cd 5px solid;
-    margin-right: 2rem;
     border-radius: 2%;
 }
 
@@ -450,13 +459,399 @@ Link .button{
         padding-top: 1.5rem;
         font-size: 0.9rem;
     }
+
+    .arrow{
+        width: 0.8rem;
+        right: 8%;
+    }
+    
+    
+    .site{
+        width: 7rem;
+        height: 7rem;
+        transform: translateY(-50%);
+    }
+
+    .site p{
+        font-size: 0.8rem;
+    }
+    
+    .visit-site{
+        transform: translateX(50%);
+        margin-top: 5rem;
+        padding-right: 5rem;
+        right: 0;
+        overflow: visible;
+    }
+
+    .p-video{
+        width: 80%;
+        margin-left: 2rem;
+    }
+
+    .prussian-cart{
+        width: 100%;
+        height: 100%;
+        margin-left: 0rem;
+    }
+
+    .prussian-backend{
+        width: 100%;
+        height: 100%;
+        margin-right: 0rem;
+    }
+    
+    .old-prussian{
+        padding-top: 5rem;
+    }
+
+    .new-prussian{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+    .old-prussian p{
+        width: 90%;
+        padding-left: 2rem;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+
+    .old-prussian h2{
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    .new-prussian h2{
+        padding: 2rem;
+        padding-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .top-section{
+        display: flex;
+    }
+    
+    .prussian-top-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paragraph-prussian{
+        width: 80%;
+        margin-left: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    
+    .paragraph-prussian p{
+        display: flex;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
 }
 
 
 
 /* Tablets */
-@media (min-width: 601px) and (max-width: 768px) {}
+@media (min-width: 601px) and (max-width: 768px) {
+    .home-link{
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .link-to-home h1{
+        padding: 0.5rem 0.5rem; 
+        width: 8rem;
+        font-size: 0.9rem;
+    }
+
+    .heading{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    .heading h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    
+    .about-prussian{
+        width: 100%;
+    }
+    
+    .about-prussian p{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .about-prussian hr{
+        width: 90%;
+    }
+
+    .prussian-role{
+        display: block;
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .prussian-role-heading{
+        font-size: 0.8rem;
+    }
+
+    .role-text{
+        padding-top: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .arrow{
+        width: 0.8rem;
+        right: 20%;
+    }
+    
+    
+    .site{
+        width: 9rem;
+        height: 9rem;
+        transform: translateY(-60%);
+    }
+
+    .site p{
+        font-size: 0.8rem;
+    }
+    
+    .visit-site{
+        transform: translateX(50%);
+        margin-top: 5rem;
+        padding-right: 5rem;
+        right: 0;
+        overflow: visible;
+    }
+
+    .p-video{
+        width: 80%;
+        margin-left: 2rem;
+    }
+
+    .prussian-cart{
+        width: 100%;
+        height: 100%;
+        margin-left: 0rem;
+    }
+
+    .prussian-backend{
+        width: 100%;
+        height: 100%;
+        margin-right: 0rem;
+    }
+    
+    .old-prussian{
+        padding-top: 5rem;
+    }
+
+    .new-prussian{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+    .old-prussian p{
+        width: 90%;
+        padding-left: 2rem;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+
+    .old-prussian h2{
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    
+    .new-prussian h2{
+        padding: 2rem;
+        padding-left: 0;
+        margin-left: 2rem;
+        padding-top: 0;
+        font-size: 2rem;
+        margin-right: auto;
+    }
+
+    .top-section{
+        display: flex;
+    }
+    
+    .prussian-top-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paragraph-prussian{
+        width: 80%;
+        margin-left: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    
+    .paragraph-prussian p{
+        display: flex;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+}
 
 
 
-@media (min-width: 769px) and (max-width: 1110px) {}
+@media (min-width: 769px) and (max-width: 1110px) {
+    .project-about-section{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .home-link{
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .link-to-home h1{
+        padding: 0.5rem 0.5rem; 
+        width: 8rem;
+        font-size: 0.9rem;
+    }
+
+    .heading{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    .heading h2{
+        font-size: 3.8rem;
+        font-weight: 600;
+    }
+    
+    .about-prussian{
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    .about-prussian p{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .about-prussian hr{
+        width: 90%;
+    }
+
+    .prussian-role{
+        display: block;
+        width: 100%;
+        margin-top: 0rem;
+        margin-left: 3rem;
+    }
+
+    .prussian-role-heading{
+        font-size: 0.8rem;
+    }
+
+    .role-text{
+        padding-top: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .arrow{
+        width: 0.8rem;
+        right: 20%;
+    }
+    
+    
+    .site{
+        width: 9rem;
+        height: 9rem;
+        transform: translateY(-60%);
+    }
+
+    .site p{
+        font-size: 0.8rem;
+    }
+    
+    .visit-site{
+        transform: translateX(50%);
+        margin-top: 5rem;
+        padding-right: 5rem;
+        right: 0;
+        overflow: visible;
+    }
+
+    .p-video{
+        width: 80%;
+        margin-left: 2rem;
+    }
+
+    .prussian-cart{
+        width: 100%;
+        height: 100%;
+        margin-left: 0rem;
+    }
+
+    .prussian-backend{
+        width: 100%;
+        height: 100%;
+        margin-right: 0rem;
+    }
+    
+    .old-prussian{
+        padding-top: 5rem;
+    }
+
+    .new-prussian{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+    .old-prussian p{
+        width: 90%;
+        padding-left: 2rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .old-prussian h2{
+        padding: 2rem;
+        font-size: 2.5rem;
+    }
+    
+    .new-prussian h2{
+        padding: 2rem;
+        padding-left: 0;
+        margin-left: 2rem;
+        padding-top: 0;
+        font-size: 2.5rem;
+        margin-right: auto;
+    }
+
+    .top-section{
+        display: flex;
+    }
+    
+    .prussian-top-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paragraph-prussian{
+        width: 80%;
+        margin-left: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    
+    .paragraph-prussian p{
+        display: flex;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+}
