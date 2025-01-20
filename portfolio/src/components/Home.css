@@ -78,6 +78,7 @@
     justify-content: center;
     position: relative;
     top: 45%;
+    min-width: 40%;
     width: 40%;
     /* border: 1px solid red; */
     margin-left: auto;
@@ -643,22 +644,23 @@ Duplicate the text with a pseudo-element
 
 
 /* phones */
-@media (min-width: 381px) and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 600px) {
     .banner h3{
         font-size: 1rem;
     }
     
     .flex{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         position: relative;
-        top: 50%;
+        top: 70%;
+        width: 80%;
     }
     
     .banner-text{
-        max-width: 55%;
+       width: 100%;
         position: relative;
-        text-align: left;  
+        text-align: right;  
     }
 
     .myNameSection{
@@ -827,9 +829,9 @@ Duplicate the text with a pseudo-element
     /* --------- EXTRA WORK SECTION-------------*/
 
     .videos{
-        height: auto;
-        margin-top: 2rem;
-        margin-bottom: 4rem;
+        height: 15rem;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
     }
 
     .box:not(:last-of-type){

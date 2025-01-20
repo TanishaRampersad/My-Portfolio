@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import gsap from 'gsap';
+import { gsap } from 'gsap';
 import './Home.css'
 import dash from '../images/horizontal-line-remove-button.png'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -10,6 +10,7 @@ import scrollAnimation from '../images/scroll animation.mp4';
 import singer from '../images/singer.mp4';
 import modelView from '../images/modelView.mp4';
 import splitScreen from '../images/splitScreen.mp4';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,38 +43,72 @@ export default function Home() {
     infiniteScroll()
 
 
-
-
-    /* video horizontal scroll */
-
     function horizontalScroll() {
 
       const firstRow = document.querySelector('.first-row')
       const secondRow = document.querySelector('.second-row')
+   
+      let mm = gsap.matchMedia()
+      
+      mm.add({
+        "(min-width: 320px) and (max-width: 600px)": () => {
 
-      const tween = gsap.to(firstRow, {x: 400, ease: "power1.inOut"})
+          const tween = gsap.to(firstRow, {x: 10, ease: "power1.inOut", transformOrigin: "center center",})
+    
+          ScrollTrigger.create({
+            trigger: firstRow,
+            start: "top 90%",
+            animation: tween,
+            end: "bottom top",
+            scrub: 0.5,
+          })
+    
+          const secondTween = gsap.to(secondRow, {x: -10, ease: "power1.inOut", transformOrigin: "center center",})
+    
+          ScrollTrigger.create({
+            trigger: secondRow,
+            start: "top 90%",
+            animation: secondTween,
+            end: "bottom top",
+            scrub: 0.5,
+          })
+        },
 
-      ScrollTrigger.create({
-        trigger: firstRow,
-        start: "top 90%",
-        animation: tween,
-        end: "bottom top",
-        scrub: 1,
+        "(min-width: 1111px)": () => {
+          const firstRow = document.querySelector('.first-row')
+          const secondRow = document.querySelector('.second-row')
+
+          const tween = gsap.to(firstRow, {x: 400, ease: "power1.inOut"})
+
+          ScrollTrigger.create({
+            trigger: firstRow,
+            start: "top 90%",
+            animation: tween,
+            end: "bottom top",
+            scrub: 1,
+          })
+
+          const secondTween = gsap.to(secondRow, {x: -400, ease: "power1:inOut"})
+
+          ScrollTrigger.create({
+            trigger: secondRow,
+            start: "top 90%",
+            animation: secondTween,
+            end: "bottom top",
+            scrub: 1,
+          })
+
+        }
+
       })
 
-      const secondTween = gsap.to(secondRow, {x: -400, ease: "power1:inOut"})
+  };
 
-      ScrollTrigger.create({
-        trigger: secondRow,
-        start: "top 90%",
-        animation: secondTween,
-        end: "bottom top",
-        scrub: 1,
-      })
-  }
-
+  window.addEventListener('load', horizontalScroll);  
+     
   horizontalScroll()
 
+  
 
   // animation for the about me link
   function aboutMe() {
@@ -175,7 +210,7 @@ export default function Home() {
 
 
 
-})
+}, [])
    
     return(
         <>
