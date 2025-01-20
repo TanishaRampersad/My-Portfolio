@@ -1102,7 +1102,7 @@ Duplicate the text with a pseudo-element
      /* --------- EXTRA WORK SECTION-------------*/
 
      .videos{
-        height: 18rem;
+        height: 20rem;
         margin-top: 2rem;
         margin-bottom: 4rem;
     }
@@ -1372,7 +1372,7 @@ Duplicate the text with a pseudo-element
      /* --------- EXTRA WORK SECTION-------------*/
 
      .videos{
-        height: 18rem;
+        height: 22rem;
         margin-top: 2rem;
         margin-bottom: 4rem;
     }

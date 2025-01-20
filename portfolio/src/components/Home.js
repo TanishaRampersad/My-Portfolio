@@ -43,64 +43,238 @@ export default function Home() {
     infiniteScroll()
 
 
+
+
+
+
+    const firstRow = document.querySelector('.first-row')
+    const secondRow = document.querySelector('.second-row')
+
+    const tween = gsap.to(firstRow, {x: 400, ease: "power1.inOut"})
+
+    ScrollTrigger.create({
+      trigger: firstRow,
+      start: "top 90%",
+      animation: tween,
+      end: "bottom top",
+      scrub: 1,
+    })
+
+    const secondTween = gsap.to(secondRow, {x: -400, ease: "power1:inOut"})
+
+    ScrollTrigger.create({
+      trigger: secondRow,
+      start: "top 90%",
+      animation: secondTween,
+      end: "bottom top",
+      scrub: 1,
+    })
+
+
+
     function horizontalScroll() {
 
       const firstRow = document.querySelector('.first-row')
       const secondRow = document.querySelector('.second-row')
+    
    
       let mm = gsap.matchMedia()
-      
-      mm.add({
-        "(min-width: 320px) and (max-width: 600px)": () => {
 
-          const tween = gsap.to(firstRow, {x: 10, ease: "power1.inOut", transformOrigin: "center center",})
+      mm.add("(min-width: 380px) and (max-width: 600px)", () => {
+
+          const tween = gsap.to(firstRow, {x: 60, ease: "power1.inOut", transformOrigin: "center center"})
     
           ScrollTrigger.create({
             trigger: firstRow,
             start: "top 90%",
             animation: tween,
-            end: "bottom top",
+            end: "top top",
             scrub: 0.5,
           })
     
-          const secondTween = gsap.to(secondRow, {x: -10, ease: "power1.inOut", transformOrigin: "center center",})
+          const secondTween = gsap.to(secondRow, {x: -60, ease: "power1.inOut", transformOrigin: "center center"})
     
           ScrollTrigger.create({
             trigger: secondRow,
             start: "top 90%",
             animation: secondTween,
-            end: "bottom top",
+            end: "top 30%",
             scrub: 0.5,
           })
-        },
+        })
 
-        "(min-width: 1111px)": () => {
-          const firstRow = document.querySelector('.first-row')
-          const secondRow = document.querySelector('.second-row')
 
-          const tween = gsap.to(firstRow, {x: 400, ease: "power1.inOut"})
 
+        mm.add("(min-width: 601px) and (max-width: 700px)", () => {
+          const tween = gsap.to(firstRow, {x: 120, ease: "power1.inOut", transformOrigin: "center center"})
+    
           ScrollTrigger.create({
             trigger: firstRow,
             start: "top 90%",
             animation: tween,
-            end: "bottom top",
-            scrub: 1,
+            end: "top top",
+            scrub: 0.5,
           })
-
-          const secondTween = gsap.to(secondRow, {x: -400, ease: "power1:inOut"})
-
+    
+          const secondTween = gsap.to(secondRow, {x: -120, ease: "power1.inOut", transformOrigin: "center center"})
+    
           ScrollTrigger.create({
             trigger: secondRow,
             start: "top 90%",
             animation: secondTween,
-            end: "bottom top",
-            scrub: 1,
+            end: "top 30%",
+            scrub: 0.5,
+          })
+        })
+
+
+        mm.add("(min-width: 701px) and (max-width: 800px)", () => {
+
+          const tween = gsap.to(firstRow, {x: 210, ease: "power1.inOut", transformOrigin: "center center"})
+    
+          ScrollTrigger.create({
+            trigger: firstRow,
+            start: "top 90%",
+            animation: tween,
+            end: "top top",
+            scrub: 0.5,
+          })
+    
+          const secondTween = gsap.to(secondRow, {x: -210, ease: "power1.inOut", transformOrigin: "center center"})
+    
+          ScrollTrigger.create({
+            trigger: secondRow,
+            start: "top 90%",
+            animation: secondTween,
+            end: "top 30%",
+            scrub: 0.5,
           })
 
-        }
+        })
 
-      })
+        mm.add("(min-width: 801px) and (max-width: 900px)", () => {
+
+          const tween = gsap.to(firstRow, {x: 260, ease: "power1.inOut", transformOrigin: "center center"})
+    
+          ScrollTrigger.create({
+            trigger: firstRow,
+            start: "top 90%",
+            animation: tween,
+            end: "top top",
+            scrub: 0.5,
+          })
+    
+          const secondTween = gsap.to(secondRow, {x: -260, ease: "power1.inOut", transformOrigin: "center center"})
+    
+          ScrollTrigger.create({
+            trigger: secondRow,
+            start: "top 90%",
+            animation: secondTween,
+            end: "top 30%",
+            scrub: 0.5,
+          })
+
+        })
+
+
+        mm.add("(min-width: 901px) and (max-width: 950px)", () => {
+
+          const tween = gsap.to(firstRow, {x: 40, ease: "power1.inOut", transformOrigin: "center center"})
+    
+          ScrollTrigger.create({
+            trigger: firstRow,
+            start: "top 90%",
+            animation: tween,
+            end: "top top",
+            scrub: 0.5,
+          })
+    
+          const secondTween = gsap.to(secondRow, {x: -40, ease: "power1.inOut", transformOrigin: "center center"})
+    
+          ScrollTrigger.create({
+            trigger: secondRow,
+            start: "top 90%",
+            animation: secondTween,
+            end: "top 30%",
+            scrub: 0.5,
+          })
+
+        })
+
+
+        mm.add("(min-width: 951px) and (max-width: 1000px)", () => {
+
+
+          const tween = gsap.to(firstRow, {x: 80, ease: "power1.inOut", transformOrigin: "center center"})
+    
+          ScrollTrigger.create({
+            trigger: firstRow,
+            start: "top 90%",
+            animation: tween,
+            end: "top top",
+            scrub: 0.5,
+          })
+    
+          const secondTween = gsap.to(secondRow, {x: -80, ease: "power1.inOut", transformOrigin: "center center"})
+    
+          ScrollTrigger.create({
+            trigger: secondRow,
+            start: "top 90%",
+            animation: secondTween,
+            end: "top 30%",
+            scrub: 0.5,
+          })
+        })
+
+
+        mm.add("(min-width: 1001px) and (max-width: 1111px)", () => {
+
+          const tween = gsap.to(firstRow, {x: 120, ease: "power1.inOut", transformOrigin: "center center"})
+    
+          ScrollTrigger.create({
+            trigger: firstRow,
+            start: "top 90%",
+            animation: tween,
+            end: "top top",
+            scrub: 0.5,
+          })
+    
+          const secondTween = gsap.to(secondRow, {x: -120, ease: "power1.inOut", transformOrigin: "center center"})
+    
+          ScrollTrigger.create({
+            trigger: secondRow,
+            start: "top 90%",
+            animation: secondTween,
+            end: "top 30%",
+            scrub: 0.5,
+          })
+
+        })
+
+
+        mm.add("(min-width: 1112px) and (max-width: 1200px)", () => {
+
+          const tween = gsap.to(firstRow, {x: 80, ease: "power1.inOut", transformOrigin: "center center"})
+    
+          ScrollTrigger.create({
+            trigger: firstRow,
+            start: "top 90%",
+            animation: tween,
+            end: "top top",
+            scrub: 0.5,
+          })
+    
+          const secondTween = gsap.to(secondRow, {x: -80, ease: "power1.inOut", transformOrigin: "center center"})
+    
+          ScrollTrigger.create({
+            trigger: secondRow,
+            start: "top 90%",
+            animation: secondTween,
+            end: "top 30%",
+            scrub: 0.5,
+          })
+
+        })
 
   };
 
