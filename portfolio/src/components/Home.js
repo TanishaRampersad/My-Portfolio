@@ -51,24 +51,24 @@ export default function Home() {
       const firstRow = document.querySelector('.first-row')
       const secondRow = document.querySelector('.second-row')
 
-      const tween = gsap.to(firstRow, {x: 160, ease: "power1:Out"})
+      const tween = gsap.to(firstRow, {x: 400, ease: "power1.inOut"})
 
       ScrollTrigger.create({
         trigger: firstRow,
         start: "top 90%",
         animation: tween,
         end: "bottom top",
-        scrub: true,
+        scrub: 1,
       })
 
-      const secondTween = gsap.to(secondRow, {x: -160, ease: "power1:Out"})
+      const secondTween = gsap.to(secondRow, {x: -400, ease: "power1:inOut"})
 
       ScrollTrigger.create({
         trigger: secondRow,
         start: "top 90%",
         animation: secondTween,
         end: "bottom top",
-        scrub: true,
+        scrub: 1,
       })
   }
 
