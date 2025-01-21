@@ -362,13 +362,13 @@
     .number{
         margin-left: 0rem;
         padding: 0.7rem 0.7rem;
-        width: 40%;
+        width: 8rem;
     }
     
     .email{
         margin-left: 0rem;
         padding: 0.7rem 0.5rem;
-        width: 60%;
+        width: 15rem;
         margin-bottom: 1rem;
     }
 
@@ -453,13 +453,13 @@
     .number{
         margin-left: 0rem;
         padding: 0.7rem 0.7rem;
-        width: 40%;
+        width: 8rem;
     }
     
     .email{
         margin-left: 0rem;
         padding: 0.7rem 0.5rem;
-        width: 60%;
+        width: 15rem;
         margin-bottom: 1rem;
     }
 
@@ -545,13 +545,13 @@
     .number{
         margin-left: 0rem;
         padding: 0.7rem 0.7rem;
-        width: 40%;
+        width: 8rem;
     }
     
     .email{
         margin-left: 0rem;
         padding: 0.7rem 0.5rem;
-        width: 60%;
+        width: 15rem;
         margin-bottom: 1rem;
     }
 
@@ -594,7 +594,7 @@
     }
 }
 
-@media (min-width: 901px) and (max-width: 1200px) {
+@media (min-width: 901px) and (max-width: 1399px) {
     .footer h1{
         font-size: 3rem;
         margin-left: 0.3rem;
@@ -636,13 +636,13 @@
     .number{
         margin-left: 0rem;
         padding: 0.7rem 0.7rem;
-        width: 40%;
+        width: 10rem;
     }
     
     .email{
         margin-left: 0rem;
         padding: 0.7rem 0.5rem;
-        width: 60%;
+        width: 16rem;
         margin-bottom: 1rem;
     }
 
@@ -682,7 +682,7 @@
     }
 
     .socials-section{
-        width: 15%;
+        width: 20%;
         margin-left: auto;
     }
 }

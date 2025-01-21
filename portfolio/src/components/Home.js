@@ -16,6 +16,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 export default function Home() {
+
+
     useEffect(() => {
 
       function infiniteScroll() {
@@ -43,35 +45,6 @@ export default function Home() {
     infiniteScroll()
 
 
-
-
-
-
-    const firstRow = document.querySelector('.first-row')
-    const secondRow = document.querySelector('.second-row')
-
-    const tween = gsap.to(firstRow, {x: 400, ease: "power1.inOut"})
-
-    ScrollTrigger.create({
-      trigger: firstRow,
-      start: "top 90%",
-      animation: tween,
-      end: "bottom top",
-      scrub: 1,
-    })
-
-    const secondTween = gsap.to(secondRow, {x: -400, ease: "power1:inOut"})
-
-    ScrollTrigger.create({
-      trigger: secondRow,
-      start: "top 90%",
-      animation: secondTween,
-      end: "bottom top",
-      scrub: 1,
-    })
-
-
-
     function horizontalScroll() {
 
       const firstRow = document.querySelector('.first-row')
@@ -89,7 +62,7 @@ export default function Home() {
             start: "top 90%",
             animation: tween,
             end: "top top",
-            scrub: 0.5,
+            scrub: true,
           })
     
           const secondTween = gsap.to(secondRow, {x: -60, ease: "power1.inOut", transformOrigin: "center center"})
@@ -98,8 +71,8 @@ export default function Home() {
             trigger: secondRow,
             start: "top 90%",
             animation: secondTween,
-            end: "top 30%",
-            scrub: 0.5,
+            end: "top 10%",
+            scrub: true,
           })
         })
 
@@ -275,6 +248,31 @@ export default function Home() {
           })
 
         })
+
+        mm.add("(min-width: 1201px) and (max-width: 5000px)", () => {
+          
+          const tween = gsap.to(firstRow, {x: 400, ease: "power1.inOut"})
+    
+          ScrollTrigger.create({
+            trigger: firstRow,
+            start: "top 90%",
+            animation: tween,
+            end: "bottom top",
+            scrub: 1,
+          })
+      
+          const secondTween = gsap.to(secondRow, {x: -400, ease: "power1:inOut"})
+      
+          ScrollTrigger.create({
+            trigger: secondRow,
+            start: "top 90%",
+            animation: secondTween,
+            end: "bottom top",
+            scrub: 1,
+          })
+
+        })
+       
 
   };
 

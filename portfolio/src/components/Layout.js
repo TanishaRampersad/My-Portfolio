@@ -21,7 +21,18 @@ export default function Layout() {
 
   useEffect(() => {
 
-  gsap.to(window, { duration: 1, scrollTo: { y: 0, autoKill: true } });
+    function Scroll(){
+      if(pathname === '/about'){
+        document.querySelector('.about-me').scrollIntoView({
+          behavior: 'smooth', // Smooth scrolling
+          block: 'start',     // Align to the top of the section
+        });
+      }
+    }
+
+    Scroll()
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
   }, [pathname])
 

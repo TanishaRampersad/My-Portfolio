@@ -7,7 +7,23 @@ import { HashLink as Link } from "react-router-hash-link";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Contact() {
+
+
+
+
     useEffect(() => {
+
+        function submitReload(){
+            const submit = document.querySelector('.submitButton');
+
+            submit.addEventListener('click', () => {
+                setTimeout(() => {
+                    window.location.reload();
+                }, 3000);
+            })
+        }
+
+        submitReload()
 
         function submitAnimation() {
             const submit = document.querySelector('.submitButton');
@@ -46,8 +62,10 @@ export default function Contact() {
                                 <h1>Get in Touch</h1>
                             </div>
 
-                            <form className="contactForm">
+                            <form  action="https://api.web3forms.com/submit" method="POST" className="contactForm">
                                 <hr className="contactLine"/>
+                                <input type="hidden" name="access_key" value="f2f9a11f-6c9b-4b81-bcbe-64d4e0a4ae3e"></input>
+
                                 <label htmlFor="userName">Your name?</label>
                                 <input type="text" id="userName" name="user-name" placeholder="David Brown*"></input>
 
@@ -61,7 +79,7 @@ export default function Contact() {
 
                                 <hr className="contactLine"/>
                                 <label htmlFor="">What type of collaboration are you interested in?</label>
-                                <select>
+                                <select  name="collaboration">
                                     <option>Hire me</option>
                                     <option>Chat with me</option>
                                     <option>Start a project together</option>

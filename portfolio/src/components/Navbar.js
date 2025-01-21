@@ -23,6 +23,16 @@ export default function Navbar() {
 
   useEffect(() => {
 
+    function workNav() {
+      if (window.location.pathname === '/') {
+        document.body.classList.add('work-special');
+      } else {
+        document.body.classList.remove('work-special');
+      }
+    }
+
+    workNav();
+
      // Check if the page has already been reloaded
      const hasReloaded = localStorage.getItem('hasReloaded');
     
@@ -73,6 +83,7 @@ export default function Navbar() {
 
       localStorage.removeItem('hasReloaded');
     };
+
   }, [location]); // Effect runs whenever location changes
   
   
@@ -87,15 +98,16 @@ export default function Navbar() {
   
             <div className='navEnd'>
                 <ul className="nav-list">
+                {location.pathname === '/home' &&
                     <li className='nav-item'>
-                    <Link to='#work' className='link textLink'> { "/Work"}</Link>
+                    <Link to='#work' className='link textLink work-special'> { "/Work"}</Link>
                         <div className='d-padding'>
                             <div className='dot'></div>
                         </div>
-                    </li>
+                    </li>}
 
                     <li className='nav-item'>
-                    <Link className='link textLink' to="/about">{ "/About"}</Link>
+                    <Link className='link textLink' to="/about" id='navigationLink'>{ "/About"}</Link>
                         <div className='d-padding'>
                           <div className='dot'></div>
                         </div>

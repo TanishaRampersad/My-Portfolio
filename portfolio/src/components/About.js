@@ -13,6 +13,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function About() {
     useEffect(() => {
 
+
+
         function textAnimation() {
             const text = document.querySelector('#closingTag')
 
