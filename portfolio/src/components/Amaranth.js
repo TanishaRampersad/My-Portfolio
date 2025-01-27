@@ -7,6 +7,7 @@ import amarantBooking from '../images/amaranth-booking.mp4'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap'
 import Spline from '@splinetool/react-spline';
+import amaranth from '../images/Amaranth recording.mp4'
 //import { Canvas } from '@react-three/fiber';
 //import { useGLTF } from '@react-three/drei';
 //import ThreeCanvas from './ThreeCanvas';
@@ -329,8 +330,8 @@ export default function Amaranth() {
                 </div>
             </section>
 
-            <section className="amaranth-model" style={{ width: '40%', height: '60vh' }}>
-                <spline-viewer 
+            <section className="amaranth-model" style={{ width: '100%', height: '60vh' }}>
+                {/* <spline-viewer 
                     url="https://prod.spline.design/6Pm5agL7JlZiEQp9/scene.splinecode"
                     style={{
                         width: '100%',
@@ -338,7 +339,9 @@ export default function Amaranth() {
                         transform: 'scale(2.1)', // Slightly enlarged the model
                         transformOrigin: 'center center' 
                     }}
-                ></spline-viewer>
+                ></spline-viewer> */}
+
+                <video className="a-vid" src={amaranth} alt='Amaranth Website' autoPlay loop muted playsInline></video>
                 
             </section>
 

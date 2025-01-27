@@ -239,8 +239,18 @@
 .amaranth-model{
     /* background-color: antiquewhite; */
     margin: 0 auto;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
     margin-top: 10rem;
+}
+
+.a-vid {
+    width: 59%;
+    height: 99%;
+    margin: 0 auto;  
+    padding: 0; 
+    display: block; 
+    border: 5px solid  #a9b3b8;
+    border-radius: 2%;
 }
 
 .amaranth-problem{
