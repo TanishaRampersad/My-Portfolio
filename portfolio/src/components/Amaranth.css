@@ -137,8 +137,9 @@
     color:#171717;
 }
 
-.project-about-section{
+.project-about-section {
     display: flex;
+    align-items: top;
 }
 
 .project-about-section p{

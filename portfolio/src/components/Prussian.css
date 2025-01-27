@@ -144,7 +144,8 @@ Link .button{
  
  .project-about-section{
      display: flex;
-     align-items: center;
+     align-items: top;
+     margin-top: 4rem;
  }
 
   
@@ -158,6 +159,7 @@ Link .button{
  
  .about-prussian p{
      width: 80%;
+     padding-top: 1rem;
  }
  
  .about-prussian hr{
@@ -172,6 +174,7 @@ Link .button{
  .prussian-role{
      display: block;
      width: 40%;
+     padding-top: 1rem;
  }
  
  .prussian-role-heading{
